@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>福建风土·物产月历</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='6' fill='%2354a982'/%3E%3Ccircle cx='16' cy='16' r='13' fill='%2354a982' fill-opacity='0.18'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=22">
+  <link rel="stylesheet" href="css/style.css?v=50">
+</head>
+<body>
+  <div class="splash" id="splash">
+    <div class="splash-tiles" id="splashTiles"></div>
+    <div class="splash-intro" id="splashIntro">
+      <span>这是一张以物产为线索的</span>
+      <span>福建时间地图</span>
+      <span>记录福建九市</span>
+      <span>一百二十种物产的</span>
+      <span>来处与时节</span>
+    </div>
+    <div class="splash-center">
+      <span class="splash-main">福建风土·物产月历</span>
+      <div class="month-switch" id="monthSwitch">
+        <span class="sw-tick left"></span>
+        <div class="sw-number" id="swNumber">8</div>
+        <span class="sw-tick right"></span>
+        <div class="sw-underline"></div>
+        <span class="sw-label">MONTH · 月份</span>
+      </div>
+      <button class="enter-btn" id="enterBtn">点击进入</button>
+    </div>
+    <div class="splash-hint">用物产的时间<br>进入福建风土</div>
+  </div>
+
+  <header class="app-header">
+    <div class="brand">
+      <h1>福建风土·物产月历</h1>
+      <p class="subtitle">拨动月份，用物产的时间，进入福建风土。</p>
+    </div>
+    <div class="header-controls">
+      <button class="btn-ghost mobile-only" id="btnFilters" title="风土筛选">筛选</button>
+      <label class="toggle">
+        <input type="checkbox" id="showAllToggle">
+        <span class="toggle-track"></span>
+        <span>显示全年物产</span>
+      </label>
+      <button class="btn-ghost" id="btnCurrentMonth" title="回到当前月份">回到本月</button>
+      <button class="btn-ghost" id="shareBtn" title="复制当前月份分享链接">分享</button>
+    </div>
+  </header>
+
+  <nav class="month-timeline" id="monthTimeline" aria-label="月份时间轴"></nav>
+
+  <main class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sheet-handle"></div>
+      <div class="sidebar-head">
+        <h2>风土筛选</h2>
+        <button class="btn-ghost small sidebar-close" id="sidebarClose" title="关闭筛选">×</button>
+        <button class="btn-ghost small" id="btnClearFilters">清空</button>
+      </div>
+      <div class="filter-groups" id="filterGroups"></div>
+      <div class="sidebar-foot">
+        <p class="hint">筛选为「同类取或、跨类取与」：选中任意地形 + 任意海拔组合生效。</p>
+      </div>
+    </aside>
+
+    <section class="map-wrap">
+      <div id="map"></div>
+      <div id="mapTooltip" class="map-tooltip" hidden></div>
+      <div class="map-status" id="mapStatus">正在载入数据…</div>
+      <div class="legend" id="legend">
+        <div class="legend-block">
+          <p class="legend-title">原点大小 · 当月风土显著度</p>
+          <div class="legend-sizes">
+            <div class="ls-row"><span class="dot-sample" data-size="s"></span><span>弱 <i>≤20</i></span></div>
+            <div class="ls-row"><span class="dot-sample" data-size="m"></span><span>正在发生 <i>21–50</i></span></div>
+            <div class="ls-row"><span class="dot-sample" data-size="l"></span><span>较重要 <i>51–80</i></span></div>
+            <div class="ls-row"><span class="dot-sample" data-size="xl"></span><span>风土高峰 <i>81–100</i></span></div>
+          </div>
+        </div>
+        <div class="legend-block">
+          <p class="legend-title">原点颜色 · 核心风土动作</p>
+          <div class="legend-colors">
+            <div class="lc-row"><span class="color-sample" data-stage="采收 / 采摘"></span><span class="lc-name">采收 / 采摘</span><span class="lc-desc">嫩绿</span></div>
+            <div class="lc-row"><span class="color-sample" data-stage="成熟"></span><span class="lc-name">成熟</span><span class="lc-desc">暖黄</span></div>
+            <div class="lc-row"><span class="color-sample" data-stage="传统制作 / 加工"></span><span class="lc-name">传统制作 / 加工</span><span class="lc-desc">暖橙</span></div>
+            <div class="lc-row"><span class="color-sample" data-stage="物候盛景"></span><span class="lc-name">物候盛景</span><span class="lc-desc">淡粉</span></div>
+          </div>
+          <p class="legend-note">地图仅展示当月发生核心风土动作的物产；休眠、生长等后台状态在物产卡片中呈现。</p>
+        </div>
+      </div>
+      <div class="legend-bar" id="legendBar">
+        <div class="lb-row">
+          <span class="lb-label">原点大小</span>
+          <span class="lb-item"><i class="lb-dot s"></i>弱</span>
+          <span class="lb-item"><i class="lb-dot m"></i>正在发生</span>
+          <span class="lb-item"><i class="lb-dot l"></i>较重要</span>
+          <span class="lb-item"><i class="lb-dot xl"></i>风土高峰</span>
+        </div>
+        <div class="lb-row">
+          <span class="lb-label">核心动作</span>
+          <span class="lb-item"><i class="lb-dot c" style="background:#78B268"></i>采收/采摘</span>
+          <span class="lb-item"><i class="lb-dot c" style="background:#d8b84c"></i>成熟</span>
+          <span class="lb-item"><i class="lb-dot c" style="background:#bb7b4e"></i>制作/加工</span>
+          <span class="lb-item"><i class="lb-dot c" style="background:#E8A0A8"></i>物候盛景</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="detail-card" id="detailCard" aria-hidden="true">
+    <div class="detail-handle"></div>
+    <button class="detail-close" id="detailClose" aria-label="关闭详情">×</button>
+    <div class="detail-body" id="detailBody"></div>
+  </aside>
+
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+
+  <!-- 月份导语浮块 -->
+  <div class="month-guide" id="monthGuide" aria-hidden="true">
+    <div class="mg-card" role="dialog" aria-modal="true" aria-label="月份导语">
+      <button class="mg-close" id="mgClose" aria-label="关闭导语">×</button>
+      <div class="mg-side">
+        <span class="mg-month-vert" id="mgMonth">1月</span>
+        <span class="mg-gap"></span>
+        <span class="mg-theme-vert" id="mgThemeWord"></span>
+      </div>
+      <div class="mg-quote-col" id="mgQuoteCol"></div>
+      <div class="mg-main">
+        <div class="mg-media" id="mgMedia">
+          <img class="mg-img" id="mgImgA" alt="">
+          <img class="mg-img" id="mgImgB" alt="">
+        </div>
+        <p class="mg-caption" id="mgCaption"></p>
+        <div class="mg-rule"></div>
+        <p class="mg-body" id="mgBody"></p>
+      </div>
+      <button class="mg-dismiss" id="mgDismiss">关闭导语 查看地图</button>
+    </div>
+  </div>
+
+  <script src="vendor/leaflet/leaflet.js?v=23"></script>
+  <script src="vendor/gsap/gsap.min.js?v=23"></script>
+  <script src="js/app.js?v=64"></script>
+</body>
+</html>

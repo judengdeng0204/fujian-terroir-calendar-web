@@ -1,0 +1,33 @@
+{
+  "$comment": "福建物产日历 · 物产与地方生活（五维）内容 Schema v1",
+  "product_id": "FJ053",
+  "living": {
+    "production_craft": {
+      "content": "正文 60–120 字",
+      "confidence": "high|medium|low",
+      "sources": [
+        {
+          "source_name": "来源名称",
+          "source_type": "政府|科研机构|高校|地方志|行业协会|专业媒体|专业数据库|商业网站|自媒体",
+          "source_url": "https://…",
+          "evidence_level": "A|B|C|D",
+          "quote": "关键原文片段（≤80字）"
+        }
+      ],
+      "reason": "仅当 content 为空时填写：no_reliable_source | weak_evidence | not_applicable",
+      "description": "生产与技艺：人如何获得、培育、栽种、采集、制作或加工这种物产；表达的是人为了获得、加工和使用一种物产，形成了哪些地方性的知识、技术与方法。"
+    },
+    "labor": {
+      "description": "劳作：谁来做、什么时候做、怎么一起做，以及这种劳动如何组织生活（季节忙闲、家庭分工、专业工匠、劳动节奏与人口流动）。"
+    },
+    "food": {
+      "description": "饮食：物产进入当地人的嘴里之后改变了什么（食用方式、地方菜、季节饮食、保存方式——人对季节性的回应）。"
+    },
+    "culture": {
+      "description": "文化：物产是否超越实用功能、承载地方意义（节俗、礼俗、民间故事、地方艺术、地方身份）。"
+    },
+    "industry": {
+      "description": "产业：物产如何改变地方经济与社会结构（产业链、职业、市场、地方经济、地方空间痕迹）。"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ031",
+ "name": "平和琯溪蜜柚",
+ "category": "水果",
+ "county": "平和县",
+ "city": "漳州市",
+ "production_area": "以平和县小溪镇为中心向周边延伸30公里，包括坂仔、国强、南胜、五寨、山格、文峰、霞寨、崎岭、九峰等10个乡镇，海拔50–300米",
+ "geographical_indication": "国家地理标志保护产品（2007）、农产品地理标志、地理标志证明商标",
+ "seasonality_summary": "3月下旬始花、4月中旬盛花，9月下旬至12月成熟采收（10月中旬为高峰），9月下旬起陆续上市。",
+ "human_environment": "丘陵果园人工栽培，蜜柚产业为平和县支柱产业，形成规模化种植与品牌化经营。",
+ "production_environment": "平和县为中国柚类主产县，琯溪蜜柚获地理标志保护并建立原产地核心示范区。",
+ "notes": "坐标为平和县行政区域近似中心点，并非具体生产地；不同来源成熟期存在9月下旬–10月上旬与10月中旬–11月中旬差异，采用9月下旬–12月综合范围。",
+ "phenology_human": [
+  "果园冬管、施基肥",
+  "追肥、修剪",
+  "花期管理、疏花",
+  "保花保果",
+  "疏果定果",
+  "水肥管理、防虫",
+  "水肥管理",
+  "控水增糖",
+  "早熟蜜柚开始采摘上市",
+  "集中采收、大量上市",
+  "采收、分级包装、储藏",
+  "采摘收尾、储藏保鲜"
+ ],
+ "sources_digest": [
+  {
+   "name": "平和县人民政府·政协提案复函",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://www.pinghe.gov.cn/cms/html/phxrmzf/2021-11-09/441718987.html",
+   "quote": "生产地域范围为以平和县城小溪镇为中心向周边延伸30公里……海拔高度50-300m左右。"
+  },
+  {
+   "name": "漳州市水利局·平和县概况",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "medium",
+   "url": "http://www.zhangpu.gov.cn/cms/html/zzsswj/2022-03-18/909191684.html",
+   "quote": "年平均气温21.3 ℃，年平均降雨量1736毫米。"
+  },
+  {
+   "name": "平和县市场监督管理局·政协提案复函（地理标志证明商标使用管理规则）",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://www.pinghe.gov.cn/cms/html/phxrmzf/2021-11-09/441718987.html",
+   "quote": "该地域海拔高度50-300m左右，年均气温24.30C，年均降雨量1902毫米……土壤PH值4.5-5.5，有机质含量0.84-2.96%。"
+  },
+  {
+   "name": "中国优质农产品开发服务协会·区域公用品牌",
+   "type": "行业协会",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://cgapa.org.cn/ds/21032a6d2b.html",
+   "quote": "琯溪蜜柚，福建省漳州市平和县特产，为地理标志保护产品……保护范围为平和县辖区。"
+  },
+  {
+   "name": "中国网·中国特色产品推介",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://cn.chinagate.cn/product/2013-03/18/content_28276537.htm",
+   "quote": "土壤PH在4.8—5.5之间……适于东南方向、地势平缓的低海拔丘陵山地种植。"
+  }
+ ]
+}

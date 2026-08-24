@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ024",
+ "name": "福鼎四季柚",
+ "category": "水果",
+ "county": "福鼎市",
+ "city": "宁德市",
+ "production_area": "福鼎市前岐镇为核心产区，地理标志保护范围为福鼎市行政区域内17个乡镇（街道、开发区）",
+ "geographical_indication": "地理标志证明商标（注册号2016482）；地理标志保护产品（T/CGAPA 066-2025团体标准）；全国名特优新农产品（编号CAQS-MTYX-20220345）",
+ "seasonality_summary": "以一年四季都能开花结果得名，春梢花为主要产量；主果11月上中旬采收（立冬后采摘品质最佳），耐贮性好可至次年立春，二季果留树保鲜可在次年2–3月采收",
+ "human_environment": "前岐镇为“四季柚之乡”核心产区，全镇种植4000多亩，亩产约3000公斤，果农立冬后采摘、常温贮藏",
+ "production_environment": "福鼎市被誉为“四季柚之乡”，大兰村等规模化果场经营，入选全国名特优新农产品",
+ "notes": "坐标为前岐镇（核心产区）行政区域近似中心点，并非具体生产地。四季柚以春梢花所结果实为主要产量，二季花为补充产量，晚夏梢之后花果多无经济价值。",
+ "phenology_human": [
+  "果园冬管，贮藏柚果继续上市",
+  "留树保鲜二季果采收",
+  "果园施春肥、修剪",
+  "花期管理、疏花",
+  "疏果、水肥管理",
+  "果园水肥与病虫害管理",
+  "果园管理",
+  "果园管理、防台风",
+  "果园管理、采前准备",
+  "采前管理，准备立冬后采收",
+  "立冬开始采摘，持续约半个月，常温贮藏",
+  "采后分选、贮藏，柚果上市流通"
+ ],
+ "sources_digest": [
+  {
+   "name": "福建省名特优新农产品专栏（福建绿色食品发展中心）",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://fjncpxh.com/bencandy.php?fid=10&id=60486",
+   "quote": "这里地属东亚热带海洋性季风气候，气候温和，温暖湿润，雨量充沛。境内多山峦起伏的丘陵地，伴有四季柚喜爱的黄土壤。"
+  },
+  {
+   "name": "地理标志特产大全·福鼎四季柚地理标志证明商标管理规则",
+   "type": "专业数据库",
+   "evidence": "B",
+   "confidence": "high",
+   "url": "https://sinogi.cn/wap/index.php/product/gg/id/291",
+   "quote": "福鼎四季柚 地理标志商标 2016482；原产地域：福建省福鼎市前岐镇、佳阳乡、山前街道等共17个乡镇（街道、开发区）现辖行政区域。"
+  },
+  {
+   "name": "《福鼎四季柚与地质背景相关性研究》（物探与化探期刊）",
+   "type": "学术论文",
+   "evidence": "B",
+   "confidence": "medium",
+   "url": "https://wutanyuhuatan.com/cn/article/pdf/preview/wtyht_3668.pdf",
+   "quote": "种植区海拔在200m以下，属中亚热带海洋性季风气候……年平均气温17.6℃。"
+  },
+  {
+   "name": "全国团体标准信息平台·T/CGAPA 066-2025《地理标志产品 福鼎四季柚》",
+   "type": "行业标准",
+   "evidence": "C",
+   "confidence": "high",
+   "url": "https://www.ttbz.org.cn/Home/PdfFileStreamGet/c3QsMTUyMDEx",
+   "quote": "福鼎四季柚地理标志产品保护范围为福建省宁德市福鼎市行政区域内17个乡镇（街道、开发区）。"
+  },
+  {
+   "name": "福鼎新闻网（“柚”见你！）",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "high",
+   "url": "https://www.fdxww.com/common/pictureArticle.html?id=116393",
+   "quote": "四季柚的采摘期一般从立冬开始，持续半个月，柚子可以储存到明年立春。"
+  }
+ ]
+}

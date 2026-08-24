@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ023",
+ "name": "福安巨峰葡萄",
+ "category": "水果",
+ "county": "福安市",
+ "city": "宁德市",
+ "production_area": "福安市赛岐镇象环村为核心产区，溪柄、穆云、晓阳、松罗（高山晚熟）等乡镇均有种植",
+ "geographical_indication": "国家农产品地理标志（福安巨峰葡萄）",
+ "seasonality_summary": "1月下旬伤流、3月中旬萌芽、5月上旬开花，7月下旬成熟，7月中旬至9月采收上市；高山晚熟区采收可延至9月下旬。",
+ "human_environment": "果园人工栽培，采用控产提质、疏花疏果、水肥一体化与避雨大棚等精细化管理。",
+ "production_environment": "福安市为中国南方鲜食葡萄集中产区，被誉为中国特色巨峰葡萄之乡。",
+ "notes": "坐标为福安市行政区域近似中心点，并非具体生产地；产区海拔跨度大（沿海平原至高山晚熟区）。",
+ "phenology_human": [
+  "修剪清园",
+  "备耕",
+  "施肥、抹芽",
+  "疏梢定穗",
+  "疏花疏果",
+  "疏果、套袋",
+  "开始采摘，抢鲜上市",
+  "集中采收、冷链发运",
+  "晚熟葡萄采收、错峰销售",
+  "采后管理",
+  "清园、施基肥",
+  "冬管"
+ ],
+ "sources_digest": [
+  {
+   "name": "福建省商务厅网站",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://swt.fj.gov.cn/xxgk/jgzn/jgcs/ltyfzc/lsy/202307/t20230727_6215130.htm",
+   "quote": "福安市是最优质的巨峰葡萄产地之一，被誉为中国特色巨峰葡萄之乡。"
+  },
+  {
+   "name": "福安市人民政府·福安巨峰葡萄物候资料",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://www.fjfa.gov.cn/ztzl/fapt/ptpz/202312/t20231204_1890481.htm",
+   "quote": "伤流期1月下旬，萌芽期3月中旬，开花期5月上旬，浆果6月底开始着色，成熟期7月下旬，落叶期11月中旬。"
+  },
+  {
+   "name": "福安市人民政府·高山晚熟葡萄报道",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://www.fjfa.gov.cn/ztzl/fapt/xghd/202412/t20241202_1997190.htm",
+   "quote": "到8月中旬即进入大量上市阶段，一直持续到9月底。"
+  },
+  {
+   "name": "福安市人民政府·项目环评文件",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "medium",
+   "url": "http://www.fjfa.gov.cn/zwgk/zdxxgk/hjbhxx/xzsp_19343/xmhpslspqgs/201706/P020230217386361530236.pdf",
+   "quote": "多年年平均气温19.3℃……年均降水量1627.4mm。"
+  },
+  {
+   "name": "《果树学报》研究·福安产区不同海拔巨峰葡萄",
+   "type": "学术论文",
+   "evidence": "B",
+   "confidence": "medium",
+   "url": "https://www.cqvip.com/doc/journal/7203169879",
+   "quote": "测定10 m（T1）、460 m（T2）、680 m（CK）3个海拔园区……"
+  }
+ ]
+}

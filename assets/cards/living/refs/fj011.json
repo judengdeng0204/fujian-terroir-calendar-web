@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ011",
+ "name": "永春佛手茶",
+ "category": "茶",
+ "county": "永春县",
+ "city": "泉州市",
+ "production_area": "永春县苏坑、玉斗、坑仔口、锦斗、桂洋等乡镇海拔400–900米山地茶园（苏坑为核心产区）",
+ "geographical_indication": "国家地理标志保护产品（2006）、全国名特优新农产品",
+ "seasonality_summary": "3月春分开采（开茶节），3–5月春茶采制为主，6–7月夏茶，9–10月秋茶；全年以春季为高活跃期。",
+ "human_environment": "高山茶园人工栽培，乌龙茶初制加工（晒青、摇青、杀青、揉捻、烘焙）为传统工艺，苏坑镇为核心产区。",
+ "production_environment": "永春县茶产业集中区，苏坑镇拥有佛手茶园1万多亩、茶叶初制加工厂128家。",
+ "notes": "坐标为永春县行政区域近似中心点，并非具体生产地；海拔不同来源存在400–800米与600–900米差异，采用400–900米综合范围。",
+ "phenology_human": [
+  "茶园冬管",
+  "茶园备耕",
+  "开茶节，开采春茶",
+  "集中采制佛手茶（晒青、摇青、杀青、揉捻、烘焙）",
+  "春茶制作收尾、烘焙",
+  "夏茶采制",
+  "茶园管理",
+  "茶园管理",
+  "秋茶采制",
+  "采制收尾",
+  "茶园冬管",
+  "茶园封园"
+ ],
+ "sources_digest": [
+  {
+   "name": "泉州市人民政府网·永春佛手",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://www.quanzhou.gov.cn/gastronomy/ch/sqsm/ctsc/202412/t20241213_3116828.htm",
+   "quote": "主产于永春县苏坑、玉斗、坑仔口、锦斗和桂洋等乡镇海拔600米至900米高山上。"
+  },
+  {
+   "name": "国家质检总局2006年第203号公告",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://chinatt315.org.cn/gggs/2006-12/28/87372.html",
+   "quote": "保护区域内海拔400米至800米，坡度小于25度，土壤为pH4.5至6.0的红壤。"
+  },
+  {
+   "name": "《福建茶叶》2013年第3期·永春生态名茶",
+   "type": "学术论文",
+   "evidence": "B",
+   "confidence": "medium",
+   "url": "https://wap.cnki.net/touch/web/Journal/Article/FJCA201303026.html",
+   "quote": "年均温20.4℃、降雨量1681.6mm、相对湿度77%、日照时数1892h、无霜期340d。"
+  },
+  {
+   "name": "中国新闻网（乡约福建）",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://www.chinanews.com.cn/sh/2023/03-21/9975892.shtml",
+   "quote": "作为佛手茶核心产区，福建省永春县苏坑镇21日举办首届佛手开茶节。"
+  },
+  {
+   "name": "海峡都市报",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://hxdsb.fjdaily.com/pad/con/202303/22/content_260100.html",
+   "quote": "苏坑是它的核心产区，已有300多年的种植历史。"
+  }
+ ]
+}

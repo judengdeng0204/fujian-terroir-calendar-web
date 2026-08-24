@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ119",
+ "name": "建瓯锥栗",
+ "category": "其他",
+ "county": "建瓯市",
+ "city": "南平市",
+ "production_area": "建瓯市海拔300–1000米山地，龙村乡、川石乡为三大主产区之二",
+ "geographical_indication": "国家地理标志保护产品（建瓯锥栗，2004）",
+ "seasonality_summary": "6月开花、9月结果，9月下旬至11月上旬采收上市（9月底建瓯最早开始采摘，10月为采收旺季）。",
+ "human_environment": "山地人工栽培，长期选育12个优质高产品种，采用传统栽培、采收与贮藏工艺。",
+ "production_environment": "建瓯为中国锥栗之乡（中国优质果品基地重点县），锥栗为国家地理标志保护产品。",
+ "notes": "坐标为建瓯市行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "栗园清园、修剪",
+  "施肥、嫁接准备",
+  "春管",
+  "水肥管理",
+  "花期管理",
+  "保花保果",
+  "疏果、防虫",
+  "水肥管理",
+  "开始采收、抢鲜销售",
+  "集中采收、销售",
+  "采收收尾、贮藏",
+  "清园、冬管"
+ ],
+ "sources_digest": [
+  {
+   "name": "南平市供销社·建瓯锥栗",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://gxs.np.gov.cn/cms/html/npsgxs/2019-10-12/2145277731.html",
+   "quote": "建瓯锥栗种植在建瓯市海拔300—1000米山地范围内。"
+  },
+  {
+   "name": "建瓯市人民政府·龙村乡锥栗采收报道",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://www.jo.gov.cn/cms/html/joszfwz/2025-09-22/227348117.html",
+   "quote": "锥栗也迎来了采收旺季。"
+  },
+  {
+   "name": "新品种网·福建锥栗产地解析",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "low",
+   "url": "http://news.ymt.com/new_arg_tech/17583858286591321968",
+   "quote": "土壤以红壤和黄壤为主，pH值在5.5–6.5之间。"
+  },
+  {
+   "name": "福建日报·满山锥栗开口笑",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://www.fjdaily.com/app/content/2022-10/20/content_1636145.html",
+   "quote": "年降雨量1670毫米，非常适宜锥栗。"
+  },
+  {
+   "name": "新品种网·南平锥栗产地解析",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://news.ymt.com/new_arg_tech/17558073672361178348",
+   "quote": "建瓯锥栗最早上市，通常在9月底开始采摘。"
+  }
+ ]
+}

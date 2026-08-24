@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ059",
+ "name": "平潭水仙花",
+ "category": "花卉",
+ "county": "平潭县",
+ "city": "福州市",
+ "production_area": "平潭综合实验区（海坛岛）各水仙花种植基地",
+ "geographical_indication": "国家地理标志保护产品（平潭水仙花，2007）、地理标志证明商标",
+ "seasonality_summary": "10月下旬霜降种球，次年6月上旬芒种前收获；6–10月球茎休眠，12月下旬起开花，春节前后为上市高峰。",
+ "human_environment": "水仙花球三种三收传统种植，全程人工操刀，10月霜降种植、芒种前收获，收获后晾干分级入库休眠。",
+ "production_environment": "平潭水仙花协会推动品牌建设，产品销往北京、天津、上海等地。",
+ "notes": "坐标为平潭县行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "装盆、销售（春节花卉市场）",
+  "花球销售",
+  "田间管理",
+  "田间管理",
+  "水肥管理",
+  "起收花球（约40万粒成熟花球）",
+  "晾干、分级、入库",
+  "库房越夏管理",
+  "库房管理",
+  "种植、销售准备（10月后销往各地）",
+  "田间管理",
+  "观赏与销售准备"
+ ],
+ "sources_digest": [
+  {
+   "name": "平潭综合实验区·项目文件",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "medium",
+   "url": "https://xzfwzx.pingtan.gov.cn:9998/G2/upload!download.do?attachId=4028012283796faf018379c2354400af",
+   "quote": "多年平均气温19.6℃，最冷日平均气温10.2℃……多年平均降水量1172毫米。"
+  },
+  {
+   "name": "福州新闻网·平潭凌波仙子报道（平潭水仙花协会）",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://news.fznews.com.cn/dsxw/20190611/5cfef0483981b.shtml",
+   "quote": "土壤为赤红壤，含多种微量元素，加上南亚热带湿润性海洋气候条件。"
+  },
+  {
+   "name": "福州新闻网·平潭水仙夏眠报道",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://news.fznews.com.cn/dsxw/20220531/406zkmX6uf.shtml",
+   "quote": "水仙花球一般在霜降节气时种植，到了来年芒种节气前后就可以收获。"
+  },
+  {
+   "name": "平潭网·水仙花球迎收获报道",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://ptnet.cn/a/2023-06/05/content_2051689.html",
+   "quote": "每年6月到10月是水仙花球的休眠期……10月以后就会逐步销往全国各地的花卉市场。"
+  },
+  {
+   "name": "平潭综合实验区管委会网（县域坐标近似）",
+   "type": "政府",
+   "evidence": "C",
+   "confidence": "low",
+   "url": "https://www.pingtan.gov.cn",
+   "quote": ""
+  }
+ ]
+}

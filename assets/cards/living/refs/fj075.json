@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ075",
+ "name": "霞浦紫菜",
+ "category": "海产",
+ "county": "霞浦县",
+ "city": "宁德市",
+ "production_area": "霞浦县沿海海域（三沙湾等养殖海域），三沙、牙城、沙江、溪南等乡镇",
+ "geographical_indication": "地理标志证明商标（霞浦紫菜，2009）",
+ "seasonality_summary": "白露（9月上旬）前后下苗，10月下旬至11月开始采收，可采五茬，11月至次年2月为采收旺季。",
+ "human_environment": "浅海竹竿挂帘养殖，白露下苗、五茬采收，采收后迅速烘干加工。",
+ "production_environment": "霞浦为中国紫菜之乡，霞浦紫菜地理标志证明商标为区域品牌。",
+ "notes": "坐标为霞浦县沿海区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "采收（二水/三水紫菜）、烘干",
+  "采收收尾",
+  "清排、晒架",
+  "设施维护",
+  "贝壳丝状体育苗",
+  "育苗管理",
+  "育苗管理",
+  "采苗、挂帘准备",
+  "下苗、挂帘",
+  "开始采收头水紫菜",
+  "集中采收、迅速烘干加工",
+  "采收（二水/三水）、加工"
+ ],
+ "sources_digest": [
+  {
+   "name": "央视关注·霞浦紫菜报道（霞浦新闻网转载）",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://hbyey.mobile.xpxww.com/show/11441.html",
+   "quote": "霞浦县被称为中国紫菜之乡……这片海域就是三沙湾养殖场。"
+  },
+  {
+   "name": "中国评论通讯社·霞浦紫菜报道",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://bj.crntt.com/crn-webapp/touch/detail.jsp?coluid=7&kindid=0&docid=106958570",
+   "quote": "2009年，霞浦县被授予中国紫菜之乡称号。"
+  },
+  {
+   "name": "东南网·霞浦5万余亩紫菜迎丰收",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "high",
+   "url": "http://nd.fjsen.com/2025-12/01/content_32088742.htm",
+   "quote": "霞浦紫菜通常在每年白露节气前后下苗，11月开始陆续采收。成熟的紫菜可采收五茬。"
+  },
+  {
+   "name": "霞浦新闻网·万亩紫菜抢鲜采收",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "high",
+   "url": "https://www.hi6.www.xpxww.com/show/29050.html",
+   "quote": "到了10月下旬左右，养殖户们就会陆续开始采收。"
+  },
+  {
+   "name": "霞浦县人民政府网（区域坐标近似）",
+   "type": "政府",
+   "evidence": "C",
+   "confidence": "low",
+   "url": "http://www.xiapu.gov.cn",
+   "quote": ""
+  }
+ ]
+}

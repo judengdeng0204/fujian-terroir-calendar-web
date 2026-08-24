@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ067",
+ "name": "福鼎黄栀子",
+ "category": "药食同源",
+ "county": "福鼎市",
+ "city": "宁德市",
+ "production_area": "福鼎市贯岭镇为核心产区，太姥山、前岐、磻溪、桐城等乡镇均有种植",
+ "geographical_indication": "农产品地理标志（福鼎黄栀子，2020）",
+ "seasonality_summary": "5月下旬至6月上中旬为盛花期，10月进入结果丰收期，10–11月（立冬前后）采收鲜果。",
+ "human_environment": "坡地人工栽培，花期赏花与采摘结合，采果期男女老少齐上阵，鲜果粗加工后外销。",
+ "production_environment": "福鼎黄栀子为全国农产品地理标志产品，贯岭镇为集中产区。",
+ "notes": "坐标为福鼎市行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "果园清园",
+  "修剪、施肥",
+  "春季管理",
+  "水肥管理",
+  "赏花、疏花管理",
+  "花期管理",
+  "疏果、防虫",
+  "水肥管理",
+  "田间管理",
+  "开始采摘鲜果",
+  "集中采摘、论斤卖鲜果，粗加工",
+  "采收收尾、加工储藏"
+ ],
+ "sources_digest": [
+  {
+   "name": "福鼎黄栀子地理标志产品保护要求",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://sinogi.cn/wap/index.php/product/gg/id/3587",
+   "quote": "福鼎黄栀子……全国农产品地理标志。"
+  },
+  {
+   "name": "福鼎黄栀子地理标志产品保护要求",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://sinogi.cn/wap/index.php/product/zxshow/id/9260/nid/22549",
+   "quote": "选择海拔600m以下，阳坡或半阳坡的山地，土层厚度＞50cm。"
+  },
+  {
+   "name": "福鼎黄栀子地理标志产品保护要求/福建日报",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://www.fjdaily.com/app/content/2023-06/06/content_1911066.html",
+   "quote": "每年5月至6月，这里迎来栀子盛花期，10月进入栀子结果丰收期。"
+  },
+  {
+   "name": "全国名特优新农产品名录/分关1号品种资料",
+   "type": "专业数据库",
+   "evidence": "B",
+   "confidence": "high",
+   "url": "http://mtyx.aqsc.org/Home/Tpsj/index?id=lvXtumV1PsWk7wKo",
+   "quote": "收获时间10-11月。"
+  },
+  {
+   "name": "福鼎市人民政府网（县域坐标近似）",
+   "type": "政府",
+   "evidence": "C",
+   "confidence": "low",
+   "url": "http://www.fuding.gov.cn",
+   "quote": ""
+  }
+ ]
+}

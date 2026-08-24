@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ039",
+ "name": "莆田荔枝",
+ "category": "水果",
+ "county": "荔城区|涵江区",
+ "city": "莆田市",
+ "production_area": "木兰溪、延寿溪两岸及荔城区新度镇、西天尾镇、拱辰街道，涵江区白塘镇、梧塘镇，城厢区灵川、东海，仙游县枫亭镇",
+ "geographical_indication": "国家地理标志保护产品（莆田荔枝，2014）",
+ "seasonality_summary": "4月开花，6月末至8月采收（7月中旬全面上市，大暑前后为高峰），品种与产区差异覆盖6–8月。",
+ "human_environment": "沿溪果园人工栽培，莆田有大暑吃荔枝的节气饮食习俗，古荔树与村落共生。",
+ "production_environment": "莆田荔枝为国家地理标志产品，品种以陈紫为主，配套状元红、乌叶、兰竹等。",
+ "notes": "坐标为莆田市区行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "果园清园",
+  "备耕、控梢",
+  "疏花穗、施肥",
+  "花期管理、授粉",
+  "疏果、保果",
+  "早熟品种开始采摘",
+  "集中采摘、大量上市",
+  "采收收尾",
+  "采后修剪、施肥",
+  "果园管理",
+  "清园",
+  "果园冬管"
+ ],
+ "sources_digest": [
+  {
+   "name": "福建省农科院·莆田荔枝调研",
+   "type": "科研机构",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://www.faas.cn/cms/html/fjsnykxy/2026-07-16/247596098.html",
+   "quote": "荔城区为核心产区……品种以陈紫为主……采收期覆盖6-8月。"
+  },
+  {
+   "name": "中国质量新闻网",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "high",
+   "url": "https://m.cqn.com.cn/zgzlb/content/2014-06/12/content_2221794.htm",
+   "quote": "福建莆田荔枝正式成为地理标志保护产品。产地范围为……15个乡镇街道办事处现辖行政区域。"
+  },
+  {
+   "name": "人民网福建频道·千年荔枝报道",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://fj.people.com.cn/BIG5/n2/2022/0711/c181466-40033167.html",
+   "quote": "莆田荔枝四月开花，七月中下旬成熟。大暑过后，荔枝采摘基本结束。"
+  },
+  {
+   "name": "莆田新闻（湄洲日报）",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://www.ptxw.com/news/xw/pt/202607/t20260701_519018.htm",
+   "quote": "预计7月中旬莆田荔枝全面上市，大暑前后将是上市高峰期。"
+  },
+  {
+   "name": "莆田史志网/莆田新闻网",
+   "type": "地方志",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://pt.fjsen.com/xw/2013-10/09/content_12690902.htm",
+   "quote": "莆田荔枝……主要分布在延寿溪、木兰溪两岸以及荔城区的新度镇、拱辰办、西天尾镇和涵江区的梧塘镇、白塘镇一带。"
+  }
+ ]
+}

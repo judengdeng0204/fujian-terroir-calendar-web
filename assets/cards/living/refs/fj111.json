@@ -1,0 +1,61 @@
+{
+ "product_id": "FJ111",
+ "name": "福建老酒",
+ "category": "传统加工物",
+ "county": "福州市区",
+ "city": "福州市",
+ "production_area": "福州市区及闽侯等黄酒酿造产区（品牌化生产）",
+ "geographical_indication": null,
+ "seasonality_summary": "闽派黄酒以秋冬为传统酿酒季，圆糯米收获后入缸慢发酵；成品常年储藏销售。具体品牌酿造周期无专项来源。",
+ "human_environment": "以糯米、红曲为原料，秋冬酿酒季入缸慢发酵，成品窖藏陈化后销售。",
+ "production_environment": "福州老酒为地方传统名酒，青红酒获地理标志保护；福建老酒品牌化生产。",
+ "notes": "福建老酒为福州传统黄酒品牌，暂无独立地理标志（福州青红酒为地理标志保护产品），本记录待核实。",
+ "phenology_human": [
+  "成品储藏陈化、销售",
+  "成品储藏销售",
+  "陈化销售",
+  "陈化销售",
+  "陈化销售",
+  "陈化销售",
+  "陈化销售",
+  "陈化销售",
+  "原料采购、酿酒准备",
+  "糯米入缸、红曲发酵",
+  "发酵管理（60–90天慢发酵）",
+  "压榨煎酒、装坛陈化"
+ ],
+ "sources_digest": [
+  {
+   "name": "福建省人民政府网·老酒出山",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "medium",
+   "url": "http://www.fujian.gov.cn/zwgk/ztzl/sxzygwzxsgzx/sdjj/wvjj/202605/t20260515_7148050.htm",
+   "quote": "圆糯米收获后的秋冬季是酿酒季，糯米入缸后……慢发酵周期长达60到90天。"
+  },
+  {
+   "name": "福州市人民政府网（县域坐标近似）",
+   "type": "政府",
+   "evidence": "C",
+   "confidence": "low",
+   "url": "http://www.fuzhou.gov.cn",
+   "quote": ""
+  },
+  {
+   "name": "百度百科·福建老酒",
+   "type": "商业网站",
+   "evidence": "D",
+   "confidence": "low",
+   "url": "https://baike.baidu.com/item/福建老酒",
+   "quote": ""
+  },
+  {
+   "name": "百度百科·青红酒",
+   "type": "商业网站",
+   "evidence": "D",
+   "confidence": "low",
+   "url": "https://baike.baidu.com/item/青红酒/4700798",
+   "quote": "青红酒是福建省福州市传统黄酒，中国地理标志保护产品。"
+  }
+ ]
+}

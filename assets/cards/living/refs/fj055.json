@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ055",
+ "name": "罗源秀珍菇",
+ "category": "菌类",
+ "county": "罗源县",
+ "city": "福州市",
+ "production_area": "罗源县起步镇为核心产区，松山、鉴江、凤山、飞竹、中房、白塔、西兰、洪洋、霍口、碧里等11个乡镇",
+ "geographical_indication": "农产品地理标志（罗源秀珍菇）",
+ "seasonality_summary": "传统栽培3月种菌、6–9月出菇采收；设施化液体菌种已实现周年轮作出菇。",
+ "human_environment": "菇棚设施化栽培，液体菌种实现每年轮作12次、采摘24次，起步镇为全国秀珍菇栽培最集中乡镇。",
+ "production_environment": "全国每3朵秀珍菇就有2朵来自起步镇；罗源县市场监管局推动地理标志保护与质量安全监管。",
+ "notes": "坐标为罗源县行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "周年轮作、采摘",
+  "周年轮作、采摘",
+  "下种、制包",
+  "菌包培育",
+  "开始采收",
+  "集中采收",
+  "集中采收",
+  "集中采收、七茬菌包轮采",
+  "采收收尾",
+  "清棚、备料",
+  "大棚改造、周年化生产准备",
+  "周年轮作"
+ ],
+ "sources_digest": [
+  {
+   "name": "福州市人民政府·小小菌菇棚报道",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://www.fuzhou.gov.cn/zwgk/zdlyxxgk/xczx/jjxc/202402/t20240218_4777793.htm",
+   "quote": "以往菇农都是每年3月种菌，6月至9月出菇……现在采用液体菌种，每年可以轮作12次，采摘24次。"
+  },
+  {
+   "name": "罗源县人民政府·政府信息公开文件",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "medium",
+   "url": "http://www.luoyuan.gov.cn/xjwz/zwgk/gggs/202009/P020200925613481469017.pdf",
+   "quote": "多年平均气温19℃左右……多年平均降雨量约1647mm。"
+  },
+  {
+   "name": "农视网·品牌展播（罗源秀珍菇）",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "high",
+   "url": "https://www.ntv.cn/content/0/933/99933107.html",
+   "quote": "罗源秀珍菇地理标志地域保护范围包括……11个乡镇。"
+  },
+  {
+   "name": "中国食品安全报/中国食用菌商务网",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://zixun.mushroommarket.net/202208/16/202267.html",
+   "quote": "眼下，正是罗源县秀珍菇采收旺季。"
+  },
+  {
+   "name": "罗源县人民政府网（县域坐标近似）",
+   "type": "政府",
+   "evidence": "C",
+   "confidence": "low",
+   "url": "http://www.luoyuan.gov.cn",
+   "quote": ""
+  }
+ ]
+}

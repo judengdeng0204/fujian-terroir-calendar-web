@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ019",
+ "name": "建阳葡萄",
+ "category": "水果",
+ "county": "建阳区",
+ "city": "南平市",
+ "production_area": "建阳区水吉镇仁山村、潭城街道考亭村、麻沙镇水南村等葡萄产区",
+ "geographical_indication": "暂无地理标志（仁山葡萄获绿色食品A级认证、福建省著名商标）",
+ "seasonality_summary": "7月中旬开始成熟上市，大暑前后进入采摘旺季，8月大量上市，9月尾果。",
+ "human_environment": "丘陵果园人工栽培，采用避雨大棚与绿色食品标准管理，水吉镇仁山村为科技特派员服务示范点。",
+ "production_environment": "建阳区为“中国优质果品基地重点县”，葡萄获绿色食品认证并授权使用武夷山水区域品牌。",
+ "notes": "坐标为建阳区行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "修剪清园",
+  "备耕、搭架整理",
+  "春耕、施肥",
+  "抹芽定梢",
+  "疏花、水肥管理",
+  "疏果、套袋、病虫害防治",
+  "开始采摘上市",
+  "集中采摘、大量上市",
+  "采摘收尾",
+  "采后管理",
+  "清园、施基肥",
+  "修剪、冬管"
+ ],
+ "sources_digest": [
+  {
+   "name": "建阳区人民政府·地理特征",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://www.fjjy.gov.cn/cms/html/jyqrmzf/dltz/index.html",
+   "quote": "年平均气温18.1℃，无霜期322天，年平均降雨量1742毫米。"
+  },
+  {
+   "name": "中国新闻网·探访仁山村（东南网转载）",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://np.fjsen.com/wap/2023-05/10/content_31311452_0.htm",
+   "quote": "地处丘陵区域，青山环绕，平均海拔145米，土壤肥沃、日照充足，气候温润。"
+  },
+  {
+   "name": "闽北日报·串串葡萄结出甜蜜果",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://mbrb.greatwuyi.com/pc/content/202408/23/content_111671.html",
+   "quote": "时下，正是葡萄大量上市的季节……仁山村的葡萄迎来了成熟采摘期。"
+  },
+  {
+   "name": "东南网·建阳潭城街道巨峰葡萄",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://np.fjsen.com/wap/2024-07/19/content_31692214.htm",
+   "quote": "眼下是葡萄成熟上市的季节……果农们开始收获甜蜜的劳动成果。"
+  },
+  {
+   "name": "福建省炎黄文化研究会官网",
+   "type": "行业协会",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://fjsyhzh.cn/zh/zjbm/11224.html",
+   "quote": "“建阳桔柚”“建阳白茶”“小湖杨梅”获得了国家地理标志产品保护……（建阳葡萄未列其中）"
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "product_id": "FJ114",
+ "name": "上杭萝卜干",
+ "category": "传统加工物",
+ "county": "上杭县",
+ "city": "龙岩市",
+ "production_area": "上杭县所辖临城镇、湖洋镇、中都镇、下都镇、庐丰畲族乡、蓝溪镇、溪口镇、白砂镇等乡镇（农产品地理标志保护范围）",
+ "geographical_indication": "农产品地理标志（'上杭萝卜干'，农业农村部2020年12月登记）；'闽西八大干'之一，制作技艺为客家传统制作技艺",
+ "seasonality_summary": "萝卜秋后至小雪播种，冬至前后采挖并腌制（'晒、腌、藏'三道工序），腊月为腌制最佳时节；半年后开坛，次年夏季起上市",
+ "human_environment": "客家传统制作技艺：采收→去杂→腌制→清洗→晾晒→漂烫→再晾晒→装坛→封口→贮藏（'晒、腌、藏'）",
+ "production_environment": "冬至前后腌制（腊月最佳），半年后开坛，次年夏季起上市",
+ "notes": "坐标为上杭县行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "腌制、晾晒、装坛封口。",
+  "坛藏管理。",
+  "坛藏管理。",
+  "坛藏管理。",
+  "坛藏管理。",
+  "开坛、分装、销售。",
+  "销售、补货。",
+  "销售。",
+  "销售。",
+  "整地、播种。",
+  "田间管理。",
+  "采收萝卜、晾晒、腌制、装坛。"
+ ],
+ "sources_digest": [
+  {
+   "name": "上杭萝卜干地理标志产品保护要求（地理标志特产平台）",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://www.sinogi.cn/wap/index.php/product/zxshow/id/4360/nid/22545",
+   "quote": "（一）品种 宁化籽……（四）加工工艺 采收→去杂→腌制→清洗→晾晒→漂烫→再晾晒→装坛→封口→贮藏。"
+  },
+  {
+   "name": "福建省人民政府网《味蕾上的故乡》（上杭萝卜干）",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://www.fujian.gov.cn/zwgk/ztzl/sxzygwzxsgzx/sdjj/wvjj/202402/t20240209_6394895.htm",
+   "quote": "腊月是腌制萝卜干的最佳时节。等到起北风的日子，这批萝卜干就可以入缸腌制了。"
+  },
+  {
+   "name": "上杭县人民政府《上杭萝卜干制作技艺》",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://www.shanghang.gov.cn/bm/wtj/zwgk/ggwhty/mlml/201911/t20191104_1598926.htm",
+   "quote": "其制作一般都是在冬至前后进行，须经'晒、腌、藏'三道工序……尤其吹北风的晴天最妙。"
+  },
+  {
+   "name": "上杭县人民政府（县城总体规划）与新浪福建资料",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "medium",
+   "url": "http://www.shanghang.gov.cn/bm/zjj/zwgk/ghjs/201206/t20120627_941649.htm",
+   "quote": "上杭县属亚热带季风气候，夏长冬短，温暖湿润，水量充沛，年平均气温20.2℃，多年平均降水量1611.7毫米。"
+  }
+ ]
+}

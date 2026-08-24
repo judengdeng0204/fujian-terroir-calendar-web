@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ103",
+ "name": "永春篾香",
+ "category": "香料",
+ "county": "永春县",
+ "city": "泉州市",
+ "production_area": "永春县达埔镇（汉口村等），中国香都核心区",
+ "geographical_indication": "国家地理标志保护产品（永春篾香，2006）；永春香制作技艺为国家级非遗（2021）",
+ "seasonality_summary": "全年制香，晾晒依赖晴好天气（春晒7–8小时、夏秋5–6小时）；春节、清明、中秋等用香节日前为备货高峰。",
+ "human_environment": "以竹篾为骨、裹覆香料粉的传统手工制香，经沾水打底、搓捻香粉、晾晒等工序；晾晒时间随季节调整。",
+ "production_environment": "达埔镇2014年获中国香都称号，为全国首个国家级制香基地，全县形成300余家制香企业集群。",
+ "notes": "坐标为永春县行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "节前备货（春节）制香晾晒",
+  "制香晾晒（春晒7–8小时）",
+  "制香晾晒",
+  "制香晾晒",
+  "制香晾晒",
+  "制香晾晒（夏晒5–6小时）",
+  "制香晾晒",
+  "制香晾晒",
+  "中秋备货、制香晾晒",
+  "制香晾晒（秋晒5–6小时）",
+  "制香晾晒",
+  "节前备货（元旦春节）"
+ ],
+ "sources_digest": [
+  {
+   "name": "国家质检总局2006年第199号公告",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://chinatt315.org.cn/gggs/2006-12/27/87368.html",
+   "quote": "永春篾香地理标志产品保护范围……为福建省永春县达埔镇现辖行政区域。"
+  },
+  {
+   "name": "《福建茶叶》2013年第3期·永春生态名茶",
+   "type": "学术论文",
+   "evidence": "B",
+   "confidence": "medium",
+   "url": "https://wap.cnki.net/touch/web/Journal/Article/FJCA201303026.html",
+   "quote": "年均温20.4℃、降雨量1681.6mm、相对湿度77%。"
+  },
+  {
+   "name": "百度百科/福州新闻网·永春篾香制作工艺",
+   "type": "商业网站",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://m.fznews.com.cn/dsxw/20181024/5bcfe6588f358.shtml",
+   "quote": "春天阳光晒7到8小时，夏秋晒5到6小时。"
+  },
+  {
+   "name": "永春县人民政府网（县域坐标近似）",
+   "type": "政府",
+   "evidence": "C",
+   "confidence": "low",
+   "url": "http://www.fjyc.gov.cn",
+   "quote": ""
+  },
+  {
+   "name": "百度百科·篾香",
+   "type": "商业网站",
+   "evidence": "D",
+   "confidence": "low",
+   "url": "https://baike.baidu.com/item/篾香/6980187",
+   "quote": "2021年以永春香制作技艺列入国家级非遗名录。"
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "product_id": "FJ086",
+ "name": "龙海金定鸭",
+ "category": "畜禽",
+ "county": "龙海区",
+ "city": "漳州市",
+ "production_area": "龙海区现辖行政区域（地理标志保护范围），原产地与主产区为龙海区紫泥镇金定村（九龙江入海处浒茂三角洲）",
+ "geographical_indication": "地理标志证明商标（'金定鸭'，注册号11476392）；地理标志产品（2004年第14号公告）",
+ "seasonality_summary": "蛋鸭品种全年产蛋（换羽期与冬季不休产），年产蛋240–300枚；适宜海滩放牧与河流、池塘、稻田放牧，全年均可上市",
+ "human_environment": "海滩放牧与河流、池塘、稻田放牧结合，也可舍内饲养；蛋鸭品种开产日龄约110–120天，全年产蛋",
+ "production_environment": "年产蛋240–300枚，换羽期与冬季不休产；蛋壳青色或灰白，常产双黄蛋",
+ "notes": "坐标为龙海区行政区域近似中心点，并非具体生产地；核心产区为紫泥镇金定村。",
+ "phenology_human": [
+  "放牧、补饲、捡蛋。",
+  "放牧、补饲、捡蛋。",
+  "放牧、种蛋收集、孵化育雏。",
+  "放牧、捡蛋、孵化育雏。",
+  "放牧、捡蛋、育雏。",
+  "放牧、捡蛋。",
+  "放牧、捡蛋。",
+  "放牧、捡蛋。",
+  "放牧、捡蛋。",
+  "放牧、捡蛋。",
+  "放牧、捡蛋。",
+  "放牧、补饲、捡蛋。"
+ ],
+ "sources_digest": [
+  {
+   "name": "漳州市农业农村局（市政协提案答复）",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://3g.zhangzhou.gov.cn/cms/siteresource/article.shtml?id=60514437509570001&siteId=620416811908440000",
+   "quote": "漳州年平均温度21℃，平均降雨量1500毫米左右，无霜期330天以上，属南亚热带季风性湿润气候。"
+  },
+  {
+   "name": "金定鸭地理标志登记资料（地理标志特产平台）",
+   "type": "地理标志官方资料",
+   "evidence": "B",
+   "confidence": "high",
+   "url": "https://www.sinogi.cn/wap/index.php/product/show/id/294",
+   "quote": "金定鸭属麻鸭的一种，又名华南鸭，属蛋鸭品种，原产于福建省漳州市龙海区紫泥乡金定村……原产地域：龙海市现辖行政区域。"
+  },
+  {
+   "name": "科普中国《金定鸭》",
+   "type": "专业媒体",
+   "evidence": "B",
+   "confidence": "medium",
+   "url": "https://www.kepuchina.cn/article/articleinfo?business_type=100&classify=0&ar_id=345970",
+   "quote": "金定鸭产区属于南亚热带气候区，几乎全年无霜……中心产区位于九龙江入海处的龙海县浒茂三角洲北角。海水咸淡交融。"
+  },
+  {
+   "name": "农博数据中心《蛋鸭笼养的饲养管理》（金定鸭品种）",
+   "type": "专业数据库",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://shuju.aweb.com.cn/technology/20121015/257872.html",
+   "quote": "金定鸭……产蛋期长，年产蛋240—260枚……母鸭开产日龄110—120天。"
+  }
+ ]
+}

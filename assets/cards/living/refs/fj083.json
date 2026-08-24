@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ083",
+ "name": "莆田花蛤",
+ "category": "海产",
+ "county": "秀屿区|城厢区",
+ "city": "莆田市",
+ "production_area": "莆田市现辖行政区周边海域（含零星养殖海域），核心为城厢区灵川镇及湄洲湾北岸滩涂",
+ "geographical_indication": "农产品地理标志（莆田花蛤，2020）、地理标志证明商标",
+ "seasonality_summary": "花蛤为多年生滩涂贝类，浅海养殖周期约3年；成蛤采收以夏季（6月前后）为旺季。",
+ "human_environment": "滩涂与浅海人工养殖，工厂化育苗技术成熟，灵川镇下尾村年供花蛤苗1000亿粒以上。",
+ "production_environment": "莆田为中国花蛤之乡，城厢区拥有花蛤农产品地理标志与证明商标。",
+ "notes": "坐标为莆田沿海区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "养殖管护",
+  "养殖管护",
+  "苗种投放、管护",
+  "管护",
+  "管护",
+  "集中采收、装运",
+  "采收",
+  "养殖管护",
+  "管护",
+  "管护",
+  "管护",
+  "管护"
+ ],
+ "sources_digest": [
+  {
+   "name": "莆田花蛤地理标志保护范围资料",
+   "type": "地理标志官方资料",
+   "evidence": "C",
+   "confidence": "high",
+   "url": "http://www.anluyun.com/Home/Product/28943",
+   "quote": "莆田花蛤地理标志保护范围为福建省莆田市现辖行政区周边海域。"
+  },
+  {
+   "name": "新华网·莆田逐鹿蓝色经济",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "high",
+   "url": "https://my-h5news.app.xinhuanet.com/chaobian-difanglink/fj.news.cn/20240605/6807c2f63ceb45edba1efb7a0853e72e/c.html",
+   "quote": "城厢区灵川镇下尾村滩涂面积广，是全国最大的花蛤苗培育基地。"
+  },
+  {
+   "name": "莆田新闻·后海垦区花蛤收获报道",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://www.ptxw.com/news/xw/mszx/202506/t20250617_501939.htm",
+   "quote": "后海垦区万亩花蛤进入采收旺季。"
+  },
+  {
+   "name": "莆田市人民政府网（区域坐标近似）",
+   "type": "政府",
+   "evidence": "C",
+   "confidence": "low",
+   "url": "http://www.putian.gov.cn",
+   "quote": ""
+  },
+  {
+   "name": "百度百科·莆田花蛤",
+   "type": "商业网站",
+   "evidence": "D",
+   "confidence": "low",
+   "url": "https://baike.baidu.com/item/莆田花蛤/54146819",
+   "quote": "2020年4月30日……批准对莆田花蛤实施国家农产品地理标志登记保护。"
+  }
+ ]
+}

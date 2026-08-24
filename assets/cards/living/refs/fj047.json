@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ047",
+ "name": "宁化薏米",
+ "category": "粮食",
+ "county": "宁化县",
+ "city": "三明市",
+ "production_area": "宁化县现辖行政区域，传统产区包括淮土、石壁、河龙等乡镇丘陵旱地",
+ "geographical_indication": "农产品地理标志（宁化米仁/薏米，2012）、《地理标志产品 宁化薏米（宁化糯薏米）》团体标准（2025）",
+ "seasonality_summary": "春季播种、秋季成熟采收；无可靠月份来源，物候行以生长/无资料标注。",
+ "human_environment": "丘陵旱地人工栽培，宁化为中国薏米之乡，形成米仁加工与道地药材产业。",
+ "production_environment": "宁化县为全国名特优新农产品（薏米）产区，团体标准设定产地范围与土壤pH门槛。",
+ "notes": "坐标为宁化县行政区域近似中心点，并非具体生产地；采收月份未获可靠来源，未作推断。",
+ "phenology_human": [
+  "",
+  "",
+  "",
+  "整地播种",
+  "田间管理",
+  "中耕施肥",
+  "田间管理",
+  "田间管理",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "sources_digest": [
+  {
+   "name": "三明市农业农村局·宁化薏米",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://smsnyj.sm.gov.cn/tsny/tsncp/202503/t20250305_2104760.htm",
+   "quote": "2012年12月宁化米仁（薏米）获得国家农产品地理标志登记保护。"
+  },
+  {
+   "name": "宁化薏米（宁化糯薏米）地理标志产品质量技术要求",
+   "type": "国家标准",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://sinogi.cn/wap/index.php/product/zxshow/id/3309/nid/3435",
+   "quote": "产地范围内海拔300米至800米……土壤pH值5至6的红壤、暗红壤、黄红壤或紫色土。"
+  },
+  {
+   "name": "三明市农业农村局·团体标准发布报道",
+   "type": "行业标准",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://smsnyj.sm.gov.cn/nyyw/nyxw/202601/t20260115_2184007.htm",
+   "quote": "保护范围仅限于宁化县现辖行政区域，并对土壤pH值、有机质含量等关键指标设定了门槛。"
+  },
+  {
+   "name": "宁化在线（宁化县新闻中心）",
+   "type": "地方志",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://www.zgnhzx.com/Item/8943.aspx",
+   "quote": "境内年均气温15～18℃……年均降水量1700～1800毫米，属福建多雨低光照地区。"
+  },
+  {
+   "name": "宁化县人民政府网（县域坐标近似）",
+   "type": "政府",
+   "evidence": "C",
+   "confidence": "low",
+   "url": "http://www.fjnh.gov.cn",
+   "quote": ""
+  }
+ ]
+}

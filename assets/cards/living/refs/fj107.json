@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ107",
+ "name": "永泰李干",
+ "category": "传统加工物",
+ "county": "永泰县",
+ "city": "福州市",
+ "production_area": "永泰县现辖行政区域，原料为永泰芙蓉李（保护范围内8–9成熟鲜果）",
+ "geographical_indication": "国家地理标志保护产品（永泰李干，2007）",
+ "seasonality_summary": "芙蓉李7月中旬至8月上旬采收，7–9月集中晾晒加工李干，全年储藏销售。",
+ "human_environment": "李干制作工序繁多（选果、摇青、预晒、腌渍、复晒、糖卤、烘干、分选、包装），7–9月集中晾晒，每日翻动保证均匀。",
+ "production_environment": "永泰素有李果之乡美称，李干为地理标志保护产品与传统蜜饯产业。",
+ "notes": "坐标为永泰县行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "成品储藏销售",
+  "果园修剪",
+  "花期管理",
+  "疏果",
+  "水肥管理",
+  "水肥管理",
+  "采收鲜果、开始制作李干（选果、摇青、预晒）",
+  "集中采收、腌渍复晒",
+  "糖卤、烘干、分选包装",
+  "成品储藏销售",
+  "成品储藏销售",
+  "成品储藏销售"
+ ],
+ "sources_digest": [
+  {
+   "name": "国家质检总局2007年第208号公告",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://chinatt315.org.cn/gggs/2007-12/26/86576.html",
+   "quote": "永泰李干地理标志产品保护范围……为福建省永泰县现辖行政区域。"
+  },
+  {
+   "name": "国家质检总局2007年第208号公告",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://chinatt315.org.cn/gggs/2007-12/26/86576.html",
+   "quote": "采收：7月中旬至8月上旬，用人工采摘8至9成熟鲜果。"
+  },
+  {
+   "name": "福州市非遗保护中心·永泰李干传统制作技艺",
+   "type": "博物馆/文化机构",
+   "evidence": "B",
+   "confidence": "high",
+   "url": "https://fy.fzswhg.cn/portal/list/articlet.html?id=9&category_id=74&post_id=1217",
+   "quote": "经过选果、摇青、预晒、腌渍、复晒、糖卤、烘干、分选、包装等工序精细加工而成。"
+  },
+  {
+   "name": "福州新闻网·永泰李干报道",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://m.fznews.com.cn/fzxw/20250813/710wCt87F3.shtml",
+   "quote": "李子从7月晾晒到9月，每天需要上午、下午各翻动一遍。"
+  },
+  {
+   "name": "永泰县人民政府网（县域坐标近似）",
+   "type": "政府",
+   "evidence": "C",
+   "confidence": "low",
+   "url": "http://www.yongtai.gov.cn",
+   "quote": ""
+  }
+ ]
+}

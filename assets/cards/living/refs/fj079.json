@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ079",
+ "name": "平潭坛紫菜",
+ "category": "海产",
+ "county": "平潭县",
+ "city": "福州市",
+ "production_area": "平潭综合实验区现辖行政区周边海域（金井片区新限洋、渔塘、华东村等养殖区）",
+ "geographical_indication": "农产品地理标志、地理标志证明商标（平潭坛紫菜，2020）",
+ "seasonality_summary": "9月上旬至下旬（白露至秋分）采苗，10月下旬至11月起采收，采收季延续至冬季。",
+ "human_environment": "养殖户海上采收船剪菜装船，晾晒加工，坛紫菜养殖为平潭传统渔农产业。",
+ "production_environment": "平潭为坛紫菜原产地和发祥地，2020年获地理标志证明商标。",
+ "notes": "坐标为平潭县行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "采收、晾晒",
+  "采收收尾",
+  "清排",
+  "设施维护",
+  "丝状体育苗",
+  "育苗管理",
+  "育苗管理",
+  "贝壳采苗准备",
+  "采苗下海",
+  "采收第1水菜",
+  "采收船剪菜、晾晒",
+  "采收、加工"
+ ],
+ "sources_digest": [
+  {
+   "name": "福建省市场监管局·地理标志商标",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://scjgj.fujian.gov.cn/zt/sbydlbz/cydt/pingtan/bzsb/202309/t20230920_6548844.htm",
+   "quote": "坛紫菜发源地在平潭……2020年获得农业部农产品地理标志和国家工商总局地理标志证明商标。"
+  },
+  {
+   "name": "平潭坛紫菜地理标志产品保护要求",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://sinogi.cn/wap/index.php/product/gg/id/8377",
+   "quote": "平潭坛紫菜地理标志保护范围为平潭综合实验区现辖行政区周边海域。"
+  },
+  {
+   "name": "平潭坛紫菜地理标志产品保护要求",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://sinogi.cn/wap/index.php/product/zxshow/id/8377/nid/22542",
+   "quote": "一般在9月上旬至9月下旬（白露与秋分两节气）进行采苗。"
+  },
+  {
+   "name": "平潭综合实验区·项目文件",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "medium",
+   "url": "https://xzfwzx.pingtan.gov.cn:9998/G2/upload!download.do?attachId=4028012283796faf018379c2354400af",
+   "quote": "多年平均气温19.6℃，最冷日平均气温10.2℃……多年平均降水量1172毫米。"
+  },
+  {
+   "name": "福州新闻网·平潭海上坛紫菜报道",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://news.fznews.com.cn/node/21729/20241108/1731030960000.shtml",
+   "quote": "一年一度的坛紫菜采收季来了。"
+  }
+ ]
+}

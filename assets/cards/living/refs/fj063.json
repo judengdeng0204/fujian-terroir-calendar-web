@@ -1,0 +1,61 @@
+{
+ "product_id": "FJ063",
+ "name": "永安淮山",
+ "category": "药食同源",
+ "county": "永安市",
+ "city": "三明市",
+ "production_area": "永安市安砂镇为主产区，种植于海拔170–700米的区域范围",
+ "geographical_indication": "国家地理标志保护产品（安砂淮山）",
+ "seasonality_summary": "3月中旬至4月上旬播种，植株落黄枯萎前（秋冬）适时采收；具体月份来源不足，未精确推断。",
+ "human_environment": "丘陵旱地人工栽培，采用种薯催芽、适时播种与田间精细管理。",
+ "production_environment": "安砂淮山为永安市地理标志产品，安砂镇为传统产区。",
+ "notes": "坐标为永安市行政区域近似中心点，并非具体生产地；海拔170–700米来自地理标志产品资料（多为转引，待官方公告复核）。",
+ "phenology_human": [
+  "",
+  "",
+  "播种前15–20天种薯催芽",
+  "播种、搭架",
+  "搭架引蔓、田间管理",
+  "水肥管理",
+  "水肥管理",
+  "田间管理",
+  "田间管理",
+  "适时采收（植株落黄枯萎前）",
+  "集中采收上市",
+  "采收收尾、储藏"
+ ],
+ "sources_digest": [
+  {
+   "name": "永安市人民政府·环评文件",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "medium",
+   "url": "http://www.ya.gov.cn/zfxxgkzl/fdzdgknr/zdlyxxgk/hjbh/hbgsgg/202306/P020230602596278484479.pdf",
+   "quote": "年平均温度14.3～19.2℃……年平均降水量1494～2059mm。"
+  },
+  {
+   "name": "永安市人民政府网（县域坐标近似）",
+   "type": "政府",
+   "evidence": "C",
+   "confidence": "low",
+   "url": "http://www.ya.gov.cn",
+   "quote": ""
+  },
+  {
+   "name": "360百科/特产网·安砂淮山",
+   "type": "商业网站",
+   "evidence": "D",
+   "confidence": "low",
+   "url": "https://baike.so.com/doc/9589410-9934684.html",
+   "quote": "安砂淮山……主要种植在永安当地海拔高度170米~700米的区域范围。"
+  },
+  {
+   "name": "百度百科·安砂大叶薯",
+   "type": "商业网站",
+   "evidence": "D",
+   "confidence": "low",
+   "url": "https://baike.baidu.com/item/安砂大叶薯",
+   "quote": "适宜播种期为3月中旬至4月上旬……种植地宜选择土层深厚的砂质壤土地块。"
+  }
+ ]
+}

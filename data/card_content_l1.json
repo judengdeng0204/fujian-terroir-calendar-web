@@ -1,0 +1,4894 @@
+{
+  "version": "l1-skeleton",
+  "generated_at": "2026-08-22",
+  "note": "L1 骨架内容：全部由数据库既有字段派生，未新增事实；basis 记录派生来源字段。待 L2/五维内容返回后合并升级。",
+  "products": {
+    "FJ001": {
+      "place_intro": "大田县是大田美人茶的核心产区。产区主要分布在屏山乡（大仙峰周边）为核心产区，全县茶园海拔800–1200米之间。（大田县列入福建乌龙茶地理标志产品保护区域（国家质检总局））",
+      "why_here": "地处山地地带；气候温暖、多雨、湿润；土壤以酸性、红壤、黄壤为主。这些自然条件共同构成了大田美人茶生长与生产的基础。 当地高山茶园人工栽培。",
+      "annual_cycle": "春茶4月上旬开采，5月中旬开茶节；夏茶（5–7月）为小绿叶蝉叮咬高峰期、美人茶最佳采制季，全年以5–7月为风土高活跃期",
+      "annual_title": "美人茶的一年",
+      "keywords": [
+        "山地",
+        "高海拔",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ002": {
+      "place_intro": "政和县是政和白茶的核心产区。产区主要分布在现辖行政区域（地理标志保护范围），主产区集中于石屯、东平等乡镇。（国家地理标志保护产品（2007年国家质检总局第55号公告））",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润；土壤以酸性、红壤、黄壤为主。这些自然条件共同构成了政和白茶生长与生产的基础。 当地低山丘陵茶园人工栽培。",
+      "annual_cycle": "春茶春分至谷雨前后采摘，夏茶小满至夏至采摘，秋茶小暑至秋分采摘；鲜叶→萎凋→烘焙制成毛茶，春、夏、秋三季分批采收加工",
+      "annual_title": "白茶的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "中海拔",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ003": {
+      "place_intro": "松溪县是松溪绿茶的核心产区。产区主要分布在全县产茶乡镇（郑墩、祖墩、渭田、溪东等），海拔300–500米茶园。（国家地理标志保护产品、地理标志证明商标（中欧地理标志协定首批保护名录））",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润；土壤以酸性、红壤为主。这些自然条件共同构成了松溪绿茶生长与生产的基础。 当地山地茶园人工栽培。",
+      "annual_cycle": "春茶3月下旬开园采摘至5月，4月为采制高峰期；9–10月少量秋茶，其余月份茶园管理与储藏。",
+      "annual_title": "绿茶的一年",
+      "keywords": [
+        "山地",
+        "中低海拔",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ004": {
+      "place_intro": "武夷山市是正山小种的核心产区。产区主要分布在星村镇桐木村一带（武夷山国家级自然保护区核心区），原产地初步界定范围东经117°38′6″～117°44′30″…。（中国原产地标记保护产品）",
+      "why_here": "地处山地地带；气候温暖、多雨、湿润；土壤以酸性、红壤、黄壤为主。这些自然条件共同构成了正山小种生长与生产的基础。 当地高山峡谷茶园人工栽培。",
+      "annual_cycle": "春茶5月上旬（立夏前后）开采，6月底采夏茶，一年两季；制作经萎凋、揉捻、发酵、过红锅、复揉、熏焙、复火，出售前进行第三次松烟熏焙",
+      "annual_title": "正山小种的一年",
+      "keywords": [
+        "山地",
+        "高海拔",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ005": {
+      "place_intro": "武夷山市是武夷岩茶的核心产区。产区主要分布在现辖行政区域（武夷街道、星村镇等10个乡镇）；正岩核心区为景区内“三坑两涧”一带。（国家地理标志保护产品）",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润；河谷等水系带来稳定水汽；土壤以酸性、红壤、黄壤为主。这些自然条件共同构成了武夷岩茶生长与生产的基础。 当地岩壁坑涧茶园与山地茶园。",
+      "annual_cycle": "春茶4月中旬至5月中旬开采（谷雨前后），夏茶小满前后、秋茶立秋后采制，6–8月为春茶精制期，全年以4–6月为高活跃期",
+      "annual_title": "武夷岩茶的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "中低海拔",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ006": {
+      "place_intro": "邵武市是邵武碎铜茶的核心产区。产区主要分布在现辖行政区域（地理标志保护范围），核心产区分布于和平镇留仙峰等高山茶园。（国家地理标志保护产品（2012年国家质检总局第205号公告））",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润；土壤以酸性、红壤、黄壤为主。这些自然条件共同构成了邵武碎铜茶生长与生产的基础。 当地低山丘陵茶园人工栽培。",
+      "annual_cycle": "采摘期在每年3月至5月中旬前，按一芽一叶初展至一芽二叶标准采摘；加工流程：摊青→杀青→揉捻→烘焙→精选，春茶上市集中于4–5月",
+      "annual_title": "碎铜茶的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "中海拔",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ007": {
+      "place_intro": "福安市是坦洋工夫的核心产区。产区主要分布在现辖行政区域，核心为社口镇坦洋村及白云山麓各茶区。（国家地理标志保护产品（2007）、农产品地理标志（2020））",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润；土壤以红壤、黄壤为主。这些自然条件共同构成了坦洋工夫生长与生产的基础。 当地山地茶园人工栽培。",
+      "annual_cycle": "3月中下旬萌芽，4月上旬开采，春茶（谷雨至立夏后七天）为采制高峰，6月夏茶、9–10月秋茶；全年生长期约220天。",
+      "annual_title": "坦洋工夫的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ008": {
+      "place_intro": "寿宁县是寿宁高山茶的核心产区。产区主要分布在行政区域南阳、竹管垅、清源等14个乡镇所辖海拔500米以上的190个行政村（社区）。（全国农产品地理标志（2014年7月28日农业农村部登记保护，质量控制技术…）",
+      "why_here": "地处山地、丘陵地带；气候湿润；土壤以酸性、黄壤、红壤为主。这些自然条件共同构成了寿宁高山茶生长与生产的基础。 当地高山生态茶园人工栽培。",
+      "annual_cycle": "春茶3月上中旬陆续开园采摘（早芽品种3月10日左右吐绿），清明谷雨间为采制高峰；红茶、绿茶两大类均以春季采制为主",
+      "annual_title": "高山茶的一年",
+      "keywords": [
+        "山地",
+        "高海拔",
+        "湿润",
+        "酸性土壤",
+        "富硒土"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ009": {
+      "place_intro": "福鼎市是福鼎白茶的核心产区。产区主要分布在太姥山、点头、磻溪、白琳、管阳等乡镇为传统核心产区，全市17个乡镇（街道）为地理标志保护范围。（国家地理标志保护产品（2004年6月16日起，原国家质检总局公告2004…）",
+      "why_here": "地处丘陵、山地地带；气候温暖、多雨、湿润；土壤以酸性、红壤、黄壤为主。这些自然条件共同构成了福鼎白茶生长与生产的基础。 当地丘陵山地茶园人工栽培。",
+      "annual_cycle": "春茶3月中旬至5月上旬依次采制白毫银针、白牡丹、寿眉，萎凋干燥加工，4月中下旬起陆续上市；秋茶9–10月少量采制",
+      "annual_title": "白茶的一年",
+      "keywords": [
+        "丘陵",
+        "山地",
+        "中低海拔",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ010": {
+      "place_intro": "安溪县是安溪铁观音的核心产区。产区主要分布在所辖24个乡镇（地理标志保护范围），原产地为西坪镇，主产区含感德、祥华、西坪、虎邱等乡镇。（农产品地理标志（AGI02286，农业农村部2017年登记））",
+      "why_here": "地处山地、丘陵地带；气候温热、多雨、湿润；土壤以酸性、红壤为主。这些自然条件共同构成了安溪铁观音生长与生产的基础。 当地山地茶园人工栽培。",
+      "annual_cycle": "3月下旬萌芽；一年四季采制：春茶谷雨至立夏（4月中下旬–5月上旬）、夏茶夏至至小暑（6月中下旬–7月上旬）、暑茶立秋至处暑、秋茶秋分至寒露（9月下旬–10月上旬）；春秋两季产量约占全年80%",
+      "annual_title": "铁观音的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "中海拔",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ011": {
+      "place_intro": "永春县是永春佛手茶的核心产区。产区主要分布在苏坑、玉斗、坑仔口、锦斗、桂洋等乡镇海拔400–900米山地茶园（苏坑为核心产区）。（国家地理标志保护产品（2006）、全国名特优新农产品）",
+      "why_here": "地处山地、丘陵地带；气候温热、多雨、湿润；土壤以酸性、红壤为主。这些自然条件共同构成了永春佛手茶生长与生产的基础。 当地高山茶园人工栽培。",
+      "annual_cycle": "3月春分开采（开茶节），3–5月春茶采制为主，6–7月夏茶，9–10月秋茶；全年以春季为高活跃期。",
+      "annual_title": "佛手茶的一年",
+      "keywords": [
+        "山地",
+        "中低海拔",
+        "酸性土壤"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ012": {
+      "place_intro": "华安县是华安铁观音的核心产区。产区主要分布在行政区域内华丰镇、仙都镇、湖林乡等10个乡镇（开发区），仙都镇为核心茶区（建有万亩绿色有机茶示范基地）。（地理标志证明商标（2010年8月国家工商总局核准注册，注册号740181…）",
+      "why_here": "地处山地、丘陵地带；气候湿润；土壤以酸性为主。这些自然条件共同构成了华安铁观音生长与生产的基础。 当地全县5700多家茶叶初制加工厂。",
+      "annual_cycle": "一年可采制春、夏、暑、秋、冬五季；2月下旬萌芽、4月上旬开采；春茶比安溪早上市15–20天（明前茶），秋茶香气最浓，冬季另有冬片茶",
+      "annual_title": "铁观音的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "中海拔",
+        "湿润",
+        "酸性土壤"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ013": {
+      "place_intro": "平和县是平和白芽奇兰的核心产区。产区主要分布在大芹山周边海拔500–1200米山区乡镇（崎岭、九峰、长乐、秀峰、芦溪、霞寨、大溪、国强、安厚9乡镇）。（国家地理标志保护产品（国家知识产权局地理标志产品认定公告第640号））",
+      "why_here": "地处山地、丘陵、河谷地带；气候温热、多雨、湿润；河谷等水系带来稳定水汽；土壤以酸性、红壤、黄壤为主。这些自然条件共同构成了平和白芽奇兰生长与生产的基础。 当地高山山地茶园人工栽培。",
+      "annual_cycle": "越冬芽3月下旬萌发，春茶4月下旬至5月上旬采制；年抽芽梢四轮左右，夏秋茶随轮次采制",
+      "annual_title": "白芽奇兰的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "河谷",
+        "盆地",
+        "中海拔"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ014": {
+      "place_intro": "诏安县是诏安八仙茶的核心产区。产区主要分布在现辖15个乡镇（地理标志保护范围），原产地为白洋乡八仙山，主产区含白洋乡、秀篆镇等。（国家地理标志保护产品（国家知识产权局地理标志产品认定公告第640号））",
+      "why_here": "地处山地、丘陵地带；气候温热、多雨、湿润；土壤以酸性、红壤为主。这些自然条件共同构成了诏安八仙茶生长与生产的基础。 当地低丘山地茶园人工栽培。",
+      "annual_cycle": "早春茶每年4月前后上市；春茶3–5月、夏茶6–7月（入夏后进入夏茶采摘季）、秋茶8–10月，一年可采制6次；工艺：晾青→晒青→做青→摇青→杀青→揉捻→烘干→复焙",
+      "annual_title": "八仙茶的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "中海拔",
+        "温热",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ015": {
+      "place_intro": "仓山区、闽侯县、福清市是福州茉莉花茶的核心产区。产区主要分布在福州市10个县（市）区现辖行政区域；江边沙洲茉莉花基地与海拔600–1000米高山茶园结合。（国家地理标志保护产品、农产品地理标志）",
+      "why_here": "地处河谷、山地、平原地带；气候湿润；河谷等水系带来稳定水汽；湿地环绕；土壤以冲积土、红壤为主。这些自然条件共同构成了福州茉莉花茶生长与生产的基础。 当地茉莉花每日上午11点至下午4点高温时段采摘未绽花苞。",
+      "annual_cycle": "春茶3月采制茶坯，茉莉花5–11月花期、盛夏（6–8月）为最佳采收，7–9月集中窨制（七月寻花、九月成茶）。",
+      "annual_title": "茉莉花茶的一年",
+      "keywords": [
+        "河谷",
+        "山地",
+        "平原",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ016": {
+      "place_intro": "漳平市是漳平水仙茶的核心产区。产区主要分布在南洋镇、双洋镇、赤水镇、新桥镇、吾祠乡、灵地乡、溪南镇、象湖镇、永福镇等9个乡镇，以南洋镇、双洋镇为主要产区。（国家地理标志保护产品（国家知识产权局地理标志产品认定公告第640号））",
+      "why_here": "地处山地、丘陵地带；气候湿润；土壤以酸性、红壤、黄壤为主。这些自然条件共同构成了漳平水仙茶生长与生产的基础。 当地南洋、双洋等乡镇茶农以压模紧压与炭焙定型形成独特茶饼工艺。",
+      "annual_cycle": "春季当茶蓬10%–15%新梢达到采摘标准即开采（约4–5月），一年可采4–5次，以春、秋两季品质最佳（春水秋香）；制作经晒青、晾青、做青、杀青、揉捻、造型压模、烘焙",
+      "annual_title": "水仙茶的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "中海拔",
+        "湿润",
+        "酸性土壤"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ017": {
+      "place_intro": "尤溪县是尤溪金柑的核心产区。产区主要分布在管前镇、八字桥乡为主产区，种植于海拔300–700米低山丘陵。（国家地理标志保护产品（2007年4月，国家质检总局2007年第60号公告…）",
+      "why_here": "地处丘陵、山地地带；气候温暖、多雨、湿润；河谷等水系带来稳定水汽；土壤以酸性、红壤为主。这些自然条件共同构成了尤溪金柑生长与生产的基础。 当地低山丘陵果园人工栽培。",
+      "annual_cycle": "花期6–9月，11月中旬至12月上旬果实成熟，11月下旬至12月采收上市",
+      "annual_title": "金柑的一年",
+      "keywords": [
+        "丘陵",
+        "山地",
+        "中低海拔",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ018": {
+      "place_intro": "建阳区是建阳桔柚的核心产区。产区主要分布在现辖行政区域（地理标志保护范围），主产区分布于海拔120–300米的丘陵地区。（国家地理标志保护产品（国家质检总局2009年批准））",
+      "why_here": "地处丘陵地带；气候温暖、多雨、湿润。这些自然条件共同构成了建阳桔柚生长与生产的基础。 当地丘陵果园人工栽培。",
+      "annual_cycle": "11月下旬—12月上旬成熟，12月上旬采收贮藏；花期4月上中旬现花、下旬盛花；果实耐贮藏，可贮至翌年春季",
+      "annual_title": "桔柚的一年",
+      "keywords": [
+        "丘陵",
+        "低海拔",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ019": {
+      "place_intro": "建阳区是建阳葡萄的主要产区。产区主要分布在水吉镇仁山村、潭城街道考亭村、麻沙镇水南村等葡萄产区。（暂无地理标志（仁山葡萄获绿色食品A级认证、福建省著名商标））",
+      "why_here": "地处丘陵、河谷地带；气候温暖、多雨、湿润。这些自然条件共同构成了建阳葡萄生长与生产的基础。 当地丘陵果园人工栽培。",
+      "annual_cycle": "7月中旬开始成熟上市，大暑前后进入采摘旺季，8月大量上市，9月尾果。",
+      "annual_title": "葡萄的一年",
+      "keywords": [
+        "丘陵",
+        "中低海拔",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ020": {
+      "place_intro": "同安区是同安凤梨穗的核心产区。产区主要分布在汀溪镇、莲花镇、五显镇等为主要产区；品种母树发现于西塘村马垵自然村（树龄300余年）。（厦门市首件地理标志证明商标（2012年11月注册，类别第29类干桂圆、第…）",
+      "why_here": "地处丘陵、山地地带；气候湿润；土壤以酸性、红壤、其他为主。这些自然条件共同构成了同安凤梨穗生长与生产的基础。 当地同安为全国六大龙眼产地之一。",
+      "annual_cycle": "花穗3月抽发、4月中旬至5月上旬开花；果实8月下旬至9月中旬成熟采收，8月中下旬至9月中旬为集中上市期",
+      "annual_title": "凤梨穗的一年",
+      "keywords": [
+        "丘陵",
+        "山地",
+        "中海拔",
+        "湿润",
+        "酸性土壤"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ021": {
+      "place_intro": "古田县是古田水蜜桃的核心产区。产区主要分布在平湖、凤都、大桥、城东、城西、吉巷等乡镇（街道），种植于海拔550–850米山地。（地理标志证明商标（2019年））",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润；河谷等水系带来稳定水汽；土壤以红壤、黄壤为主。这些自然条件共同构成了古田水蜜桃生长与生产的基础。 当地山地果园人工栽培。",
+      "annual_cycle": "3月开花，早中晚熟品种搭配使采收期从4月下旬延续至9月下旬，7月为上市高峰",
+      "annual_title": "水蜜桃的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "中海拔",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ022": {
+      "place_intro": "古田县是古田油柰的核心产区。产区主要分布在全域，优质油柰产业带布局于海拔300–500米区域，主产区含城东、泮洋、平湖、吉巷、大桥等环翠屏湖乡村。（国家地理标志证明商标（2003年12月注册））",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润。这些自然条件共同构成了古田油柰生长与生产的基础。 当地丘陵果园人工栽培。",
+      "annual_cycle": "3月上旬开花（盛花3月中下旬），果实7月中下旬至8月中下旬成熟；采摘期6月下旬至9月初（早柰至晚柰），落叶期12月下旬至1月上旬",
+      "annual_title": "油柰的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "中低海拔",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ023": {
+      "place_intro": "福安市是福安巨峰葡萄的核心产区。产区主要分布在赛岐镇象环村为核心产区，溪柄、穆云、晓阳、松罗（高山晚熟）等乡镇均有种植。（国家农产品地理标志（福安巨峰葡萄））",
+      "why_here": "地处丘陵、平原地带；气候温暖、多雨、湿润。这些自然条件共同构成了福安巨峰葡萄生长与生产的基础。 当地果园人工栽培。",
+      "annual_cycle": "1月下旬伤流、3月中旬萌芽、5月上旬开花，7月下旬成熟，7月中旬至9月采收上市；高山晚熟区采收可延至9月下旬。",
+      "annual_title": "巨峰葡萄的一年",
+      "keywords": [
+        "丘陵",
+        "平原",
+        "低海拔",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ024": {
+      "place_intro": "福鼎市是福鼎四季柚的核心产区。产区主要分布在前岐镇为核心产区，地理标志保护范围为福鼎市行政区域内17个乡镇（街道、开发区）。（地理标志证明商标（注册号2016482））",
+      "why_here": "地处丘陵、山地地带；气候温暖、湿润；土壤以黄壤为主。这些自然条件共同构成了福鼎四季柚生长与生产的基础。 当地前岐镇为“四季柚之乡”核心产区。",
+      "annual_cycle": "以一年四季都能开花结果得名，春梢花为主要产量；主果11月上中旬采收（立冬后采摘品质最佳），耐贮性好可至次年立春，二季果留树保鲜可在次年2–3月采收",
+      "annual_title": "四季柚的一年",
+      "keywords": [
+        "丘陵",
+        "低海拔",
+        "温暖",
+        "湿润",
+        "黄壤"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ025": {
+      "place_intro": "福安市是穆阳水蜜桃的核心产区。产区主要分布在穆阳溪流域两岸的穆阳、穆云、溪潭、康厝、坂中5个乡镇（60多个村）。（中国农产品地理标志（2012年））",
+      "why_here": "地处河谷、山地地带；气候温暖、多雨、湿润；河谷等水系带来稳定水汽；河谷环绕；土壤以红壤、砂质土为主。这些自然条件共同构成了穆阳水蜜桃生长与生产的基础。 当地河谷缓坡桃园人工栽培。",
+      "annual_cycle": "3月桃花节、7月采摘节；果实7月上旬至7月中旬成熟，采收上市集中于7月",
+      "annual_title": "穆阳水蜜桃的一年",
+      "keywords": [
+        "河谷",
+        "山地",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ026": {
+      "place_intro": "永春县是永春芦柑的核心产区。产区主要分布在现辖行政区域（地理标志保护范围），主产区分布于海拔600米以下区域，含桃城镇、五里街镇、湖洋镇等乡镇。（国家地理标志保护产品（2005年国家质检总局第165号公告））",
+      "why_here": "地处山地、丘陵地带；气候温热、多雨、湿润；土壤以红壤为主。这些自然条件共同构成了永春芦柑生长与生产的基础。 当地坡地果园砌水平梯田、自然草生栽培。",
+      "annual_cycle": "花期3月下旬至4月上旬；11月中旬至12月初收获（核心收获期11月至次年1月），九成熟后采收，可贮藏保鲜约4个月",
+      "annual_title": "芦柑的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ027": {
+      "place_intro": "南安市、惠安县、晋江市是泉州龙眼的分布区。产区主要分布在泉州市南安、惠安、泉港、安溪、晋江、洛江、永春、石狮、丰泽等9个县（区、市）。（农产品地理标志（泉州龙眼，2014））",
+      "why_here": "地处丘陵、平原地带；土壤以酸性、红壤为主。这些自然条件共同构成了泉州龙眼生长与生产的基础。 当地龙眼园人工栽培。",
+      "annual_cycle": "2月萌芽、3月定穗、4月上旬至5月上旬花期，果实8月中下旬至9月上旬成熟，8月下旬至10月采收上市。",
+      "annual_title": "龙眼的一年",
+      "keywords": [
+        "丘陵",
+        "平原",
+        "低海拔",
+        "海岸"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ028": {
+      "place_intro": "云霄县是下河杨桃的核心产区。产区主要分布在下河乡下河村、上河村、内龙村、外龙村、凤兴村、世坂村和上窑村（地理标志保护范围），全乡种植面积逾万亩。（地理标志证明商标（注册号9552703））",
+      "why_here": "地处河谷、盆地、丘陵地带；气候湿润；河谷环绕；土壤以冲积土为主。这些自然条件共同构成了下河杨桃生长与生产的基础。 当地依托万亩杨桃基地。",
+      "annual_cycle": "杨桃一年四季交替开花结果，5月、7月、9月、11月均有开花，60–80天成熟；8月初鲜果上市，11、12月为旺产期",
+      "annual_title": "下河杨桃的一年",
+      "keywords": [
+        "河谷",
+        "盆地",
+        "湿润",
+        "冲积土"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ029": {
+      "place_intro": "云霄县是云霄枇杷的核心产区。产区主要分布在全境（马铺、和平、火田、下河、东厦等乡镇为核心产区），全县枇杷种植面积约8万亩。（国家地理标志保护产品（2007年第206号公告，DB35/T 899-2…）",
+      "why_here": "地处丘陵、平原地带；气候温热、多雨、湿润；土壤以酸性、红壤为主。这些自然条件共同构成了云霄枇杷生长与生产的基础。 当地低丘果园人工栽培。",
+      "annual_cycle": "秋末冬初开花，12月下旬至5月上旬不同品种陆续成熟上市（早钟6号12月底抢先上市，2–5月为采收高峰），号称“开春第一果”",
+      "annual_title": "枇杷的一年",
+      "keywords": [
+        "丘陵",
+        "平原",
+        "温热",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ030": {
+      "place_intro": "芗城区是天宝香蕉的核心产区。产区主要分布在原产于芗城区天宝镇，地理标志保护范围含芗城区及南靖县7个乡镇（山城、靖城、丰田、龙山、金山、船场、南坑）。（国家地理标志保护产品（2007年国家质检总局第62号公告））",
+      "why_here": "地处平原、丘陵、台地地带；气候温热、多雨、湿润；土壤以酸性为主。这些自然条件共同构成了天宝香蕉生长与生产的基础。 当地平原蕉园与丘陵台地蕉园人工栽培。",
+      "annual_cycle": "果实一年四季均可采收（饱满度75%–80%采收）；春植蕉3月种植、9–10月抽蕾、12月采收，10月下旬至11月为集中上市期",
+      "annual_title": "天宝香蕉的一年",
+      "keywords": [
+        "平原",
+        "丘陵",
+        "台地",
+        "温热",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ031": {
+      "place_intro": "平和县是平和琯溪蜜柚的核心产区。产区主要分布在以平和县小溪镇为中心向周边延伸30公里，包括坂仔、国强、南胜、五寨、山格、文峰、霞寨、崎岭、九峰等10个乡镇，海…。（国家地理标志保护产品（2007）、农产品地理标志、地理标志证明商标）",
+      "why_here": "地处丘陵、山地地带；气候温热、多雨、湿润；河谷等水系带来稳定水汽；土壤以酸性为主。这些自然条件共同构成了平和琯溪蜜柚生长与生产的基础。 当地丘陵果园人工栽培。",
+      "annual_cycle": "3月下旬始花、4月中旬盛花，9月下旬至12月成熟采收（10月中旬为高峰），9月下旬起陆续上市。",
+      "annual_title": "琯溪蜜柚的一年",
+      "keywords": [
+        "丘陵",
+        "中低海拔",
+        "温热",
+        "多雨",
+        "酸性土壤"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ032": {
+      "place_intro": "龙海区是浮宫杨梅的核心产区。产区主要分布在浮宫镇、港尾镇、白水镇、东园镇、东泗乡、海澄镇、榜山镇等7个乡镇121个行政村（农场），浮宫镇为核心产区（全省最…。（国家地理标志保护产品（国家质检总局2010年第96号公告））",
+      "why_here": "地处丘陵、海岸地带；气候温热、多雨、湿润；滨海等水系带来稳定水汽；土壤以酸性、红壤、黄壤为主。这些自然条件共同构成了浮宫杨梅生长与生产的基础。 当地浮宫镇为全省最大杨梅种植地、集散地。",
+      "annual_cycle": "每年5–6月为上市季，分早梅、中梅、晚梅三季，5月中下旬早梅上市，6月上中旬晚梅（东魁）上市",
+      "annual_title": "浮宫杨梅的一年",
+      "keywords": [
+        "丘陵",
+        "海岸",
+        "温热",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ033": {
+      "place_intro": "长泰区是长泰芦柑的核心产区。产区主要分布在岩溪镇为核心产区（五四农场、青年果场等），属漳州芦柑地理标志范围（九龙江出海口区域低丘陵红沙壤地带）。（漳州芦柑地理标志证明商标）",
+      "why_here": "地处丘陵、平原地带；气候温热、多雨、湿润；土壤以红壤、砂质土为主。这些自然条件共同构成了长泰芦柑生长与生产的基础。 当地低丘坡地果园人工栽培。",
+      "annual_cycle": "11月中旬至12月初成熟，11月底开采、12月中下旬基本采收完成，12月至春节为销售旺季",
+      "annual_title": "芦柑的一年",
+      "keywords": [
+        "丘陵",
+        "平原",
+        "低海拔",
+        "温热",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ034": {
+      "place_intro": "永泰县是永泰芙蓉李的核心产区。产区主要分布在现辖行政区域（永泰李干地理标志保护范围），主产区含盖洋乡、梧桐镇等乡镇。（芙蓉李为'永泰李干'国家地理标志保护产品（2007年第208号公告）指定…）",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润；土壤以酸性、红壤、黄壤为主。这些自然条件共同构成了永泰芙蓉李生长与生产的基础。 当地丘陵果园人工栽培（桃砧嫁接或扦插苗）。",
+      "annual_cycle": "2–3月李花花期；7月中旬至8月上旬采收8–9成熟鲜果；鲜食李7月上旬开始成熟，低海拔产区可提早约10天",
+      "annual_title": "芙蓉李的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ035": {
+      "place_intro": "闽侯县、闽清县是福州橄榄的核心产区。产区主要分布在闽江中下游两岸冲积土及海拔250米以下丘陵山坡，核心为闽侯县白沙、鸿尾、竹岐等乡镇。（福州橄榄（农产品地理标志）、闽侯橄榄（地理标志证明商标））",
+      "why_here": "地处丘陵、河谷地带；河谷等水系带来稳定水汽；土壤以酸性、红壤、冲积土为主。这些自然条件共同构成了福州橄榄生长与生产的基础。 当地河谷与坡地果园人工栽培。",
+      "annual_cycle": "10月前后果实成熟，10–12月采收上市；闽侯县为全国橄榄主产区（全国每4颗橄榄1颗来自闽侯）。",
+      "annual_title": "橄榄的一年",
+      "keywords": [
+        "丘陵",
+        "河谷",
+        "低海拔",
+        "酸性土壤"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ036": {
+      "place_intro": "闽侯县、长乐区、仓山区、马尾区是福橘的核心产区。产区主要分布在闽江下游两岸为主，素有“闽江桔乡”之称；福州福桔地域保护范围含仓山区、马尾区、晋安区、福清市、长乐市、闽侯县、闽…。（农产品地理标志（AGI00899，农业部2012年8月3日登记，证书持有…）",
+      "why_here": "地处山地、丘陵、平原地带；气候温暖、多雨、湿润；河谷等水系带来稳定水汽；土壤以酸性、红壤、黄壤、冲积土为主。这些自然条件共同构成了福橘生长与生产的基础。 当地福橘为新春佳节家家陈列、馈赠亲友的吉庆果。",
+      "annual_cycle": "果实12月下旬至翌年1月中旬成熟采收，正值岁末新春上市，为春节吉庆果；深秋初冬（11–12月）闽江两岸红果满枝",
+      "annual_title": "福橘的一年",
+      "keywords": [
+        "河谷",
+        "丘陵",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ037": {
+      "place_intro": "仙游县是度尾文旦柚的核心产区。产区主要分布在度尾镇、大济镇等木兰溪沿岸乡镇（度尾镇苦竹、屏山、埔尾、云居、剑山等村为核心）。（国家地理标志保护产品（国家知识产权局地理标志产品认定公告第640号））",
+      "why_here": "地处丘陵、盆地地带；气候温热、多雨、湿润；河谷等水系带来稳定水汽；土壤以酸性、红壤为主。这些自然条件共同构成了度尾文旦柚生长与生产的基础。 当地丘陵柚园人工栽培。",
+      "annual_cycle": "4月盛花期，10月中旬后分期采收（9月下旬至11月中旬为成熟采摘季节），10–11月为上市高峰",
+      "annual_title": "度尾文旦柚的一年",
+      "keywords": [
+        "丘陵",
+        "盆地",
+        "中低海拔",
+        "温热",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ038": {
+      "place_intro": "涵江区、城厢区、荔城区、仙游县是莆田枇杷的核心产区。产区主要分布在地理标志保护范围为涵江、荔城、城厢、仙游24个乡镇（街道）；核心产区为城厢区常太镇（中国枇杷第一乡），另有仙游县…。（国家地理标志保护产品（2008年12月10日国家质检总局第132号公告批…）",
+      "why_here": "地处山地、丘陵地带；气候温热、多雨、湿润；土壤以酸性为主。这些自然条件共同构成了莆田枇杷生长与生产的基础。 当地常太镇等乡镇规模化种植。",
+      "annual_cycle": "枇杷为开春第一果：9月下旬抽穗，10月中旬至12月开花，翌年1–2月幼果，3月初起早熟品种（三月白等）陆续成熟，3–5月为采收上市期，解放钟5月上中旬成熟",
+      "annual_title": "枇杷的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "温热",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ039": {
+      "place_intro": "荔城区、涵江区是莆田荔枝的核心产区。产区主要分布在木兰溪、延寿溪两岸及荔城区新度镇、西天尾镇、拱辰街道，涵江区白塘镇、梧塘镇，城厢区灵川、东海，仙游县枫亭镇。（国家地理标志保护产品（莆田荔枝，2014））",
+      "why_here": "地处河谷、平原地带；河谷等水系带来稳定水汽。这些自然条件共同构成了莆田荔枝生长与生产的基础。 当地沿溪果园人工栽培。",
+      "annual_cycle": "4月开花，6月末至8月采收（7月中旬全面上市，大暑前后为高峰），品种与产区差异覆盖6–8月。",
+      "annual_title": "荔枝的一年",
+      "keywords": [
+        "河谷",
+        "平原",
+        "地形",
+        "水文",
+        "气候"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ040": {
+      "place_intro": "永定区是永定红柿的核心产区。产区主要分布在主产区位于永定县（区）东南部岐岭乡、湖坑镇等8个乡镇（岐岭、陈东、古竹、高头、湖坑、大溪、下洋、湖山），永定区为…。（国家农产品地理标志（2014年5月22日农业部批准登记，永定县红柿专业技…）",
+      "why_here": "地处山地、丘陵地带；气候温热、多雨、湿润；土壤以红壤为主。这些自然条件共同构成了永定红柿生长与生产的基础。 当地永定区为华东地区最大红柿生产基地。",
+      "annual_cycle": "我国东南部经济栽培区成熟最早的柿果之一，上市时间8月中旬至11月上旬；柿饼等加工产品9–12月制作",
+      "annual_title": "红柿的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "温热",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ041": {
+      "place_intro": "翔安区是古宅大蒜的核心产区。产区主要分布在厦门市翔安区新圩镇古宅村及周边（带动南安市周边村共约9000亩）。（地理标志证明商标（古宅大蒜））",
+      "why_here": "地处丘陵地带；气候温热、多雨、湿润；土壤以砂质土为主。这些自然条件共同构成了古宅大蒜生长与生产的基础。 当地丘陵农田连片种植（全区3000多亩耕地以大蒜为主）。",
+      "annual_cycle": "8–9月播种，11–12月采收蒜头，10月下旬至次年2月为青蒜出口季",
+      "annual_title": "古宅大蒜的一年",
+      "keywords": [
+        "丘陵",
+        "温热",
+        "多雨",
+        "湿润",
+        "砂质土"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ042": {
+      "place_intro": "福鼎市是福鼎槟榔芋的核心产区。产区主要分布在行政区域内17个乡镇（街道、开发区），海拔600米以下实行水旱轮作的冲积、坡积和残积母质土地（含丘陵地、平地、水…。（农产品地理标志（农业农村部2011年登记））",
+      "why_here": "地处丘陵、平原地带；气候温暖、多雨、湿润；土壤以酸性、水稻土为主。这些自然条件共同构成了福鼎槟榔芋生长与生产的基础。 当地水旱轮作稻田种植。",
+      "annual_cycle": "2月下旬–3月中旬育苗，3月下旬–4月中旬定植；10月下旬–11月上旬采收母芋，11月上旬–12月上旬采收种芋；中秋节前后起上市销售至春节期间，可贮至来年4月",
+      "annual_title": "槟榔芋的一年",
+      "keywords": [
+        "丘陵",
+        "平原",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ043": {
+      "place_intro": "东山县是东山芦笋的核心产区。产区主要分布在西埔、铜陵、陈城、康美、杏陈、樟塘、前楼等7个镇61个行政村。（农产品地理标志（2010）、地理标志证明商标（2012）、原产地标记（2…）",
+      "why_here": "地处海岸、岛屿、平原地带；气候温热、雨水适中、湿润；滨海等水系带来稳定水汽；土壤以酸性、砂质土为主。这些自然条件共同构成了东山芦笋生长与生产的基础。 当地海岛农田人工栽培。",
+      "annual_cycle": "分春、秋两季采收：春季4月中旬至7月中旬，秋季9月上旬至10月下旬；大棚种植可延采至次年2月。",
+      "annual_title": "芦笋的一年",
+      "keywords": [
+        "海岸",
+        "岛屿",
+        "低海拔",
+        "温暖",
+        "雨水适中"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ044": {
+      "place_intro": "尤溪县是尤溪绿竹笋的主要产区。产区主要分布在现辖行政区域，全县绿竹面积7万多亩；主要分布于西城、城关、梅仙、西滨、洋中、溪尾、台溪等乡镇的山地、溪河两岸及房…。（国家地理标志保护产品（国家质检总局2009年第26号公告，2009年4月…）",
+      "why_here": "地处山地、丘陵、河谷地带；气候温暖、多雨、湿润；河谷等水系带来稳定水汽；河谷环绕；土壤以酸性、红壤、砂质土为主。这些自然条件共同构成了尤溪绿竹笋生长与生产的基础。 当地全县绿竹面积7万多亩。",
+      "annual_cycle": "产笋期5月中旬至10月上旬，出笋期120天以上；6–10月为盛产期，7–8月最盛",
+      "annual_title": "绿竹笋的一年",
+      "keywords": [
+        "河谷",
+        "低海拔",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ045": {
+      "place_intro": "永安市是永安闽笋干的核心产区。产区主要分布在现辖行政区域（贡川、西洋等乡镇竹林产区为核心）。（国家地理标志保护产品（2008年，国家质检总局2008年第32号公告））",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润；土壤以酸性、红壤、黄壤为主。这些自然条件共同构成了永安闽笋干生长与生产的基础。 当地山地竹林人工经营。",
+      "annual_cycle": "春笋3月底至5月上旬采挖，清明节前后集中采制；冬笋12月至次年2月挖笋；立夏出榨烤笋，全年以3–5月为加工高峰",
+      "annual_title": "闽笋干的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "中海拔",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ046": {
+      "place_intro": "建瓯市是建瓯冬笋的核心产区。产区主要分布在各乡镇毛竹林，主产区含房道镇、玉山镇（岭口村海拔约820米）、吉阳镇、龙村乡等。（未检索到建瓯冬笋地理标志登记）",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润；土壤以黄壤为主。这些自然条件共同构成了建瓯冬笋生长与生产的基础。 当地毛竹林人工经营（垦复、施肥、科学管护）。",
+      "annual_cycle": "冬笋为立秋前后由毛竹地下茎（竹鞭）侧芽发育的笋芽，尚未出土；11月起开始上市，冬至前后为最佳时节，春节前后为收购高峰，采收延续至早春（随后进入春笋季）",
+      "annual_title": "冬笋的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ047": {
+      "place_intro": "宁化县是宁化薏米的核心产区。产区主要分布在现辖行政区域，传统产区包括淮土、石壁、河龙等乡镇丘陵旱地。（农产品地理标志（宁化米仁/薏米，2012）、《地理标志产品 宁化薏米（宁…）",
+      "why_here": "地处山地、丘陵、盆地地带；气候湿润；土壤以酸性、红壤、黄壤、紫色土为主。这些自然条件共同构成了宁化薏米生长与生产的基础。 当地丘陵旱地人工栽培。",
+      "annual_cycle": "春季播种、秋季成熟采收；无可靠月份来源，物候行以生长/无资料标注。",
+      "annual_title": "薏米的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "中低海拔",
+        "湿润",
+        "酸性土壤"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ048": {
+      "place_intro": "浦城县是浦城大米的主要产区。产区主要分布在现辖行政区域，全县耕地面积53.68万亩（2022年）、50.87万亩（2026年报道），再生稻种植面积突破10…。（国家地理标志证明商标（2020年4月获批注册））",
+      "why_here": "地处盆地、丘陵、山地地带；气候温暖、多雨、湿润；土壤以水稻土为主。这些自然条件共同构成了浦城大米生长与生产的基础。 当地浦城为福建省粮食生产第一大县、全国最早商品粮基地县、中国好粮油示范县。",
+      "annual_cycle": "再生稻4–5月插秧、8月中旬头季成熟收割、10月下旬至11月再生季收割；单季稻秋冬收获，全年育秧3–4月、插秧4–5月",
+      "annual_title": "大米的一年",
+      "keywords": [
+        "盆地",
+        "丘陵",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ049": {
+      "place_intro": "武夷山市是武夷山红菇的分布区。产区主要分布在高山地区天然阔叶林（红椎、槠栲等壳斗科林）下腐殖层。",
+      "why_here": "地处山地地带；气候温暖、多雨、湿润；土壤以酸性、红壤为主。这些自然条件共同构成了武夷山红菇生长与生产的基础。 当地采菇人凌晨三四点进山。",
+      "annual_cycle": "夏秋之交（7–9月）出菇，每季出菇期仅约15天，凌晨采收；干菇9月起陆续上市",
+      "annual_title": "红菇的一年",
+      "keywords": [
+        "山地",
+        "高海拔",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ050": {
+      "place_intro": "顺昌县是顺昌海鲜菇的核心产区。产区主要分布在双溪街道、建西镇、洋口镇、元坑镇、埔上镇、大历镇、大干镇、仁寿镇、洋墩乡、郑坊乡、岚下乡、高阳乡共1个街道7个镇…。（农产品地理标志（农业农村部登记））",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润。这些自然条件共同构成了顺昌海鲜菇生长与生产的基础。 当地工厂化车间栽培（温控环境）。",
+      "annual_cycle": "工厂化周年生产，生产没有季节性，一年四季均可供应市场；2020年全县食用菌种植规模2.44亿袋，海鲜菇占全国同类市场份额60–80%",
+      "annual_title": "海鲜菇的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ051": {
+      "place_intro": "顺昌县是顺昌竹荪的核心产区。产区主要分布在双溪街道、郑坊、元坑、大干、埔上、洋墩、仁寿、洋口、建西、大历、岚下、高阳等12个乡镇。（农产品地理标志（2009），2025年转化为国家地理标志保护产品）",
+      "why_here": "地处山地、丘陵、河谷地带；气候湿润；河谷等水系带来稳定水汽；土壤以酸性、红壤、冲积土为主。这些自然条件共同构成了顺昌竹荪生长与生产的基础。 当地棚栽与林下栽培结合。",
+      "annual_cycle": "1–4月种植（棚栽），5月中旬开始出菇采收，采收季持续至9月，8月为采收高峰。",
+      "annual_title": "竹荪的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "河谷",
+        "中低海拔",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ052": {
+      "place_intro": "古田县是古田银耳的核心产区。产区主要分布在现辖行政区域，含城东、城西、平湖、大桥、黄田、鹤塘、杉洋、凤都、水口、大甲、吉巷、洋洋、凤埔、卓洋等14个乡镇（…。（国家地理标志保护产品（原产地域产品保护，国家质检总局2004年第72号公…）",
+      "why_here": "地处山地、丘陵、盆地地带；气候湿润；河谷等水系带来稳定水汽；湿地环绕。这些自然条件共同构成了古田银耳生长与生产的基础。 当地古田为“中国食用菌之都”。",
+      "annual_cycle": "袋料栽培周年生产，生产周期约41天（养菌18天+出耳23天）；自然季节栽培依海拔错开，低海拔10月–次年4月、中海拔春3–5月与秋9–11月；主要采收期3–11月，5–8月品质最佳",
+      "annual_title": "银耳的一年",
+      "keywords": [
+        "山地",
+        "湿润",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ053": {
+      "place_intro": "古田县是古田香菇的核心产区。产区主要分布在全域（“中国食用菌之都”，翠屏湖周边为核心产区）。",
+      "why_here": "地处丘陵、平原地带；气候温暖、多雨、湿润。这些自然条件共同构成了古田香菇生长与生产的基础。 当地菇农以阔叶树段木或菌棒袋栽香菇。",
+      "annual_cycle": "8–9月制袋接种，10月至次年4月为主要出菇采收期（冬春季），冬季为上市高峰",
+      "annual_title": "香菇的一年",
+      "keywords": [
+        "丘陵",
+        "平原",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ054": {
+      "place_intro": "龙海区、南靖县是漳州双孢蘑菇的核心产区。产区主要分布在漳州全市为主产区，传统栽培分布于龙海、南靖、长泰、芗城、龙文、诏安、平和、华安等县（市、区）；工厂化栽培含漳州台…。（未检索到'漳州双孢蘑菇'地理标志登记）",
+      "why_here": "地处平原、丘陵地带；气候温热、多雨、湿润。这些自然条件共同构成了漳州双孢蘑菇生长与生产的基础。 当地传统菇房秋冬栽培（一年一季）与温控工厂化栽培（一年6–8茬）并存。",
+      "annual_cycle": "传统栽培季节为秋冬季并延续至早春（菇房春、夏、秋三季闲置）；工厂化生产一年6–8茬、全年出菇，7月中旬起可周年上市",
+      "annual_title": "双孢蘑菇的一年",
+      "keywords": [
+        "平原",
+        "丘陵",
+        "温热",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ055": {
+      "place_intro": "罗源县是罗源秀珍菇的核心产区。产区主要分布在起步镇为核心产区，松山、鉴江、凤山、飞竹、中房、白塔、西兰、洪洋、霍口、碧里等11个乡镇。（农产品地理标志（罗源秀珍菇））",
+      "why_here": "地处丘陵地带；气候温暖、多雨、湿润；河谷等水系带来稳定水汽。这些自然条件共同构成了罗源秀珍菇生长与生产的基础。 当地菇棚设施化栽培。",
+      "annual_cycle": "传统栽培3月种菌、6–9月出菇采收；设施化液体菌种已实现周年轮作出菇。",
+      "annual_title": "秀珍菇的一年",
+      "keywords": [
+        "丘陵",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ056": {
+      "place_intro": "延平区是延平百合的核心产区。产区主要分布在所辖王台、峡阳、茫荡、大横、塔前、炉下、西芹、南山、来舟等“两带九镇”，以王台现代农业示范园及水口库区移民百合示…。（地理标志证明商标（2014年1月28日国家商标局注册，延平区林木种苗站持…）",
+      "why_here": "地处丘陵、山地、河谷地带；气候温暖、多雨、湿润；河谷等水系带来稳定水汽；土壤以黄壤、红壤为主。这些自然条件共同构成了延平百合生长与生产的基础。 当地延平区2022年百合花种植面积1.2万亩、年产鲜切花8000多万枝、种植户145户、年产值6.3亿元。",
+      "annual_cycle": "花农夏末秋初播种商品球，来年春节至5月为花开季节；设施栽培按节庆需求安排五六月或12月至次年2月花期，农历腊月十五至春节为鲜切花采收高峰，春节销量约占全年40%",
+      "annual_title": "百合的一年",
+      "keywords": [
+        "丘陵",
+        "河谷",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ057": {
+      "place_intro": "南靖县是南靖兰花的核心产区。产区主要分布在山城、靖城、丰田、龙山、金山、和溪、奎洋、梅林、书洋、船场、南坑等11个镇。（地理标志证明商标（南靖兰花））",
+      "why_here": "地处山地、丘陵地带；气候温热、多雨、湿润；土壤以酸性、红壤、黄壤为主。这些自然条件共同构成了南靖兰花生长与生产的基础。 当地林下采集与人工兰园栽培结合。",
+      "annual_cycle": "兰花类群多、花期四季错开：春兰1–3月、建兰6–10月、墨兰10–2月、寒兰10–12月；全年有花可赏、可售",
+      "annual_title": "兰花的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "温热",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ058": {
+      "place_intro": "龙海区是漳州水仙花的核心产区。产区主要分布在传统种植区以龙海区九湖镇为主要区域；原产地保护区位于圆山脚下，总面积约6000亩、核心区3000亩。（地理标志证明商标/地理标志保护（漳州水仙花））",
+      "why_here": "地处平原地带；气候温热、多雨、湿润。这些自然条件共同构成了漳州水仙花生长与生产的基础。 当地水仙花海稻花轮作：6–10月种水稻。",
+      "annual_cycle": "霜降前后（10月）栽种，芒种前后（6月）采挖鳞茎，6–10月为球茎休眠期；自然花期集中在春节期间，雕刻水养可应节开花（春节前35天、元旦前40天、灯节前30天）",
+      "annual_title": "水仙花的一年",
+      "keywords": [
+        "平原",
+        "温热",
+        "多雨",
+        "湿润",
+        "灌溉"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ059": {
+      "place_intro": "平潭县是平潭水仙花的核心产区。产区主要分布在综合实验区（海坛岛）各水仙花种植基地。（国家地理标志保护产品（平潭水仙花，2007）、地理标志证明商标）",
+      "why_here": "地处岛屿、海岸地带；气候温暖、雨水适中、湿润；滨海等水系带来稳定水汽；土壤以红壤为主。这些自然条件共同构成了平潭水仙花生长与生产的基础。 当地水仙花球三种三收传统种植。",
+      "annual_cycle": "10月下旬霜降种球，次年6月上旬芒种前收获；6–10月球茎休眠，12月下旬起开花，春节前后为上市高峰。",
+      "annual_title": "水仙花的一年",
+      "keywords": [
+        "岛屿",
+        "海岸",
+        "低海拔",
+        "温暖",
+        "雨水适中"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ060": {
+      "place_intro": "武平县是武平富贵籽的核心产区。产区主要分布在现辖行政区域，核心产区为东留镇（“中国富贵籽之乡”），全镇富贵籽种植基地1万多亩。（国家地理标志证明商标（2010年获准注册，商标号7622475））",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润；河谷等水系带来稳定水汽；土壤以腐殖土、黄壤为主。这些自然条件共同构成了武平富贵籽生长与生产的基础。 当地东留镇坚持党建引领串联8个行政村创办合作社。",
+      "annual_cycle": "花期6–7月，果期10–12月乃至春节；挂果期长达6个月以上，果实转红期正值元旦、春节、元宵节，为节日观果观叶盆花",
+      "annual_title": "富贵籽的一年",
+      "keywords": [
+        "山地",
+        "中低海拔",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ061": {
+      "place_intro": "漳平市是漳平永福杜鹃的核心产区。产区主要分布在永福镇高山盆地（全国最大的盆栽杜鹃花生产基地，全镇花卉种植面积3.5万亩）。（永福杜鹃花国家地理标志商标（2022年注册））",
+      "why_here": "地处盆地、丘陵地带；气候温暖、多雨、湿润；河谷等水系带来稳定水汽；土壤以酸性为主。这些自然条件共同构成了漳平永福杜鹃生长与生产的基础。 当地家家户户种花。",
+      "annual_cycle": "西洋杜鹃花期经调节后约3月8日至5月1日，春节至5月底为主要开花季；盆栽杜鹃年宵花（1–2月）与春季花市两旺",
+      "annual_title": "永福杜鹃的一年",
+      "keywords": [
+        "盆地",
+        "丘陵",
+        "中低海拔",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ062": {
+      "place_intro": "建宁县是建宁通心白莲的核心产区。产区主要分布在所辖濉溪镇、溪口镇、里心镇、均口镇、客坊乡、黄坊乡、溪源乡、黄埠乡、伊家乡共9个乡镇（地理标志保护范围）。（国家地理标志保护产品）",
+      "why_here": "地处山地、河谷地带；气候温暖、多雨、湿润。这些自然条件共同构成了建宁通心白莲生长与生产的基础。 当地莲田人工栽培（春分后栽种藕苗）。",
+      "annual_cycle": "春分后栽种藕苗；7月下旬莲子成熟，7–9月分批采收加工、至秋分采收结束（共可采17茬）；通心白莲经采莲、脱粒、去壳、去膜、通心、烘干等工序制成",
+      "annual_title": "通心白莲的一年",
+      "keywords": [
+        "山地",
+        "河谷",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ063": {
+      "place_intro": "永安市是永安淮山的核心产区。产区主要分布在安砂镇为主产区，种植于海拔170–700米的区域范围。（国家地理标志保护产品（安砂淮山））",
+      "why_here": "地处山地、丘陵地带；气候湿润；河谷等水系带来稳定水汽；土壤以砂质土为主。这些自然条件共同构成了永安淮山生长与生产的基础。 当地丘陵旱地人工栽培。",
+      "annual_cycle": "3月中旬至4月上旬播种，植株落黄枯萎前（秋冬）适时采收；具体月份来源不足，未精确推断。",
+      "annual_title": "淮山的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "中低海拔",
+        "湿润",
+        "砂质土"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ064": {
+      "place_intro": "泰宁县是泰宁铁皮石斛的核心产区。产区主要分布在产地主要分布于泰宁县上清溪下码头、朱口乡、耕读李家等地；仿野生种植于海拔500–800米以上深山峭壁（丹霞岩壁）…。（国家地理标志产品（国家质检总局2016年第128号公告，2016年12月…）",
+      "why_here": "地处山地、河谷地带；气候温暖、多雨、湿润；河谷等水系带来稳定水汽；河谷环绕；土壤以其他为主。这些自然条件共同构成了泰宁铁皮石斛生长与生产的基础。 当地泰宁县丹崖农业生态科技发展有限公司仿野生种植7000亩、大棚驯化50亩。",
+      "annual_cycle": "移栽2年后方可采收，采收期为11月至翌年开花前（约5–6月）；栽植与移栽分3–6月、9–11月两季；枫斗加工贯穿采收季",
+      "annual_title": "铁皮石斛的一年",
+      "keywords": [
+        "山地",
+        "河谷",
+        "中低海拔",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ065": {
+      "place_intro": "建瓯市是建瓯泽泻的核心产区。产区主要分布在吉阳镇为核心产区（城关豪栋、钟楼等村亦有种植），建有GAP种植基地。",
+      "why_here": "地处丘陵、河谷地带；气候温暖、多雨、湿润；湿地环绕；土壤以水稻土为主。这些自然条件共同构成了建瓯泽泻生长与生产的基础。 当地水田人工栽培。",
+      "annual_cycle": "小暑前后育苗、白露前后移栽，冬季球茎成熟采收；大田鲜泽泻6–11月大量上市，药用干品冬采加工",
+      "annual_title": "泽泻的一年",
+      "keywords": [
+        "丘陵",
+        "河谷",
+        "低海拔",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ066": {
+      "place_intro": "柘荣县是柘荣太子参的核心产区。产区主要分布在现辖行政区域（地理标志保护范围），栽培于海拔500–800米山区耕地。（国家地理标志保护产品（2007年国家质检总局第45号公告））",
+      "why_here": "地处山地地带；气候温暖、多雨、湿润；土壤以酸性为主。这些自然条件共同构成了柘荣太子参生长与生产的基础。 当地山地耕地人工栽培。",
+      "annual_cycle": "11–12月播种，次年6月下旬至7月下旬采收（中海拔7月中旬、高海拔7月下旬适宜采收）；采收后与晚稻轮作，8月起加工晾晒上市",
+      "annual_title": "太子参的一年",
+      "keywords": [
+        "山地",
+        "中海拔",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ067": {
+      "place_intro": "福鼎市是福鼎黄栀子的核心产区。产区主要分布在贯岭镇为核心产区，太姥山、前岐、磻溪、桐城等乡镇均有种植。（农产品地理标志（福鼎黄栀子，2020））",
+      "why_here": "福鼎黄栀子种植于海拔600米以下阳坡半阳坡山地，土层深厚疏松排水良好，5–6月盛花、10–11月采果，形成以贯岭镇为核心的花果产业带。",
+      "annual_cycle": "5月下旬至6月上中旬为盛花期，10月进入结果丰收期，10–11月（立冬前后）采收鲜果。",
+      "annual_title": "黄栀子的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "中低海拔"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ068": {
+      "place_intro": "武平县是武平金线莲的核心产区。产区主要分布在现辖行政区域，野生金线莲集中于梁野山周边乡镇；形成野生资源采集、林下仿野生栽培和大棚设施栽培并存的生产格局。（国家地理标志证明商标（2010年3月国家工商总局核准注册，商标号7304…）",
+      "why_here": "地处山地、丘陵地带；气候湿润；河谷环绕；土壤以腐殖土、黄壤、红壤为主。这些自然条件共同构成了武平金线莲生长与生产的基础。 当地武平为福建省重点培育的6个金线莲生产基地之一、国内最大金线莲交易集散地。",
+      "annual_cycle": "春季定植（3–4月），种植约6个月后可采收，林下仿野生栽培一年可收两茬（4月开种、8月与12月各收一茬）；花期9–12月，果期10–12月",
+      "annual_title": "金线莲的一年",
+      "keywords": [
+        "山地",
+        "湿润",
+        "腐殖土"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ069": {
+      "place_intro": "武夷山市是吴屯稻花鱼的核心产区。产区主要分布在吴屯乡高山冷水梯田（后墘、倪坜等村），2022年养殖面积约1.2–1.3万亩。（吴屯稻花鱼地理标志证明商标（国家知识产权局2022年批准））",
+      "why_here": "地处山地、丘陵地带；气候凉爽、多雨、湿润；湿地环绕；土壤以水稻土为主。这些自然条件共同构成了吴屯稻花鱼生长与生产的基础。 当地稻田养鱼传统（“稻鱼并作”）。",
+      "annual_cycle": "清明前后鱼苗下田（4月）、端午前后插秧投苗，稻花扬花期（8–9月）生长最快，中秋前后（9–10月）稻黄鱼肥收获，为最佳品尝季",
+      "annual_title": "吴屯稻花鱼的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "中低海拔",
+        "凉爽",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ070": {
+      "place_intro": "蕉城区是宁德大黄鱼的核心产区。产区主要分布在宁德市蕉城区三都澳官井洋及周边海域（三都澳为中国最大规模大黄鱼人工育苗、养殖、加工、销售和出口基地）。（'宁德大黄鱼'地理标志证明商标（2012年注册））",
+      "why_here": "地处海岸地带；浅海等水系带来稳定水汽。这些自然条件共同构成了宁德大黄鱼生长与生产的基础。 当地三都澳海域大规模网箱养殖。",
+      "annual_cycle": "大黄鱼冬春两季产卵，5–6月洄游至官井洋产卵；育苗集中在春秋两季；6月为生长黄金季节；养殖大黄鱼全年供应市场",
+      "annual_title": "大黄鱼的一年",
+      "keywords": [
+        "海岸",
+        "浅海",
+        "水文",
+        "生态"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ071": {
+      "place_intro": "福鼎市是桐江鲈鱼的核心产区。产区主要分布在桐江溪流域和桐江溪入海口至沙埕港口以内的海淡水水域（山前、桐山、桐城、贯岭、前岐、点头、白琳、佳阳、龙安、店下、…。（农产品地理标志（桐江鲈鱼，2010）、中欧地理标志协定保护名录）",
+      "why_here": "地处海岸地带；气候温暖；滨海、浅海等水系带来稳定水汽；河谷环绕。这些自然条件共同构成了桐江鲈鱼生长与生产的基础。 当地网箱/鱼排人工养殖。",
+      "annual_cycle": "繁殖期11月至翌年1月，养殖周期以春夏育苗、秋冬捕捞为主；收获时间集中在10–11月。",
+      "annual_title": "桐江鲈鱼的一年",
+      "keywords": [
+        "海岸",
+        "河口",
+        "温暖"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ072": {
+      "place_intro": "福清市是福清鳗鲡的核心产区。产区主要分布在全境规模化养鳗场（土池与工厂化循环水养殖）及烤鳗加工企业集群，福清是我国重要的鳗鱼养殖和加工出口基地。（未检索到“福清鳗鲡”地理标志登记）",
+      "why_here": "地处平原、海岸、台地地带；湿地环绕；土壤以其他为主。这些自然条件共同构成了福清鳗鲡生长与生产的基础。 当地福清素有“中国鳗鱼之都”之称。",
+      "annual_cycle": "鳗苗每年10月至次年4月于咸淡水交汇处出现，冬春季投放苗种；养殖周期12–36个月，主要从养殖第二年规模化出鱼；每年5–8月活鳗集中供给烤鳗厂并出口日本，5–7月为出口高峰",
+      "annual_title": "鳗鲡的一年",
+      "keywords": [
+        "海岸",
+        "滨海",
+        "水文",
+        "气候",
+        "人地关系"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ073": {
+      "place_intro": "霞浦县是霞浦海参的核心产区。产区主要分布在东吾洋、官井洋海域（浮筏吊笼养殖），全县为“中国南方海参之乡”。（“霞浦海参”区域公用品牌（国字号区域品牌））",
+      "why_here": "地处海岸、滩涂地带；气候湿润；浅海、滨海等水系带来稳定水汽。这些自然条件共同构成了霞浦海参生长与生产的基础。 当地浮筏吊笼养殖。",
+      "annual_cycle": "当年11月至次年4月为养殖周期（冬季生长），3月下旬至5月为收获加工季（“五一”前后为黄金期）",
+      "annual_title": "海参的一年",
+      "keywords": [
+        "海岸",
+        "浅海",
+        "湿润",
+        "滨海"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ074": {
+      "place_intro": "霞浦县是霞浦海带的核心产区。产区主要分布在沿海海域，主产区位于台湾暖流与闽浙沿岸流交汇区，官井洋、东吾洋等内海养殖区。（'霞浦海带'地理标志证明商标（注册号7127315））",
+      "why_here": "地处海岸、滩涂地带；气候温暖、多雨、湿润；浅海等水系带来稳定水汽。这些自然条件共同构成了霞浦海带生长与生产的基础。 当地内湾浅海筏式养殖（海带夹苗、吊养）。",
+      "annual_cycle": "前一年11月中下旬下苗，4月初开始采收，5–6月为收成旺季，6月中旬完成全部晾晒；淡干海带加工后全年供应市场",
+      "annual_title": "海带的一年",
+      "keywords": [
+        "海岸",
+        "滩涂",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ075": {
+      "place_intro": "霞浦县是霞浦紫菜的核心产区。产区主要分布在沿海海域（三沙湾等养殖海域），三沙、牙城、沙江、溪南等乡镇。（地理标志证明商标（霞浦紫菜，2009））",
+      "why_here": "地处海岸、滩涂、岛屿地带；浅海、滩涂等水系带来稳定水汽；滩涂环绕。这些自然条件共同构成了霞浦紫菜生长与生产的基础。 当地浅海竹竿挂帘养殖。",
+      "annual_cycle": "白露（9月上旬）前后下苗，10月下旬至11月开始采收，可采五茬，11月至次年2月为采收旺季。",
+      "annual_title": "紫菜的一年",
+      "keywords": [
+        "海岸",
+        "滩涂",
+        "岛屿"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ076": {
+      "place_intro": "东山县是东山鲍鱼的核心产区。产区主要分布在海域，育苗集中在山口村、澳角村、山东村等传统养殖区和育苗区；海上养殖分布于铜陵海区、冬古海区及下西坑、岐下海区，…。（国家地理标志保护产品（2006年8月17日国家质检总局批准））",
+      "why_here": "地处海岸、岛屿、滩涂地带；气候温热；浅海、滨海等水系带来稳定水汽；滩涂环绕；土壤以其他为主。这些自然条件共同构成了东山鲍鱼生长与生产的基础。 当地东山汇聚鲍鱼育苗场、养殖场1500余家。",
+      "annual_cycle": "农历十月开始育苗，育苗到成品最短周期约两年；每年4–5月引进种鲍催熟，5月前后为集中收获上市期；盛夏鲍鱼北上“度夏”、金秋十月归来育肥或直接上市",
+      "annual_title": "鲍鱼的一年",
+      "keywords": [
+        "浅海",
+        "温热",
+        "滨海"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ077": {
+      "place_intro": "古雷港经济开发区是沙西红蟳的核心产区。产区主要分布在沙西镇（原属漳浦县）庄前、高林、屿头等9个村围出的海域与滩涂，养殖面积约1.3万亩。（国家地理标志产品（沙西螃蟹/沙西红蟳））",
+      "why_here": "地处滩涂、海岸地带；气候温热、多雨、湿润；滩涂、滨海等水系带来稳定水汽；滩涂、湿地环绕；土壤以滨海盐土为主。这些自然条件共同构成了沙西红蟳生长与生产的基础。 当地滩涂蟹池与埭田养殖。",
+      "annual_cycle": "3月投放蟹苗，秋季至年底育成上市（单只可达6两至1斤），12月进入最佳赏味期并大量上市",
+      "annual_title": "沙西红蟳的一年",
+      "keywords": [
+        "滩涂",
+        "海岸",
+        "温热",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ078": {
+      "place_intro": "诏安县是诏安牡蛎的核心产区。产区主要分布在沿海海域（海岸线96.8公里、海域面积614.45平方公里），核心养殖产区为梅岭镇诏安湾。（'中国生态牡蛎之乡'（诏安县））",
+      "why_here": "地处海岸、滩涂地带；气候温热、多雨、湿润；浅海等水系带来稳定水汽。这些自然条件共同构成了诏安牡蛎生长与生产的基础。 当地内湾吊养（吊蚝）模式。",
+      "annual_cycle": "吊养牡蛎9月下苗、养至次年2–3月收获（避开台风季）；二倍体牡蛎夏季为繁殖期，三倍体牡蛎不育、一年四季均可上市（诏安三倍体牡蛎上市主季节在夏季）",
+      "annual_title": "牡蛎的一年",
+      "keywords": [
+        "海岸",
+        "滩涂",
+        "温热",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ079": {
+      "place_intro": "平潭县是平潭坛紫菜的核心产区。产区主要分布在综合实验区现辖行政区周边海域（金井片区新限洋、渔塘、华东村等养殖区）。（农产品地理标志、地理标志证明商标（平潭坛紫菜，2020））",
+      "why_here": "地处海岸、岛屿、滩涂地带；气候温暖、雨水适中；浅海、滩涂等水系带来稳定水汽；滩涂环绕。这些自然条件共同构成了平潭坛紫菜生长与生产的基础。 当地养殖户海上采收船剪菜装船。",
+      "annual_cycle": "9月上旬至下旬（白露至秋分）采苗，10月下旬至11月起采收，采收季延续至冬季。",
+      "annual_title": "坛紫菜的一年",
+      "keywords": [
+        "海岸",
+        "岛屿",
+        "滩涂",
+        "温暖",
+        "雨水适中"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ080": {
+      "place_intro": "长乐区是漳港海蚌的核心产区。产区主要分布在漳港海域（闽江口），漳港西施舌国家级水产种质资源保护区；仅适宜在闽江口漳港一带半淡半咸海水、水深8–10米海区生…。（国家地理标志保护产品（2010年获批，另有报道载2011年））",
+      "why_here": "地处海岸、滩涂地带；浅海、滨海等水系带来稳定水汽；滩涂环绕；土壤以中性、砂质土为主。这些自然条件共同构成了漳港海蚌生长与生产的基础。 当地福州市海洋与渔业局推进品牌打造、生境恢复与蓝碳增汇工程、海蚌饵料与采捕工具研发。",
+      "annual_cycle": "性腺成熟期4月中旬至6月中旬，生殖期5月上旬至7月下旬，4–7月为禁捕期；采捕季主要在8月至次年3月；从3厘米幼苗长成9–10厘米成年蚌需2–3年",
+      "annual_title": "漳港海蚌的一年",
+      "keywords": [
+        "浅海",
+        "滩涂",
+        "滨海"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ081": {
+      "place_intro": "连江县是连江鲍鱼的核心产区。产区主要分布在黄岐半岛、罗源湾、可门口及东洛岛近岸浅海水域，养殖面积1604公顷（2024年）。（国家地理标志保护产品（2013年第166号公告））",
+      "why_here": "地处海岸、滩涂、岛屿地带；气候湿润；浅海、滨海等水系带来稳定水汽。这些自然条件共同构成了连江鲍鱼生长与生产的基础。 当地浅海网箱/吊笼养殖。",
+      "annual_cycle": "春鲍3–6月收获上市（清明后为高峰），11月回迁后越冬生长至春节前再上市一批；4月底–5月鲍鱼北上避暑、11月回迁为“南北对养”周期",
+      "annual_title": "鲍鱼的一年",
+      "keywords": [
+        "海岸",
+        "浅海",
+        "岛屿",
+        "湿润",
+        "滨海"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ082": {
+      "place_intro": "秀屿区是南日鲍的核心产区。产区主要分布在莆田市秀屿区南日镇现辖海域（南日岛30米等深线以内海区），南日岛为莆田市第一大岛。（国家地理标志保护产品（2007年国家质检总局第136号公告））",
+      "why_here": "地处海岸、岛屿地带；浅海等水系带来稳定水汽。这些自然条件共同构成了南日鲍生长与生产的基础。 当地海区浮筏式吊养（网箱浮筏为主、延绳式浮筏为辅）。",
+      "annual_cycle": "鲍鱼人工育苗催产季节为春季4月中旬–5月中旬、秋季10月上旬–11月下旬；8–10月为鱼苗生长高峰期，10月底可上市；采捕标准壳长7cm以上、体重50g以上",
+      "annual_title": "南日鲍的一年",
+      "keywords": [
+        "海岸",
+        "岛屿",
+        "浅海"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ083": {
+      "place_intro": "秀屿区、城厢区是莆田花蛤的核心产区。产区主要分布在莆田市现辖行政区周边海域（含零星养殖海域），核心为城厢区灵川镇及湄洲湾北岸滩涂。（农产品地理标志（莆田花蛤，2020）、地理标志证明商标）",
+      "why_here": "地处海岸、滩涂地带；滩涂、浅海等水系带来稳定水汽；滩涂环绕；土壤以砂质土为主。这些自然条件共同构成了莆田花蛤生长与生产的基础。 当地滩涂与浅海人工养殖。",
+      "annual_cycle": "花蛤为多年生滩涂贝类，浅海养殖周期约3年；成蛤采收以夏季（6月前后）为旺季。",
+      "annual_title": "花蛤的一年",
+      "keywords": [
+        "海岸",
+        "滩涂",
+        "砂质土"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ084": {
+      "place_intro": "德化县是德化黑鸡的核心产区。产区主要分布在现辖行政区域，主产于戴云山主峰和九仙山周边村落（龙浔、浔中、三班、龙门滩、雷峰、南埕、水口、赤水、上涌、葛坑、盖…。（国家地理标志保护产品（国家质检总局2007年第198号公告，2007年1…）",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润；土壤以红壤、黄壤为主。这些自然条件共同构成了德化黑鸡生长与生产的基础。 当地德化县采取“扩繁场+公司+监管”模式。",
+      "annual_cycle": "全年分批育雏与林下放养；公鸡180–270日龄、母鸡150–180日龄出栏，出栏期主要集中于放养后5–9个月；冬至前后为滋补消费高峰",
+      "annual_title": "黑鸡的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ085": {
+      "place_intro": "永春县是永春白番鸭的核心产区。产区主要分布在现辖22个乡镇（东关镇等为核心保种与养殖区）。（国家农产品地理标志（登记保护））",
+      "why_here": "地处丘陵、河谷地带；气候温热、多雨、湿润；河谷环绕。这些自然条件共同构成了永春白番鸭生长与生产的基础。 当地农区放养结合舍饲。",
+      "annual_cycle": "番鸭一年四季均可饲养，无严格季节性；秋冬滋补季为消费与上市高峰，年出栏约100万羽",
+      "annual_title": "白番鸭的一年",
+      "keywords": [
+        "丘陵",
+        "河谷",
+        "温热",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ086": {
+      "place_intro": "龙海区是龙海金定鸭的核心产区。产区主要分布在现辖行政区域（地理标志保护范围），原产地与主产区为龙海区紫泥镇金定村（九龙江入海处浒茂三角洲）。（地理标志证明商标（'金定鸭'，注册号11476392））",
+      "why_here": "地处平原、滩涂、湿地地带；气候温热、多雨、湿润；滨海、滩涂等水系带来稳定水汽；湿地、滩涂环绕。这些自然条件共同构成了龙海金定鸭生长与生产的基础。 当地海滩放牧与河流、池塘、稻田放牧结合。",
+      "annual_cycle": "蛋鸭品种全年产蛋（换羽期与冬季不休产），年产蛋240–300枚；适宜海滩放牧与河流、池塘、稻田放牧，全年均可上市",
+      "annual_title": "金定鸭的一年",
+      "keywords": [
+        "平原",
+        "滩涂",
+        "湿地",
+        "温热",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ087": {
+      "place_intro": "福清市是福清高山羊的核心产区。产区主要分布在高山、沙埔、东瀚等沿海乡镇，原产高山镇六十、六一一带村落。（地理标志证明商标（福清高山羊，2011，全国性））",
+      "why_here": "地处海岸、平原地带；气候温暖、多雨、湿润；滨海等水系带来稳定水汽；土壤以砂质土为主。这些自然条件共同构成了福清高山羊生长与生产的基础。 当地农区草山草坡放牧与舍饲结合。",
+      "annual_cycle": "一年四季均可配种产羔，冬季产羔胎次明显高于其他季节，秋季平均产羔数与初生重最高；多放牧于海滩堤边。",
+      "annual_title": "高山羊的一年",
+      "keywords": [
+        "海岸",
+        "平原",
+        "低海拔",
+        "温暖",
+        "雨水适中"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ088": {
+      "place_intro": "长汀县是河田鸡的核心产区。产区主要分布在现辖行政区域，中心产区为河田镇及周边的策武、南山、濯田等乡镇；农产品地理标志保护地域覆盖汀州镇、大同镇、古城镇、…。（国家地理标志保护产品（国家质检总局2006年第93号公告，2006年7月…）",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润。这些自然条件共同构成了河田鸡生长与生产的基础。 当地长汀客家人以“盐酒河田鸡”等名菜形成冬季进补传统。",
+      "annual_cycle": "分批育雏、竹林山坡树林放养；出栏时间：阉鸡140–160天、小母鸡100–120天、童子鸡110天；冬季进补与春节年节为传统消费高峰",
+      "annual_title": "河田鸡的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "中低海拔",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ089": {
+      "place_intro": "连城县是连城白鸭的核心产区。产区主要分布在全域（北团镇等为核心养殖区），放养于山溪河畔。（国家地理标志保护产品（2013年））",
+      "why_here": "地处山地、丘陵、河谷地带；气候温暖、多雨、湿润；河谷、湿地环绕。这些自然条件共同构成了连城白鸭生长与生产的基础。 当地山溪河畔放养牧饲。",
+      "annual_cycle": "全年放养牧饲，产蛋量高（年产蛋240–300个）；四季均可入馔，秋冬药膳消费旺季",
+      "annual_title": "白鸭的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "河谷",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ090": {
+      "place_intro": "南安市是南安蜂蜜的核心产区。产区主要分布在向阳乡、洪濑镇、洪梅镇、罗东镇、九都镇、乐峰镇、梅山镇、码头镇等23个乡镇林区。（国家地理标志证明商标（'南安蜂蜜'，2021年5月核准））",
+      "why_here": "地处山地、丘陵地带；气候温热、多雨、湿润。这些自然条件共同构成了南安蜂蜜生长与生产的基础。 当地林下养蜂（养殖蜜蜂超10万群）。",
+      "annual_cycle": "4月起采收荔枝蜜、龙眼蜜、百花蜜至6月下旬，之后采收冬蜜，一年通常有4–5个采收期；4月中旬–5月中旬为荔枝龙眼盛花期",
+      "annual_title": "蜂蜜的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "温热",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ091": {
+      "place_intro": "武平县是武平蜂蜜的核心产区。产区主要分布在现辖行政区域林下养蜂基地（万安镇、湘店镇等），林下养蜂经营面积14.2万亩。（国家地理标志证明商标（武平蜂蜜，2020））",
+      "why_here": "地处山地、丘陵地带；气候温热、多雨、湿润。这些自然条件共同构成了武平蜂蜜生长与生产的基础。 当地林下养蜂为武平林下经济重点产业。",
+      "annual_cycle": "春季山花流蜜、蜂群繁殖，6–7月为蜂蜜采收旺季，夏秋持续取蜜；冬季蜂群越冬管理。",
+      "annual_title": "蜂蜜的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ092": {
+      "place_intro": "宁化县是宁化玉扣纸的核心产区。产区主要分布在治平畲族乡山麓谷口（下坪村茜坑组、圆坑村等造纸作坊及玉扣纸制作工艺传承所），全乡毛竹15.9万亩，为三明市最大的…。（国家地理标志证明商标（“宁化玉扣纸”，2020年6月获批））",
+      "why_here": "地处山地地带；气候湿润。这些自然条件共同构成了宁化玉扣纸生长与生产的基础。 当地明清时期宁化即为福建四大产纸县之一。",
+      "annual_cycle": "谷雨至小满砍伐嫩竹（“竹麻不吃小满水”），石灰水浸泡约40天至3个月成竹麻，夏秋完成踏料、抄纸、焙纸；4月雨季毛竹生长旺季为开工起点",
+      "annual_title": "玉扣纸的一年",
+      "keywords": [
+        "山地",
+        "中海拔",
+        "湿润",
+        "溪流"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ093": {
+      "place_intro": "建瓯市是建瓯毛竹的核心产区。产区主要分布在全域竹林（房道、吉阳、南雅等乡镇为主产区），毛竹林面积145.32万亩。（“中国竹子之乡”“中国笋竹之都”）",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润；土壤以酸性、红壤、黄壤为主。这些自然条件共同构成了建瓯毛竹生长与生产的基础。 当地竹农科学管护竹林（测土配方施肥、滴灌）。",
+      "annual_cycle": "冬笋12月至次年2月、春笋3月下旬至4月底采挖；5月新竹成竹，秋冬为竹材采伐与加工旺季",
+      "annual_title": "毛竹的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "中低海拔",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ094": {
+      "place_intro": "永春县是永春漆篮的核心产区。产区主要分布在仙夹镇龙水村（'漆篮之乡'），始于明正德年间（1506–1522年），迄今约500年。（国家地理标志保护产品（2013年10月通过国家地理标志产品审查，2014…）",
+      "why_here": "地处山地、丘陵地带；气候温热、多雨、湿润。这些自然条件共同构成了永春漆篮生长与生产的基础。 当地村坊手工作坊世代传承。",
+      "annual_cycle": "全年手工制作，工艺分制篮坯（竹编）、灰篮、油漆、漆线堆雕、漆画五大步骤共50余道工序；产品兼具实用与审美价值，远销海外",
+      "annual_title": "漆篮的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "温热",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ095": {
+      "place_intro": "浦城县是浦城桂花的核心产区。产区主要分布在各乡镇（忠信镇等）桂花产区，全县桂花面积7万余亩。（国家地理标志保护产品（浦城丹桂，2010））",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润。这些自然条件共同构成了浦城桂花生长与生产的基础。 当地桂花林人工栽培。",
+      "annual_cycle": "金秋9月下旬至10月中旬为盛花期与采收期（上市高峰在中秋、国庆前后），采收后加工桂花蜜、桂花茶等。",
+      "annual_title": "桂花的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ096": {
+      "place_intro": "明溪县是明溪肉脯干的核心产区。产区主要分布在现辖行政区域；加工以县城及客家乡镇作坊为主，原料猪为保护范围内饲养6–8个月的闽北花猪、武夷黑猪或其杂交一代、二…。（国家地理标志保护产品（国家质检总局2008年第31号公告，2008年3月…）",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润。这些自然条件共同构成了明溪肉脯干生长与生产的基础。 当地明溪为客家侨乡。",
+      "annual_cycle": "原料猪保护范围内饲养6–8个月、出栏体重90–100公斤；加工全年可进行，传统上农历十一月至次年四月气温低、空气干燥为旺季，冬季古法炭火烤制",
+      "annual_title": "肉脯干的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ097": {
+      "place_intro": "沙县区是沙县郑湖板鸭的核心产区。产区主要分布在郑湖乡（“板鸭之乡”），全乡年产销量约80万只。（沙县板鸭为全国名特优新农产品）",
+      "why_here": "地处丘陵、河谷地带；气候温暖、多雨、湿润；河谷等水系带来稳定水汽。这些自然条件共同构成了沙县郑湖板鸭生长与生产的基础。 当地农家冬季腌制晾晒。",
+      "annual_cycle": "每年冬季（11月至次年2月）为制作高峰，春节前大量上市，为闽中年货代表",
+      "annual_title": "郑湖板鸭的一年",
+      "keywords": [
+        "丘陵",
+        "河谷",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ098": {
+      "place_intro": "清流县是清流豆腐皮的核心产区。产区主要分布在现辖行政区域（地理标志保护范围），传统制作技艺以嵩溪镇等为代表。（国家地理标志保护产品（2007年国家质检总局第200号公告））",
+      "why_here": "地处山地、丘陵、河谷地带；气候温暖、多雨、湿润。这些自然条件共同构成了清流豆腐皮生长与生产的基础。 当地传统手工作坊制作（选豆、磨浆、焖煮、捞皮、上浆、烘烤）。",
+      "annual_cycle": "全年制作（传统手工四季均可生产）；工艺：选豆→去皮→浸泡→磨浆→过滤→煮浆→成膜→揭皮→晾干→熬浆→上浆→烘烤→摊凉→包装，豆腐皮宜烘干不宜晒",
+      "annual_title": "豆腐皮的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "河谷",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ099": {
+      "place_intro": "武夷山市是岚谷熏鹅的核心产区。产区主要分布在岚谷乡及周边，选用当地放养闽北白鹅。（国家地理标志证明商标（岚谷熏鹅，2014））",
+      "why_here": "地处山地、丘陵、河谷地带；河谷环绕。这些自然条件共同构成了岚谷熏鹅生长与生产的基础。 当地选用百日龄闽北白鹅。",
+      "annual_cycle": "全年制作销售；以节庆（春节等）前后为消费与加工高峰，具体月份差异无来源，未细分推断。",
+      "annual_title": "岚谷熏鹅的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "河谷"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ100": {
+      "place_intro": "建瓯市是建瓯板鸭的核心产区。产区主要分布在现辖行政区域；乡村以本地稻谷散养百日的土鸭（半番鸭或全番鸭）为原料，加工以城乡作坊为主。（国家地理标志证明商标（“建瓯板鸭”，2018年12月27日核准注册，20…）",
+      "why_here": "地处山地、丘陵、河谷地带；气候温暖、多雨、湿润；湿地环绕。这些自然条件共同构成了建瓯板鸭生长与生产的基础。 当地建瓯板鸭制作技艺可溯至唐、兴于宋。",
+      "annual_cycle": "每年农历九月开始制作、翌年二月二收盘，依赖冬季霜风自然风干5–7日；“看天做鸭”，霜风天制作的板鸭最佳",
+      "annual_title": "板鸭的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "河谷",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ101": {
+      "place_intro": "厦门市是厦门馅饼的核心产区。产区主要分布在（鼓浪屿为发源与核心产区，思明区大同路等老字号集聚）。（鼓浪屿馅饼手工制作技艺为福建省级非物质文化遗产）",
+      "why_here": "地处海岸、岛屿、平原地带；气候温热、多雨、湿润。这些自然条件共同构成了厦门馅饼生长与生产的基础。 当地老字号饼铺（庆兰1892年、鼓浪屿1940年）传承。",
+      "annual_cycle": "全年生产销售；春节、中秋等节庆与旅游旺季（夏季）为销售高峰",
+      "annual_title": "馅饼的一年",
+      "keywords": [
+        "海岸",
+        "岛屿",
+        "温热",
+        "雨水适中",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ102": {
+      "place_intro": "惠安县是崇武鱼卷的核心产区。产区主要分布在崇武镇（崇武半岛海岸），'崇武鱼卷'为惠安县传统技艺与地理标志产品。（国家地理标志证明商标（'崇武鱼卷'，2015年3月注册））",
+      "why_here": "地处海岸、平原地带；气候温暖、雨水适中、湿润度中等；浅海等水系带来稳定水汽。这些自然条件共同构成了崇武鱼卷生长与生产的基础。 当地渔港手工坊制作：去骨取肉→加番薯粉等辅料→搅拌发酵→卷条入蒸。",
+      "annual_cycle": "选用崇武海域盛产的马鲛鱼、鳗鱼、鲨鱼为主料，配番薯粉等辅料搅拌发酵、卷条入蒸；全年制作，开渔季（8月）鲜鱼原料充足，为闽南婚宴与节庆传统菜肴",
+      "annual_title": "崇武鱼卷的一年",
+      "keywords": [
+        "海岸",
+        "平原",
+        "温暖",
+        "雨水适中"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ103": {
+      "place_intro": "永春县是永春篾香的核心产区。产区主要分布在达埔镇（汉口村等），中国香都核心区。（国家地理标志保护产品（永春篾香，2006））",
+      "why_here": "地处丘陵、山地地带；气候温热、多雨、湿润。这些自然条件共同构成了永春篾香生长与生产的基础。 当地以竹篾为骨、裹覆香料粉的传统手工制香。",
+      "annual_cycle": "全年制香，晾晒依赖晴好天气（春晒7–8小时、夏秋5–6小时）；春节、清明、中秋等用香节日前为备货高峰。",
+      "annual_title": "篾香的一年",
+      "keywords": [
+        "丘陵",
+        "山地",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ104": {
+      "place_intro": "永春县是永春老醋的核心产区。产区主要分布在现辖行政区域；酿坊集中于县城及周边乡镇，全县老醋酿造作坊、个体100多户。（国家地理标志保护产品（2009年批准））",
+      "why_here": "地处山地、丘陵、盆地地带；气候温热、多雨、湿润。这些自然条件共同构成了永春老醋生长与生产的基础。 当地永春老醋始于北宋初期。",
+      "annual_cycle": "全年酿造：糯米蒸煮、拌红曲、取酒、醋酸发酵、陈酿等50余道工序，一次酿造历时三年以上成醋、五年以上为年份醋；原料糯米、福建红曲、芝麻",
+      "annual_title": "老醋的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "盆地",
+        "温热",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ105": {
+      "place_intro": "晋江市是深沪水丸的核心产区。产区主要分布在泉州市晋江市深沪镇（深沪渔港一带，宝泉老街老字号集聚）。（“深沪鱼丸”地理标志证明商标于2011年12月经国家工商总局商标局公告核…）",
+      "why_here": "地处海岸、台地、平原地带；气候雨水适中；滨海、浅海等水系带来稳定水汽。这些自然条件共同构成了深沪水丸生长与生产的基础。 当地深沪渔业重镇。",
+      "annual_cycle": "全年生产销售（鲜鱼当天现买现做）；入秋后马鲛鱼等海产原料活跃，冬季水丸汤热食为消费高峰",
+      "annual_title": "深沪水丸的一年",
+      "keywords": [
+        "海岸",
+        "台地",
+        "平原",
+        "温热",
+        "雨水适中"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ106": {
+      "place_intro": "安溪县是湖头米粉的核心产区。产区主要分布在湖头镇现辖行政区域（地理标志保护范围），福寿村等村为主要加工村。（国家地理标志保护产品（国家质检总局2017年认定））",
+      "why_here": "地处丘陵、河谷地带；气候温暖、多雨、湿润。这些自然条件共同构成了湖头米粉生长与生产的基础。 当地农户凌晨制粉、天亮前晾晒。",
+      "annual_cycle": "全年靠天晾晒生产：三伏天（7月）晴热天气高产，农历八月底（9–10月）起进入生产销售旺季，年节前需求最高；工艺：选米→浸泡→磨浆→压干→水煮→搅拌碾压→制粉→焯粉漂水→摊凉成型→晒干→包装",
+      "annual_title": "湖头米粉的一年",
+      "keywords": [
+        "丘陵",
+        "河谷",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ107": {
+      "place_intro": "永泰县是永泰李干的核心产区。产区主要分布在现辖行政区域，原料为永泰芙蓉李（保护范围内8–9成熟鲜果）。（国家地理标志保护产品（永泰李干，2007））",
+      "why_here": "永泰李干选用保护范围内8–9成熟的芙蓉李，经选果、摇青、预晒、腌渍、复晒、糖卤、烘干等工序制成，产地与加工地均为永泰县。",
+      "annual_cycle": "芙蓉李7月中旬至8月上旬采收，7–9月集中晾晒加工李干，全年储藏销售。",
+      "annual_title": "李干的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "地形",
+        "气候",
+        "人地关系"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ108": {
+      "place_intro": "闽侯县、福州市区是福州线面的主要产区。产区主要分布在闽侯县荆溪镇埔前村、高新区南屿镇南前村、闽清县、福清市东张镇等福州传统线面产区。（闽侯线面手工制作技艺列入福州市第五批市级非物质文化遗产代表性项目名录（2…）",
+      "why_here": "地处平原、河谷地带；气候温暖、多雨、湿润。这些自然条件共同构成了福州线面生长与生产的基础。 当地线面作坊多为家庭传承。",
+      "annual_cycle": "全年制作但“靠天吃饭”：晴天凌晨2–3时开始和面，经和面、揉条、松条、串面、拉面、晾晒等十余道工序历时9–11小时制成；雨天、潮湿或过干天气无法制作，梅雨与台风季制面受限",
+      "annual_title": "线面的一年",
+      "keywords": [
+        "平原",
+        "河谷",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ109": {
+      "place_intro": "鼓楼区是福州肉燕的核心产区。产区主要分布在福州市鼓楼区三坊七巷一带（同利肉燕老铺，1876年设于光禄坊与南后街交叉路口）。（福州同利肉燕制作技艺为福建省省级非物质文化遗产代表性项目（福州晚报载20…）",
+      "why_here": "地处盆地、平原、丘陵地带；气候温暖、多雨。这些自然条件共同构成了福州肉燕生长与生产的基础。 当地三坊七巷历史文化街区。",
+      "annual_cycle": "全年制作销售；春节年货与年节宴席为消费高峰（“无燕不成宴，无燕不成年”），婚丧喜庆、宴席“头道吉祥菜”支撑全年消费",
+      "annual_title": "肉燕的一年",
+      "keywords": [
+        "盆地",
+        "平原",
+        "丘陵",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ110": {
+      "place_intro": "福州市区是福州鱼丸的核心产区。产区主要分布在为主产区与消费中心，老字号'永和鱼丸'等分布于鼓楼区等地。（国家地理标志证明商标）",
+      "why_here": "地处平原、河谷地带；气候温暖、多雨、湿润。这些自然条件共同构成了福州鱼丸生长与生产的基础。 当地老字号作坊凌晨打浆挤丸。",
+      "annual_cycle": "全年制作：夏天多用鲨鱼、马鲛鱼肉做鱼丸，冬天多用鳗鱼；逢年过节为最畅销期，春节前为制作高峰",
+      "annual_title": "鱼丸的一年",
+      "keywords": [
+        "平原",
+        "河谷",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ111": {
+      "place_intro": "福州市区是福建老酒的主要产区。产区主要分布在及闽侯等黄酒酿造产区（品牌化生产）。",
+      "why_here": "福建老酒为福州传统红曲黄酒，依托闽江流域糯米与红曲酿造，秋冬为传统酿酒季；品牌地理标志信息待核实。",
+      "annual_cycle": "闽派黄酒以秋冬为传统酿酒季，圆糯米收获后入缸慢发酵；成品常年储藏销售。具体品牌酿造周期无专项来源。",
+      "annual_title": "福建老酒的一年",
+      "keywords": [
+        "平原",
+        "河谷",
+        "水文",
+        "人地关系"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ112": {
+      "place_intro": "涵江区、城厢区是兴化桂圆的核心产区。产区主要分布在莆田市所辖行政区域（地理标志保护范围），主产于木兰溪、延寿溪、萩芦溪两岸龙眼产区（涵江、城厢等）。（国家地理标志保护产品（“莆田桂圆”，国家质检总局2008年第132号公告…）",
+      "why_here": "地处平原、丘陵地带；气候湿润；土壤以酸性、红壤为主。这些自然条件共同构成了兴化桂圆生长与生产的基础。 当地莆田龙眼为“四大名果”之一。",
+      "annual_cycle": "8月底至11月中旬莆田不同龙眼品种依次成熟，成熟度九成、可溶性固形物≥18.5%时采收；经剪果、浸洗、摇砂挂黄、预晒、初焙（65–70℃/24小时）、复焙（55–65℃/4–8小时）制成桂圆干",
+      "annual_title": "兴化桂圆的一年",
+      "keywords": [
+        "平原",
+        "丘陵",
+        "湿润",
+        "红壤",
+        "酸性土壤"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ113": {
+      "place_intro": "涵江区、城厢区是兴化米粉的核心产区。产区主要分布在莆田市涵江区、城厢区等主产区（莆田史志记载传统产地以荔城区黄石镇西洪、清江村为主）。（“莆田兴化米粉”于2016年获国家地理标志证明商标）",
+      "why_here": "地处平原、丘陵、台地地带；气候温热、多雨。这些自然条件共同构成了兴化米粉生长与生产的基础。 当地黄石、涵江等乡镇传统米粉作坊。",
+      "annual_cycle": "秋冬两季气候干燥、微风习习，为制晒米粉的最佳气候，夏季烈日高温不宜晒粉；中秋“送秋”与春节年货为消费高峰",
+      "annual_title": "兴化米粉的一年",
+      "keywords": [
+        "平原",
+        "丘陵",
+        "台地",
+        "低海拔",
+        "温热"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ114": {
+      "place_intro": "上杭县是上杭萝卜干的核心产区。产区主要分布在所辖临城镇、湖洋镇、中都镇、下都镇、庐丰畲族乡、蓝溪镇、溪口镇、白砂镇等乡镇（农产品地理标志保护范围）。（农产品地理标志（'上杭萝卜干'，农业农村部2020年12月登记））",
+      "why_here": "地处山地、丘陵、河谷地带；气候温热、多雨、湿润。这些自然条件共同构成了上杭萝卜干生长与生产的基础。 当地客家传统制作技艺：采收→去杂→腌制→清洗→晾晒→漂烫→再晾晒→装坛→封口→贮藏（'晒、腌、藏'）。",
+      "annual_cycle": "萝卜秋后至小雪播种，冬至前后采挖并腌制（'晒、腌、藏'三道工序），腊月为腌制最佳时节；半年后开坛，次年夏季起上市",
+      "annual_title": "萝卜干的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "河谷",
+        "温热",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ115": {
+      "place_intro": "武平县是武平猪胆干的主要产区。产区主要分布在客家地区（民间作坊与加工企业）。",
+      "why_here": "地处山地、丘陵地带；气候温热、多雨。这些自然条件共同构成了武平猪胆干生长与生产的基础。 当地洗料、配料、腌制、晾晒、压扁、整形、检验七道工序。",
+      "annual_cycle": "每年秋末冬初天气晴朗时为生产好季节，最佳制作时机为冬至到大寒（12月下旬至1月）；成品常年储藏销售。",
+      "annual_title": "猪胆干的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "温暖",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ116": {
+      "place_intro": "连城县是连城红心地瓜干的核心产区。产区主要分布在现辖行政区域（地理标志保护范围），红心番薯种植与地瓜干加工分布于全县各乡镇。（国家地理标志保护产品（国家质检总局2007年第210号公告，2007年1…）",
+      "why_here": "地处山地、丘陵地带；气候温暖、多雨、湿润；土壤以酸性、砂质土为主。这些自然条件共同构成了连城红心地瓜干生长与生产的基础。 当地连城地瓜干制作史300余年。",
+      "annual_cycle": "红心番薯一年一季：7月上中旬插植，初霜前（9月中旬至11月下旬）分批挖收；加工经选薯、去皮、成型、浸泡、蒸煮（100℃七成熟）、烘烤（15–20小时）而成，传统工艺为“三蒸三晒”",
+      "annual_title": "红心地瓜干的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ117": {
+      "place_intro": "长汀县是长汀豆腐干的核心产区。产区主要分布在龙岩市长汀县（古城镇、汀州镇等客家聚落，传统名产遍及全县）。（据《汀州府志》记载始于唐朝开元年间，被赞为“闽西八大干”之首）",
+      "why_here": "地处丘陵地带；气候湿润。这些自然条件共同构成了长汀豆腐干生长与生产的基础。 当地客家先民创制。",
+      "annual_cycle": "全年制作销售；春节等客家年节为消费高峰（客家豆腐干为年货“最受欢迎”的特色年货之一）",
+      "annual_title": "豆腐干的一年",
+      "keywords": [
+        "丘陵",
+        "温暖",
+        "多雨",
+        "湿润",
+        "农田"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ118": {
+      "place_intro": "新罗区是龙岩咸酥花生的核心产区。产区主要分布在龙岩市新罗区现辖行政区域（地理标志保护范围），花生原料种植与加工均在新罗区。（国家地理标志保护产品（2008年国家质检总局第64号公告））",
+      "why_here": "地处山地、丘陵、河谷地带；气候温热、多雨、湿润。这些自然条件共同构成了龙岩咸酥花生生长与生产的基础。 当地新罗区传统种植与加工：秋花生收获后经湿焙或干焙加工。",
+      "annual_cycle": "花生7月下旬–8月上旬播种、11月下旬–12月初收获；原料经湿焙或干焙加工，产品酥、香、脆、咸中略带甘甜；全年加工销售",
+      "annual_title": "咸酥花生的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "河谷",
+        "温热",
+        "多雨"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ119": {
+      "place_intro": "建瓯市是建瓯锥栗的核心产区。产区主要分布在海拔300–1000米山地，龙村乡、川石乡为三大主产区之二。（国家地理标志保护产品（建瓯锥栗，2004））",
+      "why_here": "地处山地、丘陵地带；气候多雨、湿润；土壤以酸性、红壤、黄壤为主。这些自然条件共同构成了建瓯锥栗生长与生产的基础。 当地山地人工栽培。",
+      "annual_cycle": "6月开花、9月结果，9月下旬至11月上旬采收上市（9月底建瓯最早开始采摘，10月为采收旺季）。",
+      "annual_title": "锥栗的一年",
+      "keywords": [
+        "山地",
+        "丘陵",
+        "中海拔",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    },
+    "FJ120": {
+      "place_intro": "建阳区是建盏的核心产区。产区主要分布在南平市建阳区现辖行政区域（地理标志保护范围）；核心窑场与原料地为水吉镇（后井、南山一带建窑遗址区），南浦溪中游。（国家地理标志保护产品（国家质检总局2016年第128号公告，2016年1…）",
+      "why_here": "地处丘陵、河谷地带；气候温暖、多雨、湿润。这些自然条件共同构成了建盏生长与生产的基础。 当地建窑为宋代八大名窑之一。",
+      "annual_cycle": "全年可烧制；传统龙窑柴烧一般避开梅雨潮湿季节，约6月雨季过后点火、农历年前（12月前后）停窑，一次柴烧约三天三夜70余小时；电窑、气窑不受季节限制",
+      "annual_title": "建盏的一年",
+      "keywords": [
+        "丘陵",
+        "河谷",
+        "温暖",
+        "多雨",
+        "湿润"
+      ],
+      "living": {},
+      "basis": {
+        "place_intro": [
+          "county",
+          "geo_type",
+          "production_area",
+          "geographical_indication"
+        ],
+        "why_here": [
+          "terrain",
+          "temperature_class",
+          "precipitation_class",
+          "moisture_class",
+          "water_type",
+          "ecosystem",
+          "soil_class",
+          "soil_type",
+          "human_environment",
+          "terroir_summary"
+        ],
+        "annual_cycle": [
+          "seasonality_summary"
+        ],
+        "keywords": [
+          "terroir_tags",
+          "key_terroir_factors"
+        ]
+      }
+    }
+  }
+}

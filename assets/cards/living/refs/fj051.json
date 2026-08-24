@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ051",
+ "name": "顺昌竹荪",
+ "category": "菌类",
+ "county": "顺昌县",
+ "city": "南平市",
+ "production_area": "顺昌县双溪街道、郑坊、元坑、大干、埔上、洋墩、仁寿、洋口、建西、大历、岚下、高阳等12个乡镇",
+ "geographical_indication": "农产品地理标志（2009），2025年转化为国家地理标志保护产品",
+ "seasonality_summary": "1–4月种植（棚栽），5月中旬开始出菇采收，采收季持续至9月，8月为采收高峰。",
+ "human_environment": "棚栽与林下栽培结合，栽培原料以竹制品下脚料、木屑、秸秆等为主，形成循环利用模式。",
+ "production_environment": "顺昌县为全国竹荪主产区、中国竹子之乡，竹荪产业实行地理标志保护。",
+ "notes": "坐标为顺昌县行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "大棚栽培下种",
+  "2–4月下种",
+  "下种、覆土",
+  "种植收尾、田间管理",
+  "开始采收",
+  "采收、烘干",
+  "采收、加工",
+  "集中采收",
+  "采收收尾",
+  "清棚、备料",
+  "",
+  ""
+ ],
+ "sources_digest": [
+  {
+   "name": "顺昌竹荪地理标志保护范围资料",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://sinogi.cn/wap/index.php/product/zxshow/id/1410/nid/21321",
+   "quote": "顺昌竹荪农产品地理标志地域保护范围为……12个镇乡。"
+  },
+  {
+   "name": "顺昌竹荪地理标志产品保护要求",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://sinogi.cn/wap/index.php/product/zxshow/id/1410/nid/21321",
+   "quote": "海拔高度150～500之间……土壤……pH值5～6。"
+  },
+  {
+   "name": "南平市生态环境局·项目环评文本",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "medium",
+   "url": "https://hbj.np.gov.cn/cms/pages/430541208278100005/attachments/新型环保混凝剂项目文本 - 公示稿.pdf",
+   "quote": "年平均气温15～19℃之间……年均降水量1600mm～1900mm。"
+  },
+  {
+   "name": "中国食用菌商务网",
+   "type": "行业协会",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://zixun.mushroommarket.net/201303/04/155199.html",
+   "quote": "2月～4月种植，5月中旬就可采收，9月中旬结束。"
+  },
+  {
+   "name": "大武夷新闻网·高阳乡竹荪采收报道",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://www.greatwuyi.com/info/content/202508/11/c1554221.html",
+   "quote": "迎来了它们采收的高峰期。"
+  }
+ ]
+}

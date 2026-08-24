@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ091",
+ "name": "武平蜂蜜",
+ "category": "蜂产品",
+ "county": "武平县",
+ "city": "龙岩市",
+ "production_area": "武平县现辖行政区域林下养蜂基地（万安镇、湘店镇等），林下养蜂经营面积14.2万亩",
+ "geographical_indication": "国家地理标志证明商标（武平蜂蜜，2020）",
+ "seasonality_summary": "春季山花流蜜、蜂群繁殖，6–7月为蜂蜜采收旺季，夏秋持续取蜜；冬季蜂群越冬管理。",
+ "human_environment": "林下养蜂为武平林下经济重点产业，蜂农依托山林放蜂与采收，全县养蜂6.24万箱。",
+ "production_environment": "武平为省级林下经济重点县，武平蜂蜜获国家地理标志证明商标并入选闽西八大鲜。",
+ "notes": "坐标为武平县行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "越冬管理、补饲",
+  "蜂群繁殖管理",
+  "蜂群繁殖、春蜜准备",
+  "采收春蜜",
+  "取蜜、蜂群扩繁",
+  "集中采收夏蜜",
+  "采收蜂蜜（湘店镇丰收季）",
+  "取蜜",
+  "秋蜜采收",
+  "取蜜、留足越冬饲料",
+  "补饲、蜂箱保温",
+  "越冬管理"
+ ],
+ "sources_digest": [
+  {
+   "name": "武平县人民政府·政府文件",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://www.wp.gov.cn/zwgk/gg/202503/P020250324536224131406.pdf",
+   "quote": "常年平均气温20.1℃，……年平均降雨量1701.6毫米。"
+  },
+  {
+   "name": "福建省人民政府网·绿水青山酿幸福蜜",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://www.fujian.gov.cn/zwgk/ztzl/sxzygwzxsgzx/sdjj/lsjj/202506/t20250621_6930063.htm",
+   "quote": "时值六月蜂蜜丰收季。"
+  },
+  {
+   "name": "中国食品安全报/福建省林业局",
+   "type": "政府",
+   "evidence": "B",
+   "confidence": "high",
+   "url": "https://cfsn.cn/news/detail/111/143137.html",
+   "quote": "国家知识产权局核准武平蜂蜜为地理标志证明商标。"
+  },
+  {
+   "name": "闽西新闻网·武平生态",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://www.fjwpxww.cn/2015-05/05/content_72888.htm",
+   "quote": "年平均降水量1500-1900毫米，相对湿度72-84%，森林覆盖率79.7%。"
+  },
+  {
+   "name": "武平县人民政府网（县域坐标近似）",
+   "type": "政府",
+   "evidence": "C",
+   "confidence": "low",
+   "url": "http://www.wp.gov.cn",
+   "quote": ""
+  }
+ ]
+}

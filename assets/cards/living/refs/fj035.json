@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ035",
+ "name": "福州橄榄",
+ "category": "水果",
+ "county": "闽侯县|闽清县",
+ "city": "福州市",
+ "production_area": "闽江中下游两岸冲积土及海拔250米以下丘陵山坡，核心为闽侯县白沙、鸿尾、竹岐等乡镇",
+ "geographical_indication": "福州橄榄（农产品地理标志）、闽侯橄榄（地理标志证明商标）",
+ "seasonality_summary": "10月前后果实成熟，10–12月采收上市；闽侯县为全国橄榄主产区（全国每4颗橄榄1颗来自闽侯）。",
+ "human_environment": "河谷与坡地果园人工栽培，闽侯县为中国橄榄之乡，鲜食与加工（榄角、蜜饯）并重。",
+ "production_environment": "福州橄榄种植系统入选中国重要农业文化遗产候选项目。",
+ "notes": "坐标为闽侯县行政区域近似中心点，并非具体生产地；花期物候资料不足，未作推断。",
+ "phenology_human": [
+  "果园清园",
+  "备耕",
+  "施肥、修剪",
+  "果园管理",
+  "果园管理",
+  "水肥管理、防虫",
+  "水肥管理",
+  "水肥管理",
+  "采摘准备",
+  "开始采摘上市",
+  "集中采摘、鲜销与加工",
+  "采摘收尾、加工储藏"
+ ],
+ "sources_digest": [
+  {
+   "name": "福州橄榄农产品地理标志质量控制技术规范",
+   "type": "国家标准",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://www.sinogi.cn/wap/index.php/product/zxshow/id/1638/nid/3253",
+   "quote": "海拔250米以下，土质属红壤、壤土、潮土。总保护面积2.5万公顷。"
+  },
+  {
+   "name": "中国日报·闽侯橄榄地标授权报道",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "high",
+   "url": "https://www.chinadaily.com.cn/m/fujian/fuzhou_c/2011-11/18/content_14118834.htm",
+   "quote": "海拔应在250米以下，包括白沙、鸿尾、竹岐、小箬、荆溪、上街……12个乡镇（街道）。"
+  },
+  {
+   "name": "福州新闻网·橄榄种植系统报道",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://news.fznews.com.cn/fzyw/20260331/69cb1c0ed7afa.shtml",
+   "quote": "福州橄榄主要分布于闽江中下游两岸冲积土及海拔250米以下的丘陵山坡上。"
+  },
+  {
+   "name": "福州新闻网·闽侯橄榄央视报道",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://xczx.fznews.com.cn/node/15926/20221216/639c51117fbc8.shtml",
+   "quote": "土层深厚，土质疏松肥沃、呈弱酸性。"
+  },
+  {
+   "name": "福州新闻网·乡村振兴（12月产量报道）",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://xczx.fznews.com.cn/node/15926/20221216/639c51117fbc8.shtml",
+   "quote": "闽侯橄榄火上央视，今年产量预计可达5万吨。"
+  }
+ ]
+}

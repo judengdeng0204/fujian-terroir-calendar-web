@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ071",
+ "name": "桐江鲈鱼",
+ "category": "水产",
+ "county": "福鼎市",
+ "city": "宁德市",
+ "production_area": "福鼎市桐江溪流域和桐江溪入海口至沙埕港口以内的海淡水水域（山前、桐山、桐城、贯岭、前岐、点头、白琳、佳阳、龙安、店下、沙埕等11个乡镇）",
+ "geographical_indication": "农产品地理标志（桐江鲈鱼，2010）、中欧地理标志协定保护名录",
+ "seasonality_summary": "繁殖期11月至翌年1月，养殖周期以春夏育苗、秋冬捕捞为主；收获时间集中在10–11月。",
+ "human_environment": "网箱/鱼排人工养殖，金砖会晤专供等品牌化经营，鲈鱼养殖为福鼎渔业支柱。",
+ "production_environment": "福鼎为中国鲈鱼之乡，桐江鲈鱼获农产品地理标志与中欧地理标志互认。",
+ "notes": "坐标为福鼎市沿海区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "亲鱼管理与育苗准备",
+  "养殖管理",
+  "投苗、投喂管理",
+  "投喂、病害防治",
+  "强化投喂",
+  "养殖管理",
+  "水质调控",
+  "养殖管理",
+  "育肥投喂",
+  "捕捞上市",
+  "集中捕捞、上市",
+  "亲鱼管理"
+ ],
+ "sources_digest": [
+  {
+   "name": "桐江鲈鱼地理标志产品保护要求",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://www.sinogi.cn/wap/index.php/product/zxshow/id/1809/nid/9503",
+   "quote": "桐江鲈鱼主要分布于福建省福鼎市行政区内的十一个乡镇……的海淡水水域。"
+  },
+  {
+   "name": "中国驻欧盟使团·桐江鲈鱼中欧地理标志产品推介",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://eu.china-mission.gov.cn/chn/ssht/ddbz20210609/202206/t20220630_10713141.htm",
+   "quote": "平均气温19.5℃，无霜287天，海水盐度14-16‰。"
+  },
+  {
+   "name": "全国名特优新农产品名录",
+   "type": "专业数据库",
+   "evidence": "B",
+   "confidence": "high",
+   "url": "http://mtyx.aqsc.org/Home/Tpsj/index?id=y6Tr7m99aZCn5gem",
+   "quote": "收获时间10月-11月。"
+  },
+  {
+   "name": "福鼎市人民政府网（区域坐标近似）",
+   "type": "政府",
+   "evidence": "C",
+   "confidence": "low",
+   "url": "http://www.fuding.gov.cn",
+   "quote": ""
+  },
+  {
+   "name": "百度百科·桐江鲈鱼",
+   "type": "商业网站",
+   "evidence": "D",
+   "confidence": "low",
+   "url": "https://baike.baidu.com/item/桐江鲈鱼/690474",
+   "quote": "2010年04月16日，中华人民共和国农业部批准对桐江鲈鱼实施农产品地理标志登记保护。"
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ018",
+ "name": "建阳桔柚",
+ "category": "水果",
+ "county": "建阳区",
+ "city": "南平市",
+ "production_area": "建阳区现辖行政区域（地理标志保护范围），主产区分布于海拔120–300米的丘陵地区",
+ "geographical_indication": "国家地理标志保护产品（国家质检总局2009年批准）；地理标志证明商标；2008年列入第五批国家级农业标准化示范区",
+ "seasonality_summary": "11月下旬—12月上旬成熟，12月上旬采收贮藏；花期4月上中旬现花、下旬盛花；果实耐贮藏，可贮至翌年春季",
+ "human_environment": "丘陵果园人工栽培，实行水平梯田与自然草生栽培管理，嫁接繁殖",
+ "production_environment": "11月下旬—12月上旬成熟，12月上旬采收；果实耐贮藏，可长期保鲜上市",
+ "notes": "坐标为建阳区行政区域近似中心点，并非具体生产地。成熟期以建阳市政府资料（11月下旬–12月上旬）为准；农博品种库载12月中旬成熟、12月上旬采收贮藏，存在小差异并保留。",
+ "phenology_human": [
+  "冬季修剪、清园、施基肥。",
+  "果园春管准备。",
+  "春梢管理、施肥。",
+  "花期管理、保花保果。",
+  "疏果、肥水管理。",
+  "夏梢管理、病虫害防治。",
+  "果园肥水管理。",
+  "果园管理，防治病虫害。",
+  "肥水管理。",
+  "采收前果园管理。",
+  "成熟果开始采收。",
+  "集中采收、分级包装、贮藏保鲜。"
+ ],
+ "sources_digest": [
+  {
+   "name": "建阳市人民政府『名优水果』页",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://fjjy.gov.cn/cms/html/jyqrmzf/2026-05-20/1473200648.html",
+   "quote": "建阳桔柚……11月下旬—12月上旬成熟……建阳桔柚地理标志产品保护范围为福建省建阳市现辖行政区域。"
+  },
+  {
+   "name": "建阳区人民政府『地理特征』页",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://www.fjjy.gov.cn/cms/html/jyqrmzf/dltz/index.html",
+   "quote": "建阳属中亚热带季风气候，光热资源丰富，冬短夏长……年平均气温18.1℃，无霜期322天，年平均降雨量1742毫米，年日照平均1802小时。"
+  },
+  {
+   "name": "万方数据《建阳橘柚在广西引种主要生物学性状评价研究》（学位论文）",
+   "type": "学术论文",
+   "evidence": "B",
+   "confidence": "medium",
+   "url": "https://d.wanfangdata.com.cn/thesis/Y3436051",
+   "quote": "建阳橘柚(Citrus reticulata×Citrus paradis)是近年来广西引种的柑橘品种之一……3月上旬抽发春梢，3月中旬现蕾，3月下旬开花，花期持续到4月中旬……12月上中旬果实成熟。"
+  },
+  {
+   "name": "《地理标志产品 建阳桔柚》标准技术要求（转载）",
+   "type": "行业标准",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://www.kem-china.com/index.php?_a=article_content&_m=mod_article&article_id=3251",
+   "quote": "选择海拔120m~300m丘陵地区，年平均气温18.1°C以上，年平均日照1802.7小时以上……的区域为种植区。"
+  },
+  {
+   "name": "农博数据中心《建阳桔柚》品种库",
+   "type": "专业数据库",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://shuju.aweb.com.cn/breed/20121011/182714.html",
+   "quote": "在建阳3月中旬萌芽，4月上旬现花，12月中旬果实成熟……适时采收，12月上旬采收贮藏。"
+  }
+ ]
+}

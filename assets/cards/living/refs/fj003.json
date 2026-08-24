@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ003",
+ "name": "松溪绿茶",
+ "category": "茶",
+ "county": "松溪县",
+ "city": "南平市",
+ "production_area": "松溪县全县产茶乡镇（郑墩、祖墩、渭田、溪东等），海拔300–500米茶园",
+ "geographical_indication": "国家地理标志保护产品、地理标志证明商标（中欧地理标志协定首批保护名录）",
+ "seasonality_summary": "春茶3月下旬开园采摘至5月，4月为采制高峰期；9–10月少量秋茶，其余月份茶园管理与储藏。",
+ "human_environment": "山地茶园人工栽培，蒸青绿茶加工是松溪传统制茶方式，县内为福建省最大蒸青绿茶出口基地。",
+ "production_environment": "全国绿色食品原料（茶叶）标准化生产基地县，茶园绿色生产与质量溯源体系。",
+ "notes": "坐标为松溪县行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "茶园封园管理",
+  "茶园备耕、施基肥",
+  "3月下旬春茶开始采摘",
+  "集中采摘并制作蒸青/烘青绿茶",
+  "春茶制作收尾，茶园管理",
+  "茶园除草、少量夏茶采制",
+  "病虫害防治、茶园修剪",
+  "茶园管理",
+  "秋茶少量采摘制作",
+  "秋茶制作收尾",
+  "茶园深耕、冬管",
+  "茶园封园"
+ ],
+ "sources_digest": [
+  {
+   "name": "松溪县人民政府·县茶业发展中心提案答复函",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://www.songxi.gov.cn/cms/html/sxxrmzf/2022-07-12/2118685340.html",
+   "quote": "“松溪绿茶”“松溪红茶”注册为中国地理标志证明商标。"
+  },
+  {
+   "name": "福建省市场监督管理局",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://scjgj.fujian.gov.cn/yw/sx/202008/t20200804_5341035.htm",
+   "quote": "松溪绿茶继入选全国名特优新农产品名录后，先后获得福建省首个绿茶类国家地理标志证明商标、中国驰名商标、国家地理标志保护产品等荣誉。"
+  },
+  {
+   "name": "松溪县人民政府·环境影响评价报告",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "medium",
+   "url": "https://songxi.gov.cn/cms/pages/430522682084140001/attachments/钱园桥新村建设项目环评.pdf",
+   "quote": "年平均气温18.1℃，最热的7月平均气温28.1℃，年平均降水量1658.8mm。"
+  },
+  {
+   "name": "福建茶叶网（fjtea.cn）",
+   "type": "行业协会",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://fjtea.cn/index.php/News/detail/id/26348.html",
+   "quote": "山地土壤多属酸性岩红壤，并含有丰富的腐殖质，土层深厚疏松，茶叶生产地海拔在300米到500米之间。"
+  },
+  {
+   "name": "中国网海峡频道/松溪新闻网",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://www.songxixww.com/2024-05/07/content_1704002.htm",
+   "quote": "芬芳四月，草长莺飞，正是一年当中采茶的好时节。随着春茶的全面开采……"
+  }
+ ]
+}

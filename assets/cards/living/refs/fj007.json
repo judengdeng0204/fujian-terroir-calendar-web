@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ007",
+ "name": "坦洋工夫",
+ "category": "茶",
+ "county": "福安市",
+ "city": "宁德市",
+ "production_area": "福安市现辖行政区域，核心为社口镇坦洋村及白云山麓各茶区",
+ "geographical_indication": "国家地理标志保护产品（2007）、农产品地理标志（2020）",
+ "seasonality_summary": "3月中下旬萌芽，4月上旬开采，春茶（谷雨至立夏后七天）为采制高峰，6月夏茶、9–10月秋茶；全年生长期约220天。",
+ "human_environment": "山地茶园人工栽培，采青、萎凋、揉捻、发酵、干燥、精制的传统红茶工艺，社口坦洋村为核心产区。",
+ "production_environment": "福安市为中国茶叶之乡，坦洋工夫获农产品地理标志登记，实行绿色生产。",
+ "notes": "坐标为福安市行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "茶园冬管",
+  "茶园备耕、追肥",
+  "茶园管理，为开采做准备",
+  "春茶开采，萎凋、揉捻、发酵、干燥",
+  "集中采青、制茶、精制加工",
+  "夏茶采制",
+  "暑茶少量采制、茶园管理",
+  "茶园管理",
+  "秋茶采制",
+  "采制收尾",
+  "茶园冬管",
+  "茶园封园"
+ ],
+ "sources_digest": [
+  {
+   "name": "福安市农业农村局批复",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://www.fjfa.gov.cn/bm/nyj/zfxxgkml/yzdgkzfxx_14172/202003/t20200326_1292200.htm",
+   "quote": "坦洋工夫农产品地理标志保护具体地域：分布在辖区内的4个街道、13个镇、5个乡……总面积1871.42平方千米。"
+  },
+  {
+   "name": "国家质检总局2007年第30号公告",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://chinatt315.org.cn/gggs/2007-2/14/87500.html",
+   "quote": "坦洋工夫地理标志产品保护范围……为福建省福安市现辖行政区域。"
+  },
+  {
+   "name": "国家市场监督管理总局·地理标志产品坦洋工夫国家标准",
+   "type": "国家标准",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://www.samr.gov.cn:3030/cms_files/filemanager/1647978232/attach/202511/365910b4ef9c4243b1b5e147466e8ffb.pdf",
+   "quote": "坦洋工夫地理标志产品产地范围限定于……福建省福安市现辖行政区域内。"
+  },
+  {
+   "name": "福安市人民政府·项目环评文件",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "medium",
+   "url": "http://www.fjfa.gov.cn/zwgk/zdxxgk/hjbhxx/xzsp_19343/xmhpslspqgs/201706/P020230217386361530236.pdf",
+   "quote": "多年年平均气温19.3℃……年均降水量1627.4mm。"
+  },
+  {
+   "name": "中国茶叶网·坦洋工夫茶的形态特征",
+   "type": "行业协会",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://m.chawh.net/hoc/tygf/5447.html",
+   "quote": "三月中下旬萌芽，四月上旬开始采摘，全年生长期220天。"
+  }
+ ]
+}

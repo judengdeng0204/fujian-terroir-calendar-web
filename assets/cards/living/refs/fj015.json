@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ015",
+ "name": "福州茉莉花茶",
+ "category": "茶",
+ "county": "仓山区|闽侯县|福清市",
+ "city": "福州市",
+ "production_area": "福州市10个县（市）区现辖行政区域；江边沙洲茉莉花基地与海拔600–1000米高山茶园结合",
+ "geographical_indication": "国家地理标志保护产品、农产品地理标志；福州茉莉花种植与茶文化系统为中国重要农业文化遗产",
+ "seasonality_summary": "春茶3月采制茶坯，茉莉花5–11月花期、盛夏（6–8月）为最佳采收，7–9月集中窨制（七月寻花、九月成茶）。",
+ "human_environment": "茉莉花每日上午11点至下午4点高温时段采摘未绽花苞，夜间自然绽放后与茶坯窨制（传统工艺四窨一提以上，最高九窨）。",
+ "production_environment": "福州茉莉花茶为地理标志产品与全球重要农业文化遗产候选系统，形成花-茶-湿地循环生产体系。",
+ "notes": "坐标为福州市区行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "成品茶储藏、销售",
+  "成品茶销售",
+  "三月采茶，粗制茶坯",
+  "茶坯粗制（春天完成）",
+  "茶坯精制、窨花准备",
+  "高温时段采花、窨制开始",
+  "集中采花、窨制",
+  "采花窨制高峰（伺花、拌和、通花、烘焙）",
+  "窨制收尾、匀堆装箱",
+  "少量窨制、成品销售",
+  "花田收尾",
+  "成品储藏、销售"
+ ],
+ "sources_digest": [
+  {
+   "name": "福州茉莉花茶地理标志产品保护要求",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://www.sinogi.cn/wap/index.php/product/zxshow/id/959/nid/9896",
+   "quote": "福州茉莉花茶地理标志产品保护范围为……10个县区市现辖行政区域。"
+  },
+  {
+   "name": "中国农业农村信息网·福州茉莉花茶",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://www.agri.cn/zx/zxfb/202404/t20240416_8625243.htm",
+   "quote": "在江边沙洲种植茉莉花，在海拔600〜1000米的高山上发展茶叶生产。"
+  },
+  {
+   "name": "福州市农业农村局·央视关注报道",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://nyj.fuzhou.gov.cn/xxgk/gzdt/tpxw/202506/t20250623_5037428.htm",
+   "quote": "花期是每年的5月到11月，但最佳采收时节是在温度最高的盛夏时期。"
+  },
+  {
+   "name": "福州市政府·福州茉莉花茶地理标志保护管理细则",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://law.foodmate.net/mobile/index.php?moduleid=23&itemid=171033",
+   "quote": "按照福州茉莉花茶传统工艺经四窨一提及以上加工制作而成。"
+  },
+  {
+   "name": "中国日报·活力中国调研行",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://cn.chinadaily.com.cn/a/202608/20/WS6a866478a3105d3d7a27bdf9.html",
+   "quote": "三月采茶、七月寻花、九月成茶。"
+  }
+ ]
+}

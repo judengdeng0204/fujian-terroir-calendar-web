@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ099",
+ "name": "岚谷熏鹅",
+ "category": "传统加工物",
+ "county": "武夷山市",
+ "city": "南平市",
+ "production_area": "武夷山市岚谷乡及周边，选用当地放养闽北白鹅",
+ "geographical_indication": "国家地理标志证明商标（岚谷熏鹅，2014）；岚谷熏鹅制作技艺为省级非遗（2022）",
+ "seasonality_summary": "全年制作销售；以节庆（春节等）前后为消费与加工高峰，具体月份差异无来源，未细分推断。",
+ "human_environment": "选用百日龄闽北白鹅，经宰杀、卤煮七八分熟、涂抹椒盐香料、糯米茶叶熏制等繁复工序制作。",
+ "production_environment": "岚谷熏鹅获国家地理标志证明商标，20家企业获地标授权，形成标准化生产车间与古法熏制并存的产业。",
+ "notes": "坐标为武夷山市行政区域近似中心点，并非具体生产地；季节差异无来源，全年加工。",
+ "phenology_human": [
+  "节庆前加工备货（春节）",
+  "加工销售",
+  "加工销售",
+  "加工销售",
+  "加工销售",
+  "加工销售",
+  "加工销售",
+  "加工销售",
+  "加工销售（中秋备货）",
+  "加工销售",
+  "加工销售",
+  "节前加工备货（元旦春节）"
+ ],
+ "sources_digest": [
+  {
+   "name": "福建省人民政府网·岚谷熏鹅报道",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://fujian.gov.cn/zwgk/ztzl/sxzygwzxsgzx/flsxkmh/202407/t20240709_6480849.htm",
+   "quote": "2014年，岚谷熏鹅获得国家地理标志证明商标……制作时选择体重两至三斤的百日龄白鹅为最佳。"
+  },
+  {
+   "name": "人民网·何以中国（武夷风味）",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://app.people.cn/h5/detail/normal/6281500301427712",
+   "quote": "岚谷熏鹅在制作过程中会加入糯米、茶叶和特制米酒。"
+  },
+  {
+   "name": "人民网·何以中国（武夷风味）",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://app.people.cn/h5/detail/normal/6281500301427712",
+   "quote": "良畴沃野，静水流泉，是天然鹅场。"
+  },
+  {
+   "name": "央视网·岚谷熏鹅报道",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "high",
+   "url": "https://local.cctv.com/2024/07/09/ARTI36rCFBKxR3dKYahYuh0U240709.shtml",
+   "quote": "岚谷熏鹅制作技艺被列入福建省第七批省级非物质文化遗产代表性项目名录。"
+  },
+  {
+   "name": "武夷山市人民政府网（县域坐标近似）",
+   "type": "政府",
+   "evidence": "C",
+   "confidence": "low",
+   "url": "http://www.wys.gov.cn",
+   "quote": ""
+  }
+ ]
+}

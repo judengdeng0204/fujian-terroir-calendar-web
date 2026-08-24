@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ087",
+ "name": "福清高山羊",
+ "category": "畜禽",
+ "county": "福清市",
+ "city": "福州市",
+ "production_area": "福清市高山、沙埔、东瀚等沿海乡镇，原产高山镇六十、六一一带村落",
+ "geographical_indication": "地理标志证明商标（福清高山羊，2011，全国性）",
+ "seasonality_summary": "一年四季均可配种产羔，冬季产羔胎次明显高于其他季节，秋季平均产羔数与初生重最高；多放牧于海滩堤边。",
+ "human_environment": "农区草山草坡放牧与舍饲结合，福清高山镇为高山羊集散地，形成示范基地与合作社经营。",
+ "production_environment": "列入国家地方优良品种志，2011年获全国性地理标志证明商标。",
+ "notes": "坐标为福清市行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "接羔、育羔",
+  "育羔、放牧",
+  "放牧、配种管理（春秋可安排年产两胎）",
+  "放牧",
+  "放牧育肥",
+  "放牧、防疫",
+  "舍饲避暑",
+  "放牧管理",
+  "接羔、育肥",
+  "放牧育肥",
+  "育肥、上市准备",
+  "接羔育羔"
+ ],
+ "sources_digest": [
+  {
+   "name": "中国畜牧业协会羊业分会/中国食品安全报",
+   "type": "行业协会",
+   "evidence": "B",
+   "confidence": "high",
+   "url": "https://sheep.caaa.cn/html/sheep_hykp/sheep_pzjs/2011/0711/388.html",
+   "quote": "原产于高山、沙埔、东瀚沿海一带……高山羊成为福清首个全国性地理标志证明商标。"
+  },
+  {
+   "name": "国家家养动物种质资源库·福清山羊",
+   "type": "科研机构",
+   "evidence": "B",
+   "confidence": "medium",
+   "url": "https://cdad-is.org.cn/admin/Anim.Sheep/view2?id=52",
+   "quote": "最低海拔10……年均温度19.6……年均降水量1250……土壤类型沙土壤。"
+  },
+  {
+   "name": "福建农林大学学报·舍饲福清山羊繁殖性能研究",
+   "type": "学术论文",
+   "evidence": "B",
+   "confidence": "high",
+   "url": "https://d.wanfangdata.com.cn/periodical/CihQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDYxMDIwMjYwNjEwMTYxMjM4Eg96Z2NzZHcyMDE4MDYwMjAaCDl5ZzU4Zjd3",
+   "quote": "冬季产羔胎次明显高于其他季节，夏季产羔胎次最少；秋季的平均产羔数和平均初生重均为最高。"
+  },
+  {
+   "name": "中国食品安全报/百度百科（福清山羊）",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "https://www.cfsn.cn/news/detail/249/203129.html",
+   "quote": "多放牧于海滩、堤边，常年食用野草。"
+  },
+  {
+   "name": "福清市人民政府网（县域坐标近似）",
+   "type": "政府",
+   "evidence": "C",
+   "confidence": "low",
+   "url": "http://www.fuqing.gov.cn",
+   "quote": ""
+  }
+ ]
+}

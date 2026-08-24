@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ095",
+ "name": "浦城桂花",
+ "category": "香料",
+ "county": "浦城县",
+ "city": "南平市",
+ "production_area": "浦城县各乡镇（忠信镇等）桂花产区，全县桂花面积7万余亩",
+ "geographical_indication": "国家地理标志保护产品（浦城丹桂，2010）；中国丹桂之乡（2007）",
+ "seasonality_summary": "金秋9月下旬至10月中旬为盛花期与采收期（上市高峰在中秋、国庆前后），采收后加工桂花蜜、桂花茶等。",
+ "human_environment": "桂花林人工栽培，采收在清晨至上午9时前进行，鲜花用于窨茶、制蜜饯与桂花蜜加工。",
+ "production_environment": "浦城为中国丹桂之乡，桂花面积与产量居全国首位。",
+ "notes": "坐标为浦城县行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "桂花制品销售",
+  "修剪、施肥",
+  "春管",
+  "水肥管理",
+  "水肥管理",
+  "水肥管理",
+  "田间管理",
+  "采收准备",
+  "盛花初期采摘（清晨至9时前）",
+  "集中采收、加工（窨茶、制蜜）",
+  "采收收尾、加工储藏",
+  "桂花制品储藏销售"
+ ],
+ "sources_digest": [
+  {
+   "name": "浦城桂花地理标志产品质量技术要求",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://sinogi.cn/wap/index.php/product/zxshow/id/1473/nid/3791",
+   "quote": "盛花初期采摘……清晨至上午9时前采集。"
+  },
+  {
+   "name": "浦城县人民政府·地理环境",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://pc.gov.cn/cms/html/pcxrmzf/dlhj/index.html",
+   "quote": "年平均气温17.4℃，年平均降雨量1780.2毫米。"
+  },
+  {
+   "name": "东南网·福建浦城丹桂之乡",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "high",
+   "url": "http://np.fjsen.com/wap/2022-06/17/content_31064127_0.htm",
+   "quote": "2010年9月，浦城丹桂荣获国家地理标志产品保护称号。"
+  },
+  {
+   "name": "新品种网·浦城丹桂",
+   "type": "专业媒体",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://news.ymt.com/new_arg_tech/1w6cJ4hG",
+   "quote": "主要上市时间集中在每年的9月下旬至10月中旬。"
+  },
+  {
+   "name": "浦城县人民政府网（县域坐标近似）",
+   "type": "政府",
+   "evidence": "C",
+   "confidence": "low",
+   "url": "http://pc.gov.cn",
+   "quote": ""
+  }
+ ]
+}

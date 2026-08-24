@@ -1,0 +1,61 @@
+{
+ "product_id": "FJ066",
+ "name": "柘荣太子参",
+ "category": "药食同源",
+ "county": "柘荣县",
+ "city": "宁德市",
+ "production_area": "柘荣县现辖行政区域（地理标志保护范围），栽培于海拔500–800米山区耕地",
+ "geographical_indication": "国家地理标志保护产品（2007年国家质检总局第45号公告）；'中国太子参之乡'",
+ "seasonality_summary": "11–12月播种，次年6月下旬至7月下旬采收（中海拔7月中旬、高海拔7月下旬适宜采收）；采收后与晚稻轮作，8月起加工晾晒上市",
+ "human_environment": "山地耕地人工栽培，11–12月播种、6月下旬–7月下旬采挖；采后接晚稻实行稻参轮作",
+ "production_environment": "播种11–12月；采挖6月下旬–7月下旬；采后洗净晾晒（晒参）加工",
+ "notes": "坐标为柘荣县行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "苗期田间管理。",
+  "田间管理、除草。",
+  "肥水管理。",
+  "田间管理。",
+  "肥水管理、病虫害防治。",
+  "采挖太子参（茎叶枯黄时）。",
+  "集中采挖、洗净晾晒加工。",
+  "加工、晾晒、储藏；接晚稻轮作。",
+  "储藏管理、销售。",
+  "分级包装销售。",
+  "整地、播种太子参。",
+  "播种、苗期管理。"
+ ],
+ "sources_digest": [
+  {
+   "name": "国家质检总局2007年第45号公告（柘荣太子参地理标志产品保护）",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://11412365.com.cn/gggs/2007-3/5/87515.html",
+   "quote": "海拔500米至800米之间，耕层10cm以上，有机质含量不低于2.5%，土壤pH值在4.5至6.5之间，排灌方便的壤土。"
+  },
+  {
+   "name": "宁德市地方标准DB3509（柘荣太子参生产技术规范）",
+   "type": "行业标准",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "http://scjd.ningde.gov.cn/zw/zfxxgkzl/zca/qtzdgkwj/202309/P020230925389480736585.pdf",
+   "quote": "种植时间宜在11月～12月……采挖时间：茎叶枯黄时应及时采收……采收时间宜为6月下旬至7月下旬。"
+  },
+  {
+   "name": "宁德程达铸业项目环评报告（柘荣县气候）与中国农学通报论文",
+   "type": "政府",
+   "evidence": "A",
+   "confidence": "medium",
+   "url": "https://wryfb.fjemc.org.cn/wrfiles/eia/SPMFPBXI-373C-S4P7-1OQ6-2T6E1HAE4DCI/H2LSU8OF-WKZJ-ZG3Z-ZJRH-YKL6MROQSLBD/%e9%a1%b9%e7%9b%ae%e7%8e%af%e8%af%84%e6%8a%a5%e5%91%8a%e8%a1%a8%ef%bc%88%e5%ae%81%e5%be%b7%e7%a8%8b%e8%be%be%e9%93%b8%e4%b8%9a%e6%9c%89%e9%99%90%e5%85%ac%e5%8f%b8%ef%bc%89%ef%bc%89.pdf",
+   "quote": "柘荣县是内陆山区，海洋气候特征不明显，年平均气温16.10℃……多年平均降水量2095.2mm……中海拔栽培区太子参适宜采收期在7月中旬，高海拔太子参适宜采收期在7月下旬。"
+  },
+  {
+   "name": "学习强国福建平台《宁德柘荣：夏收夏种关键时，稻参轮作促双赢》",
+   "type": "专业媒体",
+   "evidence": "B",
+   "confidence": "high",
+   "url": "https://fj.xuexi.cn/local/detail.html?ae5e411fe91d6d3c1ac4def110933f4f=c921110a1159afeaf453d53e661a308d",
+   "quote": "每年11月至12月，是柘荣太子参的播种时节，而次年6月至7月则是其丰收的季节……非常适合稻参轮作模式。"
+  }
+ ]
+}

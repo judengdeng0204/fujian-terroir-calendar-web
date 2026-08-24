@@ -1,0 +1,69 @@
+{
+ "product_id": "FJ043",
+ "name": "东山芦笋",
+ "category": "蔬菜",
+ "county": "东山县",
+ "city": "漳州市",
+ "production_area": "东山县西埔、铜陵、陈城、康美、杏陈、樟塘、前楼等7个镇61个行政村",
+ "geographical_indication": "农产品地理标志（2010）、地理标志证明商标（2012）、原产地标记（2004）",
+ "seasonality_summary": "分春、秋两季采收：春季4月中旬至7月中旬，秋季9月上旬至10月下旬；大棚种植可延采至次年2月。",
+ "human_environment": "海岛农田人工栽培，传统白芦笋培土软化种植，近年发展大棚错峰采收。",
+ "production_environment": "东山县为芦笋种植大县，产品主供鲜销与加工，芦笋产业为海岛特色农业。",
+ "notes": "坐标为东山县行政区域近似中心点，并非具体生产地。",
+ "phenology_human": [
+  "大棚采收、加工",
+  "采收收尾、清园",
+  "3–4月种植",
+  "春季采收开始（4月中旬）",
+  "集中采收（4–5月为采收期）",
+  "采收、加工",
+  "采收收尾",
+  "田间管理",
+  "秋季采收开始（9月上旬）",
+  "集中采收",
+  "采收收尾",
+  "清园、大棚管理"
+ ],
+ "sources_digest": [
+  {
+   "name": "东山芦笋地理标志产品保护要求",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://www.sinogi.cn/wap/index.php/product/zxshow/id/295/nid/21323",
+   "quote": "海拔高度5～15m，土壤为通气良好……微酸性的沙质壤土。"
+  },
+  {
+   "name": "东山芦笋地理标志产品保护要求",
+   "type": "地理标志官方资料",
+   "evidence": "A",
+   "confidence": "high",
+   "url": "https://www.sinogi.cn/wap/index.php/product/gg/id/295",
+   "quote": "春季采收从4月中旬至7月中旬，秋季采收从9月上旬至10月下旬。"
+  },
+  {
+   "name": "中国农产品地理标志（华东地区篇）",
+   "type": "专业数据库",
+   "evidence": "B",
+   "confidence": "high",
+   "url": "https://www.sinogi.cn/wap/index.php/product/zxshow/id/295/nid/21323",
+   "quote": "东山芦笋地理标志地域保护范围包括西埔镇、铜陵镇、陈城镇、康美镇、杏陈镇、樟塘镇、前楼镇等7个乡镇，61个行政村。"
+  },
+  {
+   "name": "行政区划网·东山县概况",
+   "type": "专业数据库",
+   "evidence": "C",
+   "confidence": "medium",
+   "url": "http://www.xzqh.org/html/show.php?contentid=9499",
+   "quote": "属南亚热带海洋性季风气候，年降水量1103.8毫米，年均气温20.8℃。"
+  },
+  {
+   "name": "东山县人民政府网（县域坐标近似）",
+   "type": "政府",
+   "evidence": "C",
+   "confidence": "low",
+   "url": "http://www.dongshandao.gov.cn",
+   "quote": ""
+  }
+ ]
+}
