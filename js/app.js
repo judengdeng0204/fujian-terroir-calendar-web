@@ -138,6 +138,8 @@
     guideTimer: null,     // 导语插图轮播定时器
     guideIdx: 0,          // 轮播当前索引
     guidePendingReveal: false, // 关闭导语后补播原点出现动画
+    yearRoundIds: new Set(),   // 「全年都有」物产（核心动作覆盖 ≥11 个月）
+    highlightMonths: null,     // 季节性高光：灰色地带物产 -> 高光月集合
   };
 
   let map, geoLayer, tileLayer;
@@ -419,6 +421,36 @@
           state.byId.set(item.id, item);
           return item;
         });
+      // 全年都有：12 个月中 ≥11 个月处于核心动作状态（用于「全年都有」视图与单月剔除）
+      for (const p of state.products) {
+        let n = 0;
+        for (let mm = 1; mm <= 12; mm++) {
+          const row = p._pheno[mm];
+          if (row && stageOfStatus(String(row.phenology_status || ""), "generic")) n++;
+        }
+        if (n >= 11) state.yearRoundIds.add(p.id);
+      }
+      // 季节性高光：非传统加工物、核心覆盖 8-10 个月的灰色地带物产，
+      // 单月地图只保留「事件月」——茶叶=采收（春/秋茶季），其余=采收/成熟/开花
+      state.highlightMonths = new Map();
+      for (const p of state.products) {
+        if (state.yearRoundIds.has(p.id)) continue;
+        if (productKind(p) === "processed") continue;
+        const coreMonths = [];
+        for (let mm = 1; mm <= 12; mm++) {
+          const row = p._pheno[mm];
+          if (row && stageOfStatus(String(row.phenology_status || ""), "generic")) coreMonths.push(mm);
+        }
+        if (coreMonths.length < 8) continue;
+        const isTea = String(p.basic && p.basic.category || "").includes("茶");
+        const set = new Set();
+        for (const mm of coreMonths) {
+          const toks = multi(p._pheno[mm].phenology_status);
+          const hit = isTea ? toks.includes("采收") : (toks.includes("采收") || toks.includes("成熟") || toks.includes("开花"));
+          if (hit) set.add(mm);
+        }
+        if (set.size) state.highlightMonths.set(p.id, set);
+      }
       state.loaded = true;
       init();
     } catch (err) {
@@ -543,20 +575,26 @@
     const m = state.month;
     return state.products.filter((p) => {
       if (!matchesFilters(p)) return false;
-      const kind = productKind(p);
-      if (state.showAll) {
-        // 全年任意月份发生过核心风土动作即显示（休眠/萌芽/常规生长仍隐去）
-        for (let mm = 1; mm <= 12; mm++) {
-          const row = p._pheno[mm];
-          if (row && isCoreStatus(String(row.phenology_status || ""), kind) && (num(row.seasonal_activity) || 0) >= ACTIVE_MIN) return true;
-        }
-        return false;
-      }
+      if (m === 0) return state.showAll ? hasAnyCoreMonth(p) : state.yearRoundIds.has(p.id);   // 全年视图：开「显示所有物产」= 全年核心动作
+      if (state.showAll) return hasAnyCoreMonth(p);
+      if (state.yearRoundIds.has(p.id)) return false;   // 单月视图剔除「全年都有」物产
       const row = monthRow(p, m);
       if (!row) return false;
       const a = num(row.seasonal_activity) || 0;
-      return isCoreStatus(String(row.phenology_status || ""), kind) && a >= ACTIVE_MIN;
+      if (!isCoreStatus(String(row.phenology_status || ""), productKind(p)) || a < ACTIVE_MIN) return false;
+      const hl = state.highlightMonths && state.highlightMonths.get(p.id);
+      if (hl && !hl.has(m)) return false;               // 季节性高光：非事件月不上地图
+      return true;
     });
+  }
+
+  /* 全年任意月份发生过核心风土动作（显示所有物产用） */
+  function hasAnyCoreMonth(p) {
+    for (let mm = 1; mm <= 12; mm++) {
+      const row = p._pheno[mm];
+      if (row && isCoreStatus(String(row.phenology_status || ""), productKind(p)) && (num(row.seasonal_activity) || 0) >= ACTIVE_MIN) return true;
+    }
+    return false;
   }
 
   /* ---------------- 原点构建 ---------------- */
@@ -621,10 +659,9 @@
   /* 全年模式下取该物产最活跃的核心动作月（休眠/生长等后台状态不参与上色） */
   function primaryCoreRow(p) {
     let best = null, bestA = 0;
-    const kind = productKind(p);
     for (let mm = 1; mm <= 12; mm++) {
       const row = p._pheno[mm];
-      if (!row || !isCoreStatus(String(row.phenology_status || ""), kind)) continue;
+      if (!row || !stageOfStatus(String(row.phenology_status || ""), "generic")) continue;
       const a = num(row.seasonal_activity) || 0;
       if (a >= bestA) { bestA = a; best = row; }
     }
@@ -632,7 +669,9 @@
   }
 
   function targetStyle(p) {
-    const row = state.showAll ? (primaryCoreRow(p) || monthRow(p, state.month)) : monthRow(p, state.month);
+    const row = state.month === 0
+      ? primaryCoreRow(p)
+      : (state.showAll ? (primaryCoreRow(p) || monthRow(p, state.month)) : monthRow(p, state.month));
     const a = num(row && row.seasonal_activity) || 0;
     const st = stageFor(row, productKind(p));
     const sz = sizeFor(a);
@@ -860,6 +899,8 @@
   function tweenDot(p, entry, target) {
     const from = dotStates.get(entry.pid) || { opacity: 0, r: 5, color: STAGE.dormant.color, haloR: 22, haloOpacity: 0 };
     const t0 = performance.now();
+    const el0 = entry.dot.getElement();
+    if (el0) el0.setAttribute("data-pid", entry.pid);
     if (target.labelOn) labelLayer.addLayer(entry.label);
     else labelLayer.removeLayer(entry.label);
 
@@ -1242,10 +1283,10 @@
   }
 
   function statusLine(p) {
-    const row = monthRow(p, state.month);
+    const row = state.month === 0 ? primaryCoreRow(p) : monthRow(p, state.month);
     const sts = statusLabelFor(row && row.phenology_status, p) || "无明确物候";
     const a = num(row && row.seasonal_activity) || 0;
-    return `${state.month}月 · ${sts} · 活跃度${a}`;
+    return `${state.month === 0 ? "全年" : state.month + "月"} · ${sts} · 活跃度${a}`;
   }
 
   function showTooltip(e, name, line, color) {
@@ -1312,9 +1353,19 @@
   function renderStatus(n) {
     const el = $("#mapStatus");
     const filterOn = Object.values(state.filters).some((s) => s && s.size > 0);
-    const label = state.showAll ? "（全年核心风土动作）" : "";
-    if (n === 0) el.textContent = `${state.month}月 · 本月暂无核心风土动作`;
-    else el.textContent = `${state.month}月 · ${n} 种物产正在发生核心风土动作 ${label}${filterOn ? " · 已筛选" : ""}`;
+    const label = state.showAll ? "（显示所有物产）" : "";
+    const when = state.month === 0 ? "全年" : state.month + "月";
+    if (state.month === 0) {
+      el.textContent = n === 0
+        ? "全年 · 暂无符合条件的物产"
+        : state.showAll
+          ? `全年 · ${n} 种物产（显示所有物产）${filterOn ? " · 已筛选" : ""}`
+          : `全年 · ${n} 种物产持续发生${filterOn ? " · 已筛选" : ""}`;
+    } else if (n === 0) {
+      el.textContent = `${when} · 本月暂无核心风土动作`;
+    } else {
+      el.textContent = `${when} · ${n} 种物产正在发生核心风土动作 ${label}${filterOn ? " · 已筛选" : ""}`;
+    }
   }
 
   /* ---------------- 月份导语浮块 ---------------- */
@@ -1323,8 +1374,11 @@
     if (!avail) return [];
     const core = [], any = [];
     for (const p of state.products) {
+      if (state.yearRoundIds.has(p.id)) continue;   // 「全年都有」物产不进单月导语插图池
       const row = p._pheno && p._pheno[m];
       if (!row || !avail.has(p.id.toLowerCase())) continue;
+      const hl = state.highlightMonths && state.highlightMonths.get(p.id);
+      if (hl && !hl.has(m)) continue;               // 季节性高光：非事件月不进导语插图池
       if (isCoreStatus(String(row.phenology_status || ""), productKind(p))) core.push(p);
       else any.push(p);
     }
@@ -1435,6 +1489,15 @@
       item.addEventListener("click", () => setMonth(m, true));
       tl.appendChild(item);
     });
+    // 「全年都有」时间按钮（第 13 个节点）
+    const yr = document.createElement("button");
+    yr.className = "month-item year-round" + (state.month === 0 ? " active" : "");
+    yr.dataset.month = 0;
+    yr.type = "button";
+    yr.title = "全年都有";
+    yr.innerHTML = `<span class="mi-dot"></span><span class="mi-num">全年都有</span>`;
+    yr.addEventListener("click", () => setMonth(0));
+    tl.appendChild(yr);
     // 滑动切换月份（左右滑动时间轴）
     let sx = null;
     tl.addEventListener("touchstart", (e) => { sx = e.touches[0].clientX; }, { passive: true });
@@ -1453,7 +1516,7 @@
   }
 
   function setMonth(m, showGuide) {
-    if (m < 1) m = 12;
+    if (m < 0) m = 12;
     if (m > 12) m = 1;
     if (m === state.month) return;
     state.month = m;
@@ -1689,7 +1752,7 @@
   function init() {
     startSplash();
     const qm = parseInt(new URLSearchParams(location.search).get("month"), 10);
-    if (qm >= 1 && qm <= 12) state.month = qm;
+    if (qm >= 0 && qm <= 12) state.month = qm;   // 0 = 「全年都有」视图
     initMap();
     buildMonthTimeline();
     buildFilters();
@@ -1882,7 +1945,7 @@
           overlay.remove();
           document.body.classList.add("revealed");
           state.splashActive = false;
-          if (targetMonth !== state.month) setMonth(targetMonth);
+          if (targetMonth !== state.month && state.month !== 0) setMonth(targetMonth);
           renderOrigins(true, "initial");
         },
       });
