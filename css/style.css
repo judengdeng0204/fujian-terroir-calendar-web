@@ -782,10 +782,10 @@ button { font-family: inherit; }
 .mg-main { position: static; }
 .mg-media {
   position: absolute;
-  left: 26%;
-  right: 26%;
-  top: 24%;
-  height: 38%;
+  left: 15%;
+  right: 15%;
+  top: 20%;
+  height: 43%;
   border-radius: 10px;
   background: transparent;   /* 插画本身为透明底，去掉容器米色背景避免画框感 */
   overflow: hidden;
@@ -795,8 +795,8 @@ button { font-family: inherit; }
 }
 .mg-img {
   position: absolute;
-  max-width: 92%;
-  max-height: 92%;
+  max-width: 98%;
+  max-height: 98%;
   object-fit: contain;
   transition: opacity 0.45s ease;
 }
