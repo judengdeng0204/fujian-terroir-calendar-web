@@ -493,7 +493,10 @@
 
     const fujianBounds = L.geoJSON(state.geo).getBounds();
     const mobileView = window.innerWidth < 860;
-    map.fitBounds(fujianBounds.pad(0.06));
+    map.fitBounds(fujianBounds.pad(0.06), { animate: false });
+    // 宽屏容器下 fitBounds 按高度受限，福建水平占比低、左右露出邻国与大片海洋。
+    // 再放大一档让福建成为画面主体（邻国出画），用户可缩小/拖动查看周边。
+    if (map.getZoom() < 8) map.setZoom(map.getZoom() + 1, { animate: false });
     state.defaultZoom = map.getZoom();   // 默认视图缩放：未放大前不显示插画
     map.setMaxBounds(fujianBounds.pad(mobileView ? 1.25 : 0.35));
 
