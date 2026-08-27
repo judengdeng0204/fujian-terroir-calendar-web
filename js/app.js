@@ -770,7 +770,7 @@
       zIndexOffset: -6,
     });
     const img = document.createElement("img");
-    img.src = `assets/illustrations/splash/cutout/${p.id.toLowerCase()}.png`;
+    img.src = `assets/illustrations/splash/cutout/${p.id.toLowerCase()}.webp`;
     img.alt = "";
     img.style.cssText = "position:absolute;left:0;top:0;width:80px;height:80px;object-fit:contain;pointer-events:auto;cursor:pointer;transform:translate(-50%,-50%) scale(0.45);opacity:0;will-change:transform,opacity;";
     img.addEventListener("click", (e) => {
@@ -1388,7 +1388,7 @@
       const t = list[i]; list[i] = list[j]; list[j] = t;
     }
     return list.map((p) => ({
-      url: `assets/illustrations/splash/cutout/${p.id.toLowerCase()}.png`,
+      url: `assets/illustrations/splash/cutout/${p.id.toLowerCase()}.webp`,
       name: p.name,
       id: p.id,
       category: (p.basic && p.basic.category) || "",
@@ -1596,7 +1596,7 @@
 
     const hasImg = !!(state.imgAvailable && state.imgAvailable.has(p.id.toLowerCase()));
     const illustrationHtml = hasImg
-      ? `<img class="dc-illustration-img" src="assets/illustrations/${p.id.toLowerCase()}.png" alt="${escapeHtml(b.product_name)} 物产插画">`
+      ? `<img class="dc-illustration-img" src="assets/illustrations/${p.id.toLowerCase()}.webp" alt="${escapeHtml(b.product_name)} 物产插画">`
       : `<div class="dc-illustration-placeholder"><span>${escapeHtml(b.category || "物产")} · 插画待补充</span></div>`;
 
     const subParts = [b.category, b.subcategory, b.product_type, `${b.city || ""}${b.county ? " " + b.county : ""}`].filter(Boolean);
@@ -1771,11 +1771,11 @@
     // 开屏用透明抠图（以 manifest 清单为准，缺图自动跳过）
     const pool = [];
     if (state.imgAvailable && state.imgAvailable.size) {
-      for (const id of state.imgAvailable) pool.push(`assets/illustrations/splash/cutout/${id}.png`);
+      for (const id of state.imgAvailable) pool.push(`assets/illustrations/splash/cutout/${id}.webp`);
     } else {
       for (let i = 1; i <= 119; i++) {
         if (i === 9 || i === 118 || i === 120) continue;
-        pool.push(`assets/illustrations/splash/cutout/fj${String(i).padStart(3, "0")}.png`);
+        pool.push(`assets/illustrations/splash/cutout/fj${String(i).padStart(3, "0")}.webp`);
       }
     }
     if (!pool.length) return;
