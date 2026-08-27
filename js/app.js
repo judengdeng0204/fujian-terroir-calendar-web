@@ -464,7 +464,7 @@
     map = L.map("map", {
       zoomControl: false,
       attributionControl: false,
-      minZoom: 6,
+      minZoom: 7,    // 最小缩放：再小会暴露出整片邻国与海洋，破坏「福建地图」的视觉聚焦
       maxZoom: 13,
       preferCanvas: false,
     });
