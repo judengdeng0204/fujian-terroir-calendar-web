@@ -801,6 +801,7 @@ button { font-family: inherit; }
   transition: opacity 0.45s ease;
 }
 .mg-caption {
+  display: none;   /* 插画下方物产名称注释已去除 */
   position: absolute;
   left: 50%;
   transform: translateX(-50%);

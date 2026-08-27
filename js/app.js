@@ -1425,7 +1425,6 @@
     const pool = monthImagePool(m);
     const media = $("#mgMedia");
     const imgs = [$("#mgImgA"), $("#mgImgB")];
-    const captionFor = (it) => "『" + it.name + " " + it.id + " · " + (it.category || "物产") + "』";
     if (!pool.length) {
       media.style.display = "none";
       $("#mgCaption").textContent = "";
@@ -1433,7 +1432,6 @@
       media.style.display = "flex";
       pool.forEach((it) => { const im = new Image(); im.src = it.url; });   // 预载
       imgs[0].src = pool[0].url;
-      $("#mgCaption").textContent = captionFor(pool[0]);
       imgs[1].src = (pool.length > 1 ? pool[1] : pool[0]).url;
       imgs[0].style.opacity = "1";
       imgs[1].style.opacity = "0";
@@ -1444,7 +1442,6 @@
           const cur = imgs[state.guideIdx % 2];
           const nxt = imgs[(state.guideIdx + 1) % 2];
           nxt.src = pool[next].url;
-          $("#mgCaption").textContent = captionFor(pool[next]);
           nxt.style.opacity = "1";
           cur.style.opacity = "0";
           state.guideIdx = next;
