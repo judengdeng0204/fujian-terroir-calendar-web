@@ -787,7 +787,7 @@ button { font-family: inherit; }
   top: 24%;
   height: 38%;
   border-radius: 10px;
-  background: rgba(247, 244, 235, 0.7);
+  background: transparent;   /* 插画本身为透明底，去掉容器米色背景避免画框感 */
   overflow: hidden;
   display: flex;
   align-items: center;
