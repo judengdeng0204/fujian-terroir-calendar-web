@@ -485,7 +485,7 @@
     addGeography();
 
     tileLayer = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      opacity: 0.42,
+      opacity: 0.14,   // 大幅减淡：只留海岸线/省界的空间定位感
       className: "map-tiles",
       attribution: "© OpenStreetMap",
     });
@@ -523,7 +523,7 @@
     }
 
     geoLayer = L.geoJSON(state.geo, {
-      style: { color: "#cfc9ba", weight: 1.1, fillColor: "#f6f4ec", fillOpacity: 0.55 },
+      style: { color: "#a89e88", weight: 1.4, fillColor: "#f8f5ec", fillOpacity: 0.78 },
       interactive: false,
     });
     geoLayer.addTo(map);
@@ -1005,16 +1005,16 @@
 
   /* ---------------- 聚合 ---------------- */
   function addGeography() {
-    // 真实地形阴影底图（Esri World Hillshade，低对比叠加）
+    // 真实地形阴影底图（Esri World Hillshade，低对比叠加）→ 山的「墨晕」来源
     L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}", {
-      opacity: 0.55,
+      opacity: 0.3,
       className: "map-hillshade",
       attribution: "Terrain © Esri",
       interactive: false,
     }).addTo(map);
 
-    // 经纬网
-    const gridStyle = { color: "#b9b2a1", weight: 0.8, opacity: 0.6, dashArray: "1 5", interactive: false };
+    // 经纬网（极淡，仅保留技术感）
+    const gridStyle = { color: "#b9b2a1", weight: 0.6, opacity: 0.2, dashArray: "1 5", interactive: false };
     for (let lon = 116; lon <= 120; lon++) {
       L.polyline([[GRID_BOUNDS.latMin, lon], [GRID_BOUNDS.latMax, lon]], gridStyle).addTo(geogLayer);
     }
@@ -1024,9 +1024,8 @@
     for (let lon = 116; lon <= 120; lon++) addGeoLabel([23.62, lon], lon + "°E", "grid");
     for (let lat = 24; lat <= 28; lat++) addGeoLabel([lat, 115.88], lat + "°N", "grid");
 
-    // 山脉（沿真实山链走向的概略线）
+    // 山脉：不画线，靠地形晕渲（hillshade）呈现起伏；山名文字作为符号直接标注
     for (const m of MOUNTAINS) {
-      L.polyline(m.pts, { color: "#ad8f68", weight: 1.6, opacity: 0.7, dashArray: "7 6", interactive: false }).addTo(geogLayer);
       addGeoLabel(m.labelAt, m.name, "mountain");
     }
 
@@ -1039,10 +1038,10 @@
       const coords = f.geometry && f.geometry.coordinates;
       if (!name || !coords || coords.length < 2) continue;
       const style = tier === 1
-        ? { color: "#5f86a8", weight: 1.5, opacity: 0.8 }
+        ? { color: "#7f9db8", weight: 2.6, opacity: 0.42, lineCap: "round", lineJoin: "round" }
         : tier === 2
-          ? { color: "#7d9cb8", weight: 1.0, opacity: 0.6 }
-          : { color: "#9db4c9", weight: 0.6, opacity: 0.45 };
+          ? { color: "#8ba8c2", weight: 1.7, opacity: 0.3, lineCap: "round", lineJoin: "round" }
+          : { color: "#9db8cf", weight: 0.9, opacity: 0.22, lineCap: "round", lineJoin: "round" };
       style.interactive = false;
       L.polyline(coords, style).addTo(geogLayer);
       if (RIVER_T1.has(name) && !labeled.has(name) && coords.length >= 3) {

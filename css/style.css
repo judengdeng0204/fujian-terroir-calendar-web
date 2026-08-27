@@ -477,7 +477,7 @@ button { font-family: inherit; }
 /* ---------- map ---------- */
 .map-wrap { position: relative; min-width: 0; }
 #map { position: absolute; inset: 0; background: #eceae3; }
-.map-tiles { filter: grayscale(0.8) sepia(0.1) contrast(0.92) brightness(1.03); }
+.map-tiles { filter: grayscale(1) brightness(1.6) contrast(0.8) sepia(0.04); }
 .map-hillshade {
   filter: grayscale(1) brightness(1.12) contrast(0.92);
   mix-blend-mode: multiply;
@@ -654,7 +654,7 @@ button { font-family: inherit; }
   display: block;
   transform: translate(-50%, -50%);
 }
-.geo-label.grid { color: #bcb6a5; font-size: 9px; letter-spacing: 0.04em; }
+.geo-label.grid { color: #cfc9bb; font-size: 9px; letter-spacing: 0.04em; opacity: 0.6; }
 .geo-label.neighbor {
   color: #b5ad98;
   font-size: 13px;
