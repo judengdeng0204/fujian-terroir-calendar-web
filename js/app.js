@@ -98,12 +98,12 @@
   const FILTER_GROUPS = [
     { key: "category", label: "分类", values: ["茶", "水果", "蔬菜", "笋类", "粮食", "菌类", "花卉", "药食同源", "水产", "海产", "畜禽", "蜂产品", "竹木", "香料", "传统加工物", "其他"] },
     { key: "terrain", label: "地形", values: ["山地", "丘陵", "平原", "河谷", "盆地", "台地", "海岸", "滩涂", "岛屿", "湿地"] },
-    { key: "elevation_class", label: "海拔", values: ["低海拔", "中低海拔", "中海拔", "高海拔", "高山"] },
-    { key: "temperature_class", label: "温度", values: ["寒冷", "凉爽", "温暖", "温热", "炎热"] },
-    { key: "precipitation_class", label: "降水", values: ["低降水", "中低降水", "中降水", "较高降水", "高降水"] },
-    { key: "moisture_class", label: "湿润度", values: ["湿润", "中等", "偏干"] },
+    { key: "elevation_class", label: "海拔", values: ["低海拔", "中低海拔", "中海拔", "高海拔"] },
+    { key: "temperature_class", label: "温度", values: ["凉爽", "温暖", "温热"] },
+    { key: "precipitation_class", label: "降水", values: ["中降水", "较高降水", "高降水"] },
+    { key: "moisture_class", label: "湿润度", values: ["湿润", "中等"] },
     { key: "water_type", label: "水域", values: ["河流", "溪流", "湖泊", "水库", "地下水", "河谷", "滨海", "潮间带", "滩涂", "浅海", "海岛", "雨养", "灌溉"] },
-    { key: "soil_class", label: "土壤", values: ["酸性", "中性", "碱性"] },
+    { key: "soil_class", label: "土壤", values: ["酸性", "中性"] },
     { key: "ecosystem", label: "生态", values: ["森林", "竹林", "茶园", "果园", "农田", "湿地", "滩涂", "海洋", "河谷", "草地", "林下"] },
   ];
 
@@ -484,10 +484,10 @@
     clusterLayer.addTo(map);
     addGeography();
 
-    tileLayer = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      opacity: 0.14,   // 大幅减淡：只留海岸线/省界的空间定位感
+    tileLayer = L.tileLayer("https://basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png", {
+      opacity: 0.9,   // 极简淡色底图（白底灰线·无底图文字），替代 OSM（部分网络不可达且纹理重）
       className: "map-tiles",
-      attribution: "© OpenStreetMap",
+      attribution: "© OpenStreetMap · © CARTO",
     });
     tileLayer.addTo(map);
 
@@ -522,8 +522,15 @@
       });
     }
 
+    // 福建主体：按「山地市 / 沿海市」分区填充（山海分区的明度层次，风土地图表达）
     geoLayer = L.geoJSON(state.geo, {
-      style: { color: "#a89e88", weight: 1.4, fillColor: "#f8f5ec", fillOpacity: 0.78 },
+      style: (feat) => {
+        const n = (feat.properties && feat.properties.name) || "";
+        const inland = n.includes("南平") || n.includes("三明") || n.includes("龙岩");
+        return inland
+          ? { color: "#b0a68b", weight: 1.0, fillColor: "#e8dfc9", fillOpacity: 0.6 }
+          : { color: "#b0a68b", weight: 1.0, fillColor: "#f8f5ec", fillOpacity: 0.85 };
+      },
       interactive: false,
     });
     geoLayer.addTo(map);
@@ -1005,13 +1012,8 @@
 
   /* ---------------- 聚合 ---------------- */
   function addGeography() {
-    // 真实地形阴影底图（Esri World Hillshade，低对比叠加）→ 山的「墨晕」来源
-    L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}", {
-      opacity: 0.3,
-      className: "map-hillshade",
-      attribution: "Terrain © Esri",
-      interactive: false,
-    }).addTo(map);
+    // 注：Esri Hillshade 在部分网络环境不可达（arcgisonline.com），故不使用；
+    // 山的表达改用「山形符号串 + 山名」（见下方山脉段落），零外部依赖。
 
     // 经纬网（极淡，仅保留技术感）
     const gridStyle = { color: "#b9b2a1", weight: 0.6, opacity: 0.2, dashArray: "1 5", interactive: false };
@@ -1024,7 +1026,7 @@
     for (let lon = 116; lon <= 120; lon++) addGeoLabel([23.62, lon], lon + "°E", "grid");
     for (let lat = 24; lat <= 28; lat++) addGeoLabel([lat, 115.88], lat + "°N", "grid");
 
-    // 山脉：不画线，靠地形晕渲（hillshade）呈现起伏；山名文字作为符号直接标注
+    // 山脉：不画符号不画线，仅以山名文字标注（配合淡色底图的自然地形肌理）
     for (const m of MOUNTAINS) {
       addGeoLabel(m.labelAt, m.name, "mountain");
     }
@@ -1038,10 +1040,10 @@
       const coords = f.geometry && f.geometry.coordinates;
       if (!name || !coords || coords.length < 2) continue;
       const style = tier === 1
-        ? { color: "#7f9db8", weight: 2.6, opacity: 0.42, lineCap: "round", lineJoin: "round" }
+        ? { color: "#6f8fb0", weight: 2.6, opacity: 0.5, lineCap: "round", lineJoin: "round" }
         : tier === 2
-          ? { color: "#8ba8c2", weight: 1.7, opacity: 0.3, lineCap: "round", lineJoin: "round" }
-          : { color: "#9db8cf", weight: 0.9, opacity: 0.22, lineCap: "round", lineJoin: "round" };
+          ? { color: "#7d9cb8", weight: 1.7, opacity: 0.38, lineCap: "round", lineJoin: "round" }
+          : { color: "#8fa9c2", weight: 0.9, opacity: 0.28, lineCap: "round", lineJoin: "round" };
       style.interactive = false;
       L.polyline(coords, style).addTo(geogLayer);
       if (RIVER_T1.has(name) && !labeled.has(name) && coords.length >= 3) {
@@ -1559,7 +1561,11 @@
       const title = document.createElement("button");
       title.className = "filter-group-title";
       title.type = "button";
-      title.innerHTML = `<span>${escapeHtml(g.label)}</span><span class="chev">▶</span>`;
+      // 数据覆盖度标注：该维度有数据的物产数/总数（筛选结果只含「有数据」的子集）
+      const cov = state.products.filter((p) =>
+        g.key === "category" ? !!(p.basic && p.basic.category) : !!((p.terroir && p.terroir[g.key]) || "").length
+      ).length;
+      title.innerHTML = `<span>${escapeHtml(g.label)}</span><span class="coverage" title="该维度 ${cov}/${state.products.length} 种物产已有数据，筛选仅在已有数据内进行">${cov}/${state.products.length}</span><span class="chev">▶</span>`;
       const chips = document.createElement("div");
       chips.className = "chips" + (gi === 0 ? "" : " collapsed");
       g.values.forEach((v) => {

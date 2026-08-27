@@ -409,6 +409,12 @@ button { font-family: inherit; }
   font-size: 10px;
   color: var(--ink-faint);
 }
+.filter-group-title .coverage {
+  font-size: 10px;
+  color: #b0a892;
+  letter-spacing: 0.03em;
+  margin-right: 2px;
+}
 .filter-group.open .filter-group-title .chev { transform: rotate(90deg); }
 .chips.collapsed { display: none; }
 .chips { margin-top: 7px; }
@@ -477,7 +483,7 @@ button { font-family: inherit; }
 /* ---------- map ---------- */
 .map-wrap { position: relative; min-width: 0; }
 #map { position: absolute; inset: 0; background: #eceae3; }
-.map-tiles { filter: grayscale(1) brightness(1.6) contrast(0.8) sepia(0.04); }
+.map-tiles { filter: sepia(0.1) brightness(1.04) contrast(0.94); }
 .map-hillshade {
   filter: grayscale(1) brightness(1.12) contrast(0.92);
   mix-blend-mode: multiply;
@@ -661,12 +667,21 @@ button { font-family: inherit; }
   letter-spacing: 0.25em;
   text-shadow: 0 0 5px rgba(255,255,255,0.8);
 }
-.geo-label.mountain {
+.geo-label.mountain { 
   color: #96794f;
   font-size: 11.5px;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-shadow: 0 0 5px rgba(255,255,255,0.95), 0 1px 2px rgba(255,255,255,0.9);
+}
+/* 古地图式山形符号（沿山链一串 ▲，不连线） */
+.geo-label.mountain-sym .msym {
+  display: block;
+  color: #8d7a58;
+  font-size: 10px;
+  line-height: 1;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 4px rgba(255,255,255,0.95);
 }
 .geo-label.river {
   color: #4f7ea6;
