@@ -1187,9 +1187,13 @@
         iconSize: [0, 0],
         iconAnchor: [0, 0],
       }),
-      interactive: false,
+      interactive: true,
       keyboard: false,
       zIndexOffset: -4,
+    });
+    label.on("click", (e) => {
+      L.DomEvent.stopPropagation(e);
+      map.flyTo(center, Math.min(Math.max(map.getZoom() + 2, 9), 13), { duration: 0.5 });
     });
     halo.addTo(clusterLayer);
     for (const dot of dots) {
@@ -1738,6 +1742,7 @@
       syncTimeline();
       if (state.activePid) selectProduct(null);
       renderOrigins(true, "month");
+      try { history.replaceState(null, "", "?month=" + m); } catch (e) { /* noop */ }
     });
     $("#detailClose").addEventListener("click", () => selectProduct(null));
     $("#mgClose").addEventListener("click", closeMonthGuide);
@@ -1895,7 +1900,10 @@
     const swNum = $("#swNumber");
     const swUnder = overlay.querySelector(".sw-underline");
     const enterBtn = $("#enterBtn");
-    let shownMonth = new Date().getMonth() + 1;
+    // URL ?month=N 指定初始月时：封面数字定格为该月，进入后不再被秒表循环覆盖
+    const _urlMonth = parseInt(new URLSearchParams(location.search).get("month"), 10);
+    const _hasUrlMonth = _urlMonth >= 1 && _urlMonth <= 12;
+    let shownMonth = _hasUrlMonth ? _urlMonth : new Date().getMonth() + 1;
     let jumping = false;
     let pendingCommit = false;
 
@@ -1912,9 +1920,10 @@
       swNum.textContent = m;
     }
 
-    // 1-12 顺序循环跳动，永不停下
+    // 1-12 顺序循环跳动，永不停下（URL 指定月份时定格不循环）
     function startCycle() {
       renderMonth(shownMonth);
+      if (_hasUrlMonth) return;
       const step = () => {
         if (ended || !document.body.contains(overlay)) return;
         const next = (shownMonth % 12) + 1;
@@ -1935,7 +1944,7 @@
       gsap.to(container.querySelectorAll(".splash-tile"), {
         opacity: 0, scale: 1.14, duration: 0.5, stagger: 0.03, ease: "power2.in",
       });
-      const targetMonth = Number(swNum.textContent) || shownMonth;
+      const targetMonth = _hasUrlMonth ? _urlMonth : (Number(swNum.textContent) || shownMonth);
       gsap.to(overlay, {
         opacity: 0,
         duration: 0.6,

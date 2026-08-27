@@ -548,7 +548,12 @@ button { font-family: inherit; }
 .product-img img { pointer-events: auto; cursor: pointer; }
 
 .cluster-label {
-  pointer-events: none;
+  pointer-events: auto;
+  cursor: pointer;
+}
+.cluster-label:hover span {
+  color: #2e332b;
+  font-weight: 600;
 }
 .cluster-label span {
   display: block;
