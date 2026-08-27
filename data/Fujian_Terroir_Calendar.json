@@ -20556,7 +20556,7 @@
     "soil_class": "中性",
     "soil_drainage": null,
     "soil_characteristics": null,
-    "ecosystem": null,
+    "ecosystem": "农田",
     "vegetation": null,
     "land_cover": null,
     "wild_cultivated": "人工栽培",
@@ -20886,6 +20886,15 @@
      "raw_value": "九龙江水系灌溉区",
      "standardized_value": "河流|灌溉",
      "source_url": "http://www.xc.gov.cn",
+     "note": "外部核查补全 2026-08-27"
+    },
+    {
+     "source_id": "FJ054-S01",
+     "product_id": "FJ054",
+     "field_name": "ecosystem",
+     "raw_value": "漳州平原农业产区（已有核查：漳州平原海拔0-20m水稻土）",
+     "standardized_value": "农田",
+     "source_url": "http://geochina.cgs.gov.cn",
      "note": "外部核查补全 2026-08-27"
     }
    ]
@@ -38669,7 +38678,7 @@
     "soil_class": "酸性",
     "soil_drainage": null,
     "soil_characteristics": null,
-    "ecosystem": null,
+    "ecosystem": "农田",
     "vegetation": null,
     "land_cover": "城区",
     "wild_cultivated": null,
@@ -38981,6 +38990,15 @@
      "field_name": "water_type",
      "raw_value": "厦门岛四面环海",
      "standardized_value": "滨海|海岛",
+     "source_url": "https://www.baike.com",
+     "note": "外部核查补全 2026-08-27"
+    },
+    {
+     "source_id": "FJ101-S01",
+     "product_id": "FJ101",
+     "field_name": "ecosystem",
+     "raw_value": "厦门岛沿海平原城区（已有核查：厦门岛低丘台地/平原）",
+     "standardized_value": "农田",
      "source_url": "https://www.baike.com",
      "note": "外部核查补全 2026-08-27"
     }
@@ -41721,7 +41739,7 @@
     "soil_class": "中性",
     "soil_drainage": null,
     "soil_characteristics": null,
-    "ecosystem": null,
+    "ecosystem": "农田",
     "vegetation": null,
     "land_cover": "城区",
     "wild_cultivated": null,
@@ -42067,6 +42085,15 @@
      "field_name": "moisture_class",
      "raw_value": "福州相对湿度77%",
      "standardized_value": "湿润",
+     "source_url": "https://m.fznews.com.cn",
+     "note": "外部核查补全 2026-08-27"
+    },
+    {
+     "source_id": "FJ109-S01",
+     "product_id": "FJ109",
+     "field_name": "ecosystem",
+     "raw_value": "福州河口盆地冲积平原（已有核查：福州平原海拔3-5m）",
+     "standardized_value": "农田",
      "source_url": "https://m.fznews.com.cn",
      "note": "外部核查补全 2026-08-27"
     }
