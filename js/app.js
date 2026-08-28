@@ -520,7 +520,7 @@
     const fujianBounds = L.geoJSON(state.geo).getBounds();
     const mobileView = window.innerWidth < 860;
     // 默认视图：福建全境 + 邻省（浙/赣/湘/粤/台）与海域参照（fjt 截图基准）
-    map.fitBounds(fujianBounds.pad(mobileView ? 0.9 : 0.16), { animate: false });
+    map.fitBounds(fujianBounds.pad(mobileView ? 1.2 : 0.16), { animate: false });
     state.defaultZoom = map.getZoom();   // 默认视图缩放：未放大前不显示插画
     state.defaultCenter = map.getCenter(); // 默认视图中心（切月时重置回该视图）
     map.setMaxBounds(fujianBounds.pad(mobileView ? 2.0 : 0.55));
