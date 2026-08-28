@@ -69,10 +69,14 @@
     <section class="map-wrap">
       <div id="map"></div>
       <div id="mapTooltip" class="map-tooltip" hidden></div>
+      <div class="map-mode-toggle" id="mapModeToggle" role="group" aria-label="地图视角切换">
+        <button class="mode-btn active" type="button" data-mode="product">物产</button>
+        <button class="mode-btn" type="button" data-mode="labor">劳作</button>
+      </div>
       <button class="month-guide-btn" id="btnMonthGuide" type="button" hidden>查看风土手记</button>
       <div class="map-status" id="mapStatus">正在载入数据…</div>
       <div class="legend" id="legend">
-        <div class="legend-block">
+        <div class="legend-block" id="legendSize">
           <p class="legend-title">原点大小 · 当月风土显著度</p>
           <div class="legend-sizes">
             <div class="ls-row"><span class="dot-sample" data-size="s"></span><span>弱 <i>≤20</i></span></div>
@@ -81,7 +85,7 @@
             <div class="ls-row"><span class="dot-sample" data-size="xl"></span><span>风土高峰 <i>81–100</i></span></div>
           </div>
         </div>
-        <div class="legend-block">
+        <div class="legend-block" id="legendColor">
           <p class="legend-title">原点颜色 · 核心风土动作</p>
           <div class="legend-colors">
             <div class="lc-row"><span class="color-sample" data-stage="采收 / 采摘"></span><span class="lc-name">采收 / 采摘</span><span class="lc-desc">嫩绿</span></div>
@@ -90,6 +94,23 @@
             <div class="lc-row"><span class="color-sample" data-stage="物候盛景"></span><span class="lc-name">物候盛景</span><span class="lc-desc">淡粉</span></div>
           </div>
           <p class="legend-note">地图仅展示当月发生核心风土动作的物产；休眠、生长等后台状态在物产卡片中呈现。</p>
+        </div>
+        <div class="legend-block" id="legendLaborSize" style="display:none">
+          <p class="legend-title">原点大小 · 当月劳作规模</p>
+          <div class="legend-sizes">
+            <div class="ls-row"><span class="dot-sample" data-size="s"></span><span>弱 <i>≤20</i></span></div>
+            <div class="ls-row"><span class="dot-sample" data-size="m"></span><span>正在发生 <i>21–50</i></span></div>
+            <div class="ls-row"><span class="dot-sample" data-size="l"></span><span>较重要 <i>51–80</i></span></div>
+            <div class="ls-row"><span class="dot-sample" data-size="xl"></span><span>高峰 <i>81–100</i></span></div>
+          </div>
+        </div>
+        <div class="legend-block" id="legendLaborColor" style="display:none">
+          <p class="legend-title">原点颜色 · 山海劳作</p>
+          <div class="legend-colors">
+            <div class="lc-row"><span class="color-sample" style="background:#6b8578"></span><span class="lc-name">山地劳作</span><span class="lc-desc">采制 · 挖笋 · 伐采</span></div>
+            <div class="lc-row"><span class="color-sample" style="background:#5f86a8"></span><span class="lc-name">沿海劳作</span><span class="lc-desc">捕捞 · 晾晒 · 窨制</span></div>
+          </div>
+          <p class="legend-note">悬停点位查看具体劳作类型与涉及物产；点击点位仍打开物产档案。</p>
         </div>
       </div>
       <div class="legend-bar" id="legendBar">
@@ -106,6 +127,20 @@
           <span class="lb-item"><i class="lb-dot c" style="background:#d8b84c"></i>成熟</span>
           <span class="lb-item"><i class="lb-dot c" style="background:#bb7b4e"></i>制作/加工</span>
           <span class="lb-item"><i class="lb-dot c" style="background:#E8A0A8"></i>物候盛景</span>
+        </div>
+      </div>
+      <div class="legend-bar" id="legendBarLabor" style="display:none">
+        <div class="lb-row">
+          <span class="lb-label">原点大小</span>
+          <span class="lb-item"><i class="lb-dot s"></i>弱</span>
+          <span class="lb-item"><i class="lb-dot m"></i>正在发生</span>
+          <span class="lb-item"><i class="lb-dot l"></i>较重要</span>
+          <span class="lb-item"><i class="lb-dot xl"></i>高峰</span>
+        </div>
+        <div class="lb-row">
+          <span class="lb-label">山海劳作</span>
+          <span class="lb-item"><i class="lb-dot c" style="background:#6b8578"></i>山地</span>
+          <span class="lb-item"><i class="lb-dot c" style="background:#5f86a8"></i>沿海</span>
         </div>
       </div>
     </section>

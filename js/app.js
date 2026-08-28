@@ -135,6 +135,7 @@
     splashActive: true,   // 开屏期间隐藏物产原点
     pendingEnter: false,  // 数据未就绪时用户已点击「点击进入」
     heroes: new Set(),    // 当月主角物产 id（峰值月轮换）
+    laborMode: false,     // 地图视角：false=物产层（现状），true=劳作层（人的劳作）
     defaultZoom: null,    // 进入时的默认缩放：低于等于该级别不显示插画
     defaultCenter: null,  // 进入时的默认视图中心（切月时重置回该视图）
     imgAvailable: null,   // 已有抠图文件的物产 id 集合（小写）
@@ -727,6 +728,49 @@
     return out;
   }
 
+  /* ---------------- 劳作层（人的地方性）---------------- */
+  const INLAND_CITIES = new Set(["南平市", "三明市", "龙岩市"]);   // 山地三市
+  const LABOR_MT = "#6b8578";   // 山地劳作·青黛
+  const LABOR_SEA = "#5f86a8";  // 沿海劳作·海蓝
+
+  // 按物候词元 × 物产分类 → 劳作类型（全部可溯源，规则与数据验证一致）
+  function laborType(p, status) {
+    const st = String(status || "");
+    const cat = (p.basic && p.basic.category) || "";
+    if (st.indexOf("采收") >= 0 || st.indexOf("成熟") >= 0) {
+      if (cat === "茶") return "采制";
+      if (cat === "水产" || cat === "海产") return "捕捞采捕";
+      if (cat === "畜禽") return "出栏";
+      if (cat === "菌类") return "采菇";
+      if (cat === "笋类") return "挖笋";
+      if (cat === "竹木") return "伐采";
+      if (cat === "蜂产品") return "割蜜";
+      return "采收";
+    }
+    if (st.indexOf("加工") >= 0) {
+      if (cat === "传统加工物") return "制作晾晒";
+      if (cat === "茶") return "制茶";
+      if (cat === "香料") return "窨制";
+      if (cat === "蔬菜") return "腌晒";
+      return "加工";
+    }
+    if (st.indexOf("开花") >= 0) return cat === "花卉" ? "花事" : "管护";
+    if (st.indexOf("储藏") >= 0) return "储藏";
+    if (st.indexOf("生长") >= 0) return "养护";
+    return "其他";
+  }
+
+  // 当前月该物产的劳作信息（供 targetStyle 与 hover 复用）
+  function laborInfo(p) {
+    const row = state.month === 0
+      ? primaryCoreRow(p)
+      : (state.showAll ? (primaryCoreRow(p) || monthRow(p, state.month)) : monthRow(p, state.month));
+    const st = row && row.phenology_status;
+    const type = laborType(p, st);
+    const inland = !!INLAND_CITIES.has((p.basic && p.basic.city) || "");
+    return { type, inland, color: inland ? LABOR_MT : LABOR_SEA };
+  }
+
   function targetStyle(p) {
     const row = state.month === 0
       ? primaryCoreRow(p)
@@ -736,6 +780,21 @@
     const sz = sizeFor(a);
     const active = state.showAll || a >= ACTIVE_MIN;
     const isHero = !!state.heroes && state.heroes.has(p.id);
+    // 劳作层：大小=人力规模（activity），颜色=山海分组，无主角放大
+    if (state.laborMode) {
+      const li = laborInfo(p);
+      return {
+        visible: active,
+        r: active ? sz.r : 4,
+        color: li.color,
+        haloR: active ? sz.halo : 18,
+        opacity: active ? (state.activePid && state.activePid !== p.id ? 0.6 : 1) : 0.16,
+        haloOpacity: active ? (state.activePid && state.activePid !== p.id ? 0.07 : 0.12) : 0,
+        labelOn: active,
+        stage: st,
+        labor: li,
+      };
+    }
     return {
       visible: active,
       r: active ? sz.r * (isHero ? HERO_SCALE : 1) : 4,
@@ -1308,7 +1367,12 @@
     if (!entry || !originLayer.hasLayer(entry.dot)) {
       // 聚合模式下的单个原点（clusterLayer 内的 dot）
       if (over) {
-        showTooltip(e, p.name, statusLine(p));
+        if (state.laborMode) {
+          const li = laborInfo(p);
+          showTooltip(e, p.name, (li.inland ? "山地" : "沿海") + " · " + li.type, li.color);
+        } else {
+          showTooltip(e, p.name, statusLine(p));
+        }
       } else {
         hideTooltip();
       }
@@ -1321,7 +1385,12 @@
       const st = stageFor(row, productKind(p));
       entry.dot.setStyle({ radius: sz.r * 1.18 });
       entry.halo.setStyle({ radius: sz.halo * 1.25, fillOpacity: 0.18 });
-      showTooltip(e, p.name, statusLine(p), mapColor(st));
+      if (state.laborMode) {
+        const li = laborInfo(p);
+        showTooltip(e, p.name, (li.inland ? "山地" : "沿海") + " · " + li.type, li.color);
+      } else {
+        showTooltip(e, p.name, statusLine(p), mapColor(st));
+      }
       const el = entry.label.getElement();
       if (el) {
         const span = el.querySelector(".pl");
@@ -1556,7 +1625,8 @@
     MONTHS.forEach((name, i) => {
       const m = i + 1;
       const item = document.createElement("button");
-      item.className = "month-item" + (m === state.month ? " active" : "");
+      const season = m >= 3 && m <= 5 ? "spring" : m >= 6 && m <= 8 ? "summer" : m >= 9 && m <= 11 ? "autumn" : "winter";
+      item.className = "month-item season-" + season + (m === state.month ? " active" : "");
       item.dataset.month = m;
       item.type = "button";
       item.title = `${m}月 ${name}`;
@@ -1596,6 +1666,18 @@
     if (state.month <= 0) { btn.hidden = true; return; }
     btn.hidden = false;
     btn.innerHTML = `<span class="mgb-month">${state.month}月</span>查看风土手记`;
+  }
+
+  // 物产层 / 劳作层 图例切换（桌面 legend + 移动 legendBar 各两套）
+  function updateLegendMode() {
+    const on = state.laborMode;
+    const show = (id, v) => { const el = $(id); if (el) el.style.display = v ? "" : "none"; };
+    show("#legendSize", !on);
+    show("#legendColor", !on);
+    show("#legendLaborSize", on);
+    show("#legendLaborColor", on);
+    show("#legendBar", !on);
+    show("#legendBarLabor", on);
   }
 
   function setMonth(m) {
@@ -1853,6 +1935,20 @@
     });
     $("#btnMonthGuide").addEventListener("click", () => { if (state.month > 0) openMonthGuide(state.month); });
     updateMonthGuideBtn();
+    // 物产层 / 劳作层 切换
+    $("#mapModeToggle").addEventListener("click", (e) => {
+      const btn = e.target.closest(".mode-btn");
+      if (!btn) return;
+      const mode = btn.dataset.mode;
+      const next = mode === "labor";
+      if (next === state.laborMode) return;
+      state.laborMode = next;
+      document.querySelectorAll("#mapModeToggle .mode-btn").forEach((b) => b.classList.toggle("active", b === btn));
+      updateLegendMode();
+      if (state.activePid) selectProduct(null);
+      renderOrigins(false, "mode");
+    });
+    updateLegendMode();
     $("#detailClose").addEventListener("click", () => selectProduct(null));
     $("#mgClose").addEventListener("click", closeMonthGuide);
     $("#mgDismiss").addEventListener("click", closeMonthGuide);

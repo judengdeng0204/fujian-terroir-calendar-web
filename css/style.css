@@ -364,6 +364,23 @@ button { font-family: inherit; }
   font-weight: 700;
 }
 
+/* 季节色带：月份轴顶部细色条（春嫩绿 / 夏浓绿 / 秋金 / 冬灰蓝） */
+.month-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 2px;
+  right: 2px;
+  height: 3px;
+  border-radius: 2px;
+  opacity: 0.55;
+  pointer-events: none;
+}
+.month-item.season-spring::before { background: #a3c47f; }
+.month-item.season-summer::before { background: #5d8a5e; }
+.month-item.season-autumn::before { background: #d8a34c; }
+.month-item.season-winter::before { background: #8fa3b0; }
+
 /* 底部横排图例（移动端） */
 .legend-bar { display: none; }
 
@@ -594,7 +611,7 @@ button { font-family: inherit; }
 
 .month-guide-btn {
   position: absolute;
-  top: 14px;
+  top: 56px;
   right: 16px;
   z-index: 510;
   background: rgba(255,255,255,0.92);
@@ -611,6 +628,34 @@ button { font-family: inherit; }
 }
 .month-guide-btn:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
 .month-guide-btn .mgb-month { font-weight: 500; color: var(--accent); margin-right: 4px; }
+
+/* 物产 / 劳作 视角切换 */
+.map-mode-toggle {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  z-index: 510;
+  display: flex;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px;
+  box-shadow: 0 2px 10px rgba(60,64,56,0.10);
+}
+.map-mode-toggle .mode-btn {
+  border: 0;
+  background: transparent;
+  font-size: 11.5px;
+  color: var(--ink-faint);
+  padding: 4px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  transition: background 0.2s, color 0.2s;
+}
+.map-mode-toggle .mode-btn:hover { color: var(--ink-soft); }
+.map-mode-toggle .mode-btn.active { background: var(--accent); color: #fff; }
 
 .map-tooltip {
   position: absolute;
