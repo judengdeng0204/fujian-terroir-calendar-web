@@ -487,10 +487,15 @@
 
   /* ---------------- 地图 ---------------- */
   function initMap() {
+    // mobileView 判定前置：视口窄 或 地图容器窄（部分手机/浏览器 innerWidth 异常时兜底）
+    const initWrapEl = document.querySelector(".map-wrap");
+    const mobileView = window.innerWidth < 860 || (initWrapEl && initWrapEl.offsetWidth < 700);
     map = L.map("map", {
       zoomControl: false,
       attributionControl: false,
-      minZoom: 7,    // 最小缩放：再小会暴露出整片邻国与海洋，破坏「福建地图」的视觉聚焦
+      // minZoom 必须随设备放宽：桌面 7 聚焦福建；移动端 5 才能缩小到「福建+邻省海域」完整视图。
+      // 之前写死 7，导致移动端 fitBounds/setView 想给 zoom 5 也被强行抬回 7 → 福建占满屏（用户多轮反馈的根因）
+      minZoom: mobileView ? 5 : 7,
       maxZoom: 13,
       preferCanvas: false,
     });
@@ -518,13 +523,10 @@
     tileLayer.addTo(map);
 
     const fujianBounds = L.geoJSON(state.geo).getBounds();
-    // mobileView 双条件判定：视口窄 或 地图容器窄（部分手机/浏览器 innerWidth 异常时兜底）
-    const mapWrapEl = document.querySelector(".map-wrap");
-    const mobileView = window.innerWidth < 860 || (mapWrapEl && mapWrapEl.offsetWidth < 700);
+    // mobileView 已在 initMap 开头判定（map 创建时用于 minZoom）
     if (mobileView) {
       // 移动端：固定视图，不依赖 fitBounds 的容器尺寸计算
-      // （规避 iOS Safari 100vh bug / 视口异常导致容器超高 → fitBounds 把 zoom 推高 → 福建占满屏）
-      // zoom 5.0 在 390-430px 屏宽下福建约占 28-31%，邻省（浙/赣/湘/粤/台）与海域完整可见
+      // zoom 5.0（minZoom 已放宽到 5）在 390-430px 屏宽下福建约占 28-31%，邻省（浙/赣/湘/粤/台）与海域完整可见
       map.setView([25.9, 118.3], 5.0, { animate: false });
     } else {
       map.fitBounds(fujianBounds.pad(0.16), { animate: false, maxZoom: 9 });
