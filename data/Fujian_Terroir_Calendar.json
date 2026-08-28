@@ -29362,7 +29362,7 @@
     "geo_scope": null,
     "geographical_indication": "地理标志证明商标（霞浦紫菜，2009）",
     "protection_scope": "霞浦县沿海养殖海域",
-    "seasonality_summary": "白露（9月上旬）前后下苗，10月下旬至11月开始采收，可采五茬，11月至次年2月为采收旺季。",
+    "seasonality_summary": "白露（9月上旬）前后下苗，10月下旬至11月开始采收，可采五茬，11月至次年2月为采收旺季。注：头水紫菜（10月首采）品质最佳，可采五茬；采收主季延续至冬季（11月至次年2月）。",
     "status": "verified",
     "notes": "坐标为霞浦县沿海区域近似中心点，并非具体生产地。"
    },
@@ -29753,6 +29753,15 @@
      "standardized_value": "peak=12",
      "source_url": "https://k.sina.com.cn/article_2090512390_7c9ab006020032emg.html；https://news.qq.com/rain/a/20241121A08XW600?id=20241121A08XW600",
      "note": "物候全量核验 2026-08-28"
+    },
+    {
+     "source_id": "FJ075-S01",
+     "product_id": "FJ075",
+     "field_name": "seasonality_summary（口径说明）",
+     "raw_value": "连江美食月历：10月左右头水紫菜上市",
+     "standardized_value": "注：头水紫菜（10月首采）品质最佳，可采五茬；采收主季延续至冬季（11月至次年2月）。",
+     "source_url": "https://www.163.com/dy/article/EPF9FRKB05455BRU.html",
+     "note": "最佳食用期 vs 采捕上市期口径 2026-08-28"
     }
    ]
   },
@@ -29778,7 +29787,7 @@
     "geo_scope": "东山县现辖行政区域及其海域（国家地理标志产品保护范围）",
     "geographical_indication": "国家地理标志保护产品（2006年8月17日国家质检总局批准）；国家地理标志证明商标（2014年）；东山县被誉为“中国鲍鱼种苗之乡”",
     "protection_scope": "东山县现辖行政区域及其海域",
-    "seasonality_summary": "农历十月开始育苗，育苗到成品最短周期约两年；每年4–5月引进种鲍催熟，5月前后为集中收获上市期；盛夏鲍鱼北上“度夏”、金秋十月归来育肥或直接上市",
+    "seasonality_summary": "农历十月开始育苗，育苗到成品最短周期约两年；每年4–5月引进种鲍催熟，5月前后为集中收获上市期；盛夏鲍鱼北上“度夏”、金秋十月归来育肥或直接上市。注：农业部门称秋季（9-11月）为鲍鱼肉质最肥美期；采捕与上市集中于春夏。",
     "status": "verified",
     "notes": "坐标为东山县行政区域近似中心点，并非具体生产地。东山县为全国最大鲍鱼育苗基地，年产鲍鱼苗60亿粒、占全国总量60%（2025年漳州海洋渔业局）。"
    },
@@ -30160,6 +30169,15 @@
      "standardized_value": "peak=10",
      "source_url": "https://tv.cctv.com/v/v2/VIDEgVncox2se1AruJdxOAlB160420.html；https://big5.cctv.com/gate/big5/tv.cctv.com/2014/04/28/VIDE1409105717330370.shtml",
      "note": "物候全量核验 2026-08-28"
+    },
+    {
+     "source_id": "FJ076-S01",
+     "product_id": "FJ076",
+     "field_name": "seasonality_summary（口径说明）",
+     "raw_value": "省农业农村厅：秋天的鲍鱼肉质肥美鲜嫩，为秋季进补佳品",
+     "standardized_value": "注：农业部门称秋季（9-11月）为鲍鱼肉质最肥美期；采捕与上市集中于春夏。",
+     "source_url": "https://nynct.fujian.gov.cn/ztzl/fsfsfnyp/202309/t20230918_6260456.htm",
+     "note": "最佳食用期 vs 采捕上市期口径 2026-08-28"
     }
    ]
   },
@@ -30185,7 +30203,7 @@
     "geo_scope": null,
     "geographical_indication": "国家地理标志产品（沙西螃蟹/沙西红蟳）",
     "protection_scope": "沙西镇庄前、高林、屿头等9个村生产海域：东经117°27′27″至117°39′35″，北纬23°50′30″至23°56′00″",
-    "seasonality_summary": "3月投放蟹苗，秋季至年底育成上市（单只可达6两至1斤），12月进入最佳赏味期并大量上市",
+    "seasonality_summary": "3月投放蟹苗，秋季至年底育成上市（单只可达6两至1斤），12月进入最佳赏味期并大量上市。注：民谚「秋风起，蟹脚痒」，9-10月为传统食蟹季；数据采捕上市峰值在岁末（12月），秋冬皆肥。",
     "status": "verified",
     "notes": "坐标为沙西镇行政区域近似中心点，并非具体生产地。红蟳即锯缘青蟹雌性膏蟹；气候采用原属漳浦县县域数据。"
    },
@@ -30532,6 +30550,15 @@
      "standardized_value": "peak=12",
      "source_url": "https://www.zhangzhou.gov.cn/cms/html/zzshyyyyj/2025-12-22/517216219.html；https://fj.people.com.cn/BIG5/n2/2022/0531/c181466-35293868.html",
      "note": "物候全量核验 2026-08-28"
+    },
+    {
+     "source_id": "FJ077-S01",
+     "product_id": "FJ077",
+     "field_name": "seasonality_summary（口径说明）",
+     "raw_value": "省农业农村厅：秋风起蟹脚痒，秋天是螃蟹最佳赏味期",
+     "standardized_value": "注：民谚「秋风起，蟹脚痒」，9-10月为传统食蟹季；数据采捕上市峰值在岁末（12月），秋冬皆肥。",
+     "source_url": "https://nynct.fujian.gov.cn/ztzl/fsfsfnyp/202309/t20230918_6260456.htm",
+     "note": "最佳食用期 vs 采捕上市期口径 2026-08-28"
     }
    ]
   },
@@ -30946,7 +30973,7 @@
     "geo_scope": null,
     "geographical_indication": "农产品地理标志、地理标志证明商标（平潭坛紫菜，2020）",
     "protection_scope": "平潭综合实验区现辖行政区周边海域",
-    "seasonality_summary": "9月上旬至下旬（白露至秋分）采苗，10月下旬至11月起采收，采收季延续至冬季。",
+    "seasonality_summary": "9月上旬至下旬（白露至秋分）采苗，10月下旬至11月起采收，采收季延续至冬季。注：头水紫菜（10月首采）品质最佳；采收延续至冬季。",
     "status": "verified",
     "notes": "坐标为平潭县行政区域近似中心点，并非具体生产地。"
    },
@@ -31336,6 +31363,15 @@
      "standardized_value": "peak=12",
      "source_url": "https://www.sohu.com/a/205538999_351239；https://sinogi.cn/wap/index.php/product/zxshow/id/8377/nid/22542",
      "note": "物候全量核验 2026-08-28"
+    },
+    {
+     "source_id": "FJ079-S01",
+     "product_id": "FJ079",
+     "field_name": "seasonality_summary（口径说明）",
+     "raw_value": "连江美食月历：10月左右头水紫菜上市",
+     "standardized_value": "注：头水紫菜（10月首采）品质最佳；采收延续至冬季。",
+     "source_url": "https://www.163.com/dy/article/EPF9FRKB05455BRU.html",
+     "note": "最佳食用期 vs 采捕上市期口径 2026-08-28"
     }
    ]
   },
@@ -31768,7 +31804,7 @@
     "geo_scope": null,
     "geographical_indication": "国家地理标志保护产品（2013年第166号公告）；2023年入选国家地理标志产品保护示范区筹建名单；“中国鲍鱼之乡”",
     "protection_scope": "连江县现辖行政区域及海域（北纬26°07′～26°27′，东经119°17′～120°31′）",
-    "seasonality_summary": "春鲍3–6月收获上市（清明后为高峰），11月回迁后越冬生长至春节前再上市一批；4月底–5月鲍鱼北上避暑、11月回迁为“南北对养”周期",
+    "seasonality_summary": "春鲍3–6月收获上市（清明后为高峰），11月回迁后越冬生长至春节前再上市一批；4月底–5月鲍鱼北上避暑、11月回迁为“南北对养”周期。注：农业部门称秋季（9-11月）为鲍鱼肉质最肥美期；采捕与上市则按南北对养周期集中于春夏与岁末。",
     "status": "verified",
     "notes": "坐标为连江县行政区域近似中心点，并非具体生产地。连江夏季海水温度常超30℃，采用“南北对养”模式（夏季北上山东避暑、冬季回迁）。"
    },
@@ -32150,6 +32186,15 @@
      "standardized_value": "peak=4",
      "source_url": "https://fj.people.com.cn/n2/2025/0410/c181466-41192056.html；https://www.toutiao.com/article/7622976748052922921",
      "note": "物候全量核验 2026-08-28"
+    },
+    {
+     "source_id": "FJ081-S01",
+     "product_id": "FJ081",
+     "field_name": "seasonality_summary（口径说明）",
+     "raw_value": "省农业农村厅：秋天的鲍鱼肉质肥美鲜嫩，为秋季进补佳品",
+     "standardized_value": "注：农业部门称秋季（9-11月）为鲍鱼肉质最肥美期；采捕与上市则按南北对养周期集中于春夏与岁末。",
+     "source_url": "https://nynct.fujian.gov.cn/ztzl/fsfsfnyp/202309/t20230918_6260456.htm",
+     "note": "最佳食用期 vs 采捕上市期口径 2026-08-28"
     }
    ]
   },
@@ -32175,7 +32220,7 @@
     "geo_scope": null,
     "geographical_indication": "国家地理标志保护产品（2007年国家质检总局第136号公告）",
     "protection_scope": "福建省莆田市秀屿区南日镇现辖行政区域",
-    "seasonality_summary": "鲍鱼人工育苗催产季节为春季4月中旬–5月中旬、秋季10月上旬–11月下旬；8–10月为鱼苗生长高峰期，10月底可上市；采捕标准壳长7cm以上、体重50g以上",
+    "seasonality_summary": "鲍鱼人工育苗催产季节为春季4月中旬–5月中旬、秋季10月上旬–11月下旬；8–10月为鱼苗生长高峰期，10月底可上市；采捕标准壳长7cm以上、体重50g以上。注：农业部门称秋季（9-11月）为鲍鱼肉质最肥美期；采捕与上市集中于春夏及10月底。",
     "status": "verified",
     "notes": "坐标为南日镇行政区域近似中心点，并非具体生产地；养殖区为南日岛周边海域。"
    },
@@ -32549,6 +32594,15 @@
      "standardized_value": "peak=4",
      "source_url": "https://dzb.hxnews.com/2017-03/30/content_437842.htm；https://www.ptxw.com/pspd/zx/202602/t20260210_512704.htm",
      "note": "物候全量核验 2026-08-28"
+    },
+    {
+     "source_id": "FJ082-S01",
+     "product_id": "FJ082",
+     "field_name": "seasonality_summary（口径说明）",
+     "raw_value": "省农业农村厅：秋天的鲍鱼肉质肥美鲜嫩，为秋季进补佳品",
+     "standardized_value": "注：农业部门称秋季（9-11月）为鲍鱼肉质最肥美期；采捕与上市集中于春夏及10月底。",
+     "source_url": "https://nynct.fujian.gov.cn/ztzl/fsfsfnyp/202309/t20230918_6260456.htm",
+     "note": "最佳食用期 vs 采捕上市期口径 2026-08-28"
     }
    ]
   },
