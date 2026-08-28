@@ -518,15 +518,17 @@
     tileLayer.addTo(map);
 
     const fujianBounds = L.geoJSON(state.geo).getBounds();
-    const mobileView = window.innerWidth < 860;
-    // 默认视图：福建全境 + 邻省（浙/赣/湘/粤/台）与海域参照（fjt 截图基准）
-    // maxZoom 硬上限：iOS Safari 100vh bug 会让地图容器高度异常 → fitBounds 按高度把 zoom 推高 → 福建占满屏。
-    // 用 maxZoom 兜底，无论容器尺寸多异常，手机端 zoom 都不超过 5.2（福建约占屏宽 33%，邻省可见）。
-    map.fitBounds(fujianBounds.pad(mobileView ? 1.2 : 0.16), {
-      animate: false,
-      maxZoom: mobileView ? 5.2 : 9,
-    });
-    if (mobileView && map.getZoom() > 5.2) map.setZoom(5.2, { animate: false });
+    // mobileView 双条件判定：视口窄 或 地图容器窄（部分手机/浏览器 innerWidth 异常时兜底）
+    const mapWrapEl = document.querySelector(".map-wrap");
+    const mobileView = window.innerWidth < 860 || (mapWrapEl && mapWrapEl.offsetWidth < 700);
+    if (mobileView) {
+      // 移动端：固定视图，不依赖 fitBounds 的容器尺寸计算
+      // （规避 iOS Safari 100vh bug / 视口异常导致容器超高 → fitBounds 把 zoom 推高 → 福建占满屏）
+      // zoom 5.0 在 390-430px 屏宽下福建约占 28-31%，邻省（浙/赣/湘/粤/台）与海域完整可见
+      map.setView([25.9, 118.3], 5.0, { animate: false });
+    } else {
+      map.fitBounds(fujianBounds.pad(0.16), { animate: false, maxZoom: 9 });
+    }
     state.defaultZoom = map.getZoom();   // 默认视图缩放：未放大前不显示插画
     state.defaultCenter = map.getCenter(); // 默认视图中心（切月时重置回该视图）
     map.setMaxBounds(fujianBounds.pad(mobileView ? 2.0 : 0.55));
