@@ -136,6 +136,7 @@
     pendingEnter: false,  // 数据未就绪时用户已点击「点击进入」
     heroes: new Set(),    // 当月主角物产 id（峰值月轮换）
     defaultZoom: null,    // 进入时的默认缩放：低于等于该级别不显示插画
+    defaultCenter: null,  // 进入时的默认视图中心（切月时重置回该视图）
     imgAvailable: null,   // 已有抠图文件的物产 id 集合（小写）
     monthGuides: null,    // 月份导语（12 个月的主题/金句/正文）
     guideTimer: null,     // 导语插图轮播定时器
@@ -521,6 +522,7 @@
     // 默认视图：福建全境 + 邻省（浙/赣/湘/粤/台）与海域参照（fjt 截图基准）
     map.fitBounds(fujianBounds.pad(mobileView ? 0.04 : 0.16), { animate: false });
     state.defaultZoom = map.getZoom();   // 默认视图缩放：未放大前不显示插画
+    state.defaultCenter = map.getCenter(); // 默认视图中心（切月时重置回该视图）
     map.setMaxBounds(fujianBounds.pad(mobileView ? 1.25 : 0.55));
 
     // 邻省矢量底图（浙江/江西/湖南/广东），瓦片不可用时仍能看到福建周边
@@ -1559,7 +1561,7 @@
       item.type = "button";
       item.title = `${m}月 ${name}`;
       item.innerHTML = `<span class="mi-dot"></span><span class="mi-num">${m}月</span>`;
-      item.addEventListener("click", () => setMonth(m, true));
+      item.addEventListener("click", () => setMonth(m));
       tl.appendChild(item);
     });
     // 「全年都有」时间按钮（第 13 个节点）
@@ -1577,7 +1579,7 @@
     tl.addEventListener("touchend", (e) => {
       if (sx === null) return;
       const dx = e.changedTouches[0].clientX - sx;
-      if (Math.abs(dx) > 30) setMonth(state.month + (dx < 0 ? 1 : -1), true);
+      if (Math.abs(dx) > 30) setMonth(state.month + (dx < 0 ? 1 : -1));
       sx = null;
     }, { passive: true });
   }
@@ -1588,7 +1590,15 @@
     if (el) el.scrollIntoView({ inline: "center", block: "nearest", behavior: "smooth" });
   }
 
-  function setMonth(m, showGuide) {
+  function updateMonthGuideBtn() {
+    const btn = $("#btnMonthGuide");
+    if (!btn) return;
+    if (state.month <= 0) { btn.hidden = true; return; }
+    btn.hidden = false;
+    btn.innerHTML = `<span class="mgb-month">${state.month}月</span>查看风土手记`;
+  }
+
+  function setMonth(m) {
     if (m < 0) m = 12;
     if (m > 12) m = 1;
     if (m === state.month) return;
@@ -1597,9 +1607,12 @@
     try { history.replaceState(null, "", "?month=" + m); } catch (e) { /* noop */ }
     syncTimeline();
     if (state.activePid) selectProduct(null);
-    if (showGuide) state.guidePendingReveal = true;   // 导语打开期间不播原点动画，关闭后再补播
     renderOrigins(true, "month");
-    if (showGuide) openMonthGuide(m);
+    // 切月时地图重置回默认视图（用户可自行放大/拖动查看）
+    if (state.defaultCenter && state.defaultZoom) {
+      map.setView(state.defaultCenter, state.defaultZoom, { animate: false });
+    }
+    updateMonthGuideBtn();
   }
 
   function scrollActiveMonth() {
@@ -1836,7 +1849,10 @@
       if (state.activePid) selectProduct(null);
       renderOrigins(true, "month");
       try { history.replaceState(null, "", "?month=" + m); } catch (e) { /* noop */ }
+      updateMonthGuideBtn();
     });
+    $("#btnMonthGuide").addEventListener("click", () => { if (state.month > 0) openMonthGuide(state.month); });
+    updateMonthGuideBtn();
     $("#detailClose").addEventListener("click", () => selectProduct(null));
     $("#mgClose").addEventListener("click", closeMonthGuide);
     $("#mgDismiss").addEventListener("click", closeMonthGuide);
