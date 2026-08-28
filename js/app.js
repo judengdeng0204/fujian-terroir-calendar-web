@@ -518,12 +518,10 @@
 
     const fujianBounds = L.geoJSON(state.geo).getBounds();
     const mobileView = window.innerWidth < 860;
-    map.fitBounds(fujianBounds.pad(0.06), { animate: false });
-    // 宽屏容器下 fitBounds 按高度受限，福建水平占比低、左右露出邻国与大片海洋。
-    // 再放大一档让福建成为画面主体（邻国出画），用户可缩小/拖动查看周边。
-    if (map.getZoom() < 8) map.setZoom(map.getZoom() + 1, { animate: false });
+    // 默认视图：福建全境 + 邻省（浙/赣/湘/粤/台）与海域参照（fjt 截图基准）
+    map.fitBounds(fujianBounds.pad(mobileView ? 0.04 : 0.16), { animate: false });
     state.defaultZoom = map.getZoom();   // 默认视图缩放：未放大前不显示插画
-    map.setMaxBounds(fujianBounds.pad(mobileView ? 1.25 : 0.35));
+    map.setMaxBounds(fujianBounds.pad(mobileView ? 1.25 : 0.55));
 
     // 邻省矢量底图（浙江/江西/湖南/广东），瓦片不可用时仍能看到福建周边
     if (state.chinaGeo && state.chinaGeo.features) {
