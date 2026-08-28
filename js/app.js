@@ -1429,21 +1429,37 @@
   function monthImagePool(m) {
     const avail = state.imgAvailable;
     if (!avail) return [];
-    const heroes = computeHeroes(m);   // 主角优先：导语插画同步当月主角轮换
+    // 只保留当月主角的插画（主角随月轮换 → 导语插画每月不同）
+    const heroes = computeHeroes(m);
+    const heroPool = [];
+    for (const p of state.products) {
+      if (!heroes.has(p.id) || !avail.has(p.id.toLowerCase())) continue;
+      heroPool.push({
+        url: `assets/illustrations/splash/cutout/${p.id.toLowerCase()}.webp`,
+        name: p.name,
+        id: p.id,
+        category: (p.basic && p.basic.category) || "",
+      });
+    }
+    if (heroPool.length) {
+      for (let i = heroPool.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const t = heroPool[i]; heroPool[i] = heroPool[j]; heroPool[j] = t;
+      }
+      return heroPool;
+    }
+    // 兜底：主角均无插画时，退回当月核心动作物产
     const core = [], any = [];
     for (const p of state.products) {
-      if (state.yearRoundIds.has(p.id)) continue;   // 「全年都有」物产不进单月导语插图池
+      if (state.yearRoundIds.has(p.id)) continue;
       const row = p._pheno && p._pheno[m];
       if (!row || !avail.has(p.id.toLowerCase())) continue;
       const hl = state.highlightMonths && state.highlightMonths.get(p.id);
-      if (hl && !hl.has(m)) continue;               // 季节性高光：非事件月不进导语插图池
+      if (hl && !hl.has(m)) continue;
       if (isCoreStatus(String(row.phenology_status || ""), productKind(p))) core.push(p);
       else any.push(p);
     }
-    let list;
-    const heroList = core.filter((p) => heroes.has(p.id));
-    if (heroList.length) list = heroList.concat(core.filter((p) => !heroes.has(p.id)));
-    else list = core.length ? core : any;
+    const list = core.length ? core : any;
     for (let i = list.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       const t = list[i]; list[i] = list[j]; list[j] = t;
