@@ -135,9 +135,6 @@
     splashActive: true,   // 开屏期间隐藏物产原点
     pendingEnter: false,  // 数据未就绪时用户已点击「点击进入」
     heroes: new Set(),    // 当月主角物产 id（峰值月轮换）
-    trendOn: false,       // 全年趋势演示模式
-    trendTimer: null,     // 趋势自动拨月定时器
-    trendSaved: null,     // 进入趋势前的状态（{filters, month, showAll}）
     defaultZoom: null,    // 进入时的默认缩放：低于等于该级别不显示插画
     imgAvailable: null,   // 已有抠图文件的物产 id 集合（小写）
     monthGuides: null,    // 月份导语（12 个月的主题/金句/正文）
@@ -708,8 +705,9 @@
 
   /* 每月主角：当月=该物产全年 activity 峰值 且 ≥门槛，同品类≤2，取前5（峰值月轮换叙事） */
   const HERO_MIN = 50, HERO_MAX = 5, HERO_SCALE = 1.9;
-  function heroListFor(m) {
-    if (m <= 0) return [];
+  function computeHeroes(m) {
+    const out = new Set();
+    if (m <= 0) return out;
     const catCount = {}, heroes = [];
     for (const p of state.products) {
       let bestA = 0, bestM = 0;
@@ -725,112 +723,8 @@
       heroes.push({ p, a: bestA });
     }
     heroes.sort((x, y) => y.a - x.a);
-    return heroes.slice(0, HERO_MAX);
-  }
-
-  function computeHeroes(m) {
-    return new Set(heroListFor(m).map((h) => h.p.id));
-  }
-
-  /* ---------------- 全年趋势演示 ---------------- */
-  const trendLayer = L.layerGroup();   // 钟摆轨迹线图层（仅趋势模式显示）
-
-  function pendulumPoints() {
-    const pts = [];
-    for (let m = 1; m <= 12; m++) {
-      const list = heroListFor(m);
-      if (!list.length) continue;
-      let sw = 0, slat = 0, slng = 0;
-      for (const { p, a } of list) {
-        const lat = num(p.basic && p.basic.latitude), lng = num(p.basic && p.basic.longitude);
-        if (lat === null || lng === null) continue;
-        sw += a; slat += a * lat; slng += a * lng;
-      }
-      if (sw) pts.push({ month: m, lat: slat / sw, lng: slng / sw });
-    }
-    return pts;
-  }
-
-  function drawPendulum() {
-    trendLayer.clearLayers();
-    const pts = pendulumPoints();
-    if (pts.length < 2) return;
-    L.polyline(pts.map((p) => [p.lat, p.lng]), {
-      color: "#6f8fae", weight: 1.6, opacity: 0.55, dashArray: "2 6", interactive: false,
-    }).addTo(trendLayer);
-    for (const p of pts) {
-      const isCur = p.month === state.month;
-      L.circleMarker([p.lat, p.lng], {
-        radius: isCur ? 6.5 : 3.5,
-        color: isCur ? "#2c4a61" : "#7fa0bf",
-        weight: isCur ? 2 : 1,
-        fillColor: isCur ? "#2c4a61" : "#e6f1fb",
-        fillOpacity: isCur ? 0.95 : 0.75,
-        interactive: false,
-      }).addTo(trendLayer);
-    }
-    if (!map.hasLayer(trendLayer)) trendLayer.addTo(map);
-  }
-
-  function trendSetMonth(m) {
-    state.month = m;
-    state.heroes = computeHeroes(m);
-    try { history.replaceState(null, "", "?month=" + m); } catch (e) { /* noop */ }
-    syncTimeline();
-    if (state.activePid) selectProduct(null);
-    renderOrigins(true, "month");
-  }
-
-  function trendStart() {
-    if (state.trendOn) { trendStop(); return; }
-    state.trendSaved = { filters: state.filters, month: state.month, showAll: state.showAll };
-    state.trendOn = true;
-    state.filters = {};
-    document.querySelectorAll(".chip").forEach((c) => c.classList.remove("on"));
-    if (state.showAll) {
-      state.showAll = false;
-      const t = $("#showAllToggle"); if (t) t.checked = false;
-    }
-    drawPendulum();
-    const btn = $("#btnTrend");
-    if (btn) { btn.textContent = "⏸ 停止"; btn.classList.add("on"); }
-    const start = 1;   // 趋势演示总是从 1 月播完整年
-    let m = start;
-    const tick = () => {
-      if (!state.trendOn) return;
-      trendSetMonth(m);
-      drawPendulum();
-      m++;
-      if (m > 12) { trendStop(); return; }
-      state.trendTimer = setTimeout(tick, 1600);
-    };
-    state.trendTimer = setTimeout(tick, 120);
-  }
-
-  function trendStop(restore = true) {
-    state.trendOn = false;
-    if (state.trendTimer) { clearTimeout(state.trendTimer); state.trendTimer = null; }
-    trendLayer.clearLayers();
-    const btn = $("#btnTrend");
-    if (btn) { btn.textContent = "▶ 全年趋势"; btn.classList.remove("on"); }
-    if (!restore) return;
-    const s = state.trendSaved;
-    state.trendSaved = null;
-    if (!s) return;
-    state.filters = s.filters || {};
-    document.querySelectorAll(".chip").forEach((c) => {
-      if (s.filters && Object.values(s.filters).some((setv) => setv && setv.has(c.textContent))) c.classList.add("on");
-    });
-    if (s.showAll) {
-      state.showAll = true;
-      const t = $("#showAllToggle"); if (t) t.checked = true;
-    }
-    state.month = s.month;
-    state.heroes = computeHeroes(s.month);
-    try { history.replaceState(null, "", "?month=" + s.month); } catch (e) { /* noop */ }
-    syncTimeline();
-    if (state.activePid) selectProduct(null);
-    renderOrigins(false, "restore");
+    heroes.slice(0, HERO_MAX).forEach((h) => out.add(h.p.id));
+    return out;
   }
 
   function targetStyle(p) {
@@ -1667,7 +1561,7 @@
       item.type = "button";
       item.title = `${m}月 ${name}`;
       item.innerHTML = `<span class="mi-dot"></span><span class="mi-num">${m}月</span>`;
-      item.addEventListener("click", () => { if (state.trendOn) trendStop(false); setMonth(m, true); });
+      item.addEventListener("click", () => setMonth(m, true));
       tl.appendChild(item);
     });
     // 「全年都有」时间按钮（第 13 个节点）
@@ -1685,7 +1579,7 @@
     tl.addEventListener("touchend", (e) => {
       if (sx === null) return;
       const dx = e.changedTouches[0].clientX - sx;
-      if (Math.abs(dx) > 30) { if (state.trendOn) trendStop(false); setMonth(state.month + (dx < 0 ? 1 : -1), true); }
+      if (Math.abs(dx) > 30) setMonth(state.month + (dx < 0 ? 1 : -1), true);
       sx = null;
     }, { passive: true });
   }
@@ -1764,12 +1658,10 @@
       box.appendChild(wrap);
     });
     $("#btnClearFilters").addEventListener("click", () => {
-      if (state.trendOn) trendStop(false);
       state.filters = {};
       document.querySelectorAll(".chip").forEach((c) => c.classList.remove("on"));
       renderOrigins(false, "filter");
     });
-    $("#btnTrend").addEventListener("click", () => trendStart());
   }
 
   /* ---------------- 详情卡 ---------------- */
@@ -1917,7 +1809,6 @@
       setTimeout(() => { btn.textContent = old; }, 1500);
     });
     $("#showAllToggle").addEventListener("change", (e) => {
-      if (state.trendOn) trendStop(false);
       state.showAll = e.target.checked;
       // 打开「显示所有物产」→ 月份轴不选中任何时间（包括「全年都有」也不高亮）；
       // 关闭 → 恢复当前自然月
