@@ -526,8 +526,8 @@
     // mobileView 已在 initMap 开头判定（map 创建时用于 minZoom）
     if (mobileView) {
       // 移动端：固定视图，不依赖 fitBounds 的容器尺寸计算
-      // zoom 5.0（minZoom 已放宽到 5）在 390-430px 屏宽下福建约占 28-31%，邻省（浙/赣/湘/粤/台）与海域完整可见
-      map.setView([25.9, 118.3], 5.0, { animate: false });
+      // zoom 6.0（minZoom 已放宽到 5）在 390-430px 屏宽下福建约占 56%，左右仍露出邻省（江西/台湾）与海域
+      map.setView([25.9, 118.3], 6.0, { animate: false });
     } else {
       map.fitBounds(fujianBounds.pad(0.16), { animate: false, maxZoom: 9 });
     }
