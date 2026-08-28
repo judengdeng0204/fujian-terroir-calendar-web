@@ -394,7 +394,7 @@
   async function loadData() {
     try {
       const [jsonRes, geoRes, riverRes, chinaRes, manifestRes, guidesRes] = await Promise.all([
-        fetch("data/Fujian_Terroir_Calendar.json").then((r) => { setLoadProgress("物产名录"); return r; }),
+        fetch("data/Fujian_Terroir_Calendar.light.json").then((r) => { setLoadProgress("物产名录"); return r; }),
         fetch("assets/fujian.geojson").then((r) => { setLoadProgress("地图轮廓"); return r; }),
         fetch("assets/fujian_rivers.geojson").then((r) => { setLoadProgress("水系"); return r; }),
         fetch("assets/china_context.geojson").catch(() => null).then((r) => { setLoadProgress("邻省"); return r; }),
