@@ -397,7 +397,7 @@
         fetch("assets/fujian.geojson").then((r) => { setLoadProgress("地图轮廓"); return r; }),
         fetch("assets/fujian_rivers.geojson").then((r) => { setLoadProgress("水系"); return r; }),
         fetch("assets/china_context.geojson").catch(() => null).then((r) => { setLoadProgress("邻省"); return r; }),
-        fetch("assets/illustrations/thumb/cutout/manifest.json").catch(() => null).then((r) => { setLoadProgress("插画清单"); return r; }),
+        fetch("assets/illustrations/splash/cutout/manifest.json").catch(() => null).then((r) => { setLoadProgress("插画清单"); return r; }),
         fetch("data/month_guides.json").catch(() => null).then((r) => { setLoadProgress("月度导语"); return r; }),
       ]);
       // 注：card_content.json（详情深度内容）已改为点击详情时懒加载，首屏不再下载（899KB）
