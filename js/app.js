@@ -133,6 +133,7 @@
     visiblePids: new Set(),
     splashActive: true,   // 开屏期间隐藏物产原点
     pendingEnter: false,  // 数据未就绪时用户已点击「点击进入」
+    heroes: new Set(),    // 当月主角物产 id（峰值月轮换）
     defaultZoom: null,    // 进入时的默认缩放：低于等于该级别不显示插画
     imgAvailable: null,   // 已有抠图文件的物产 id 集合（小写）
     monthGuides: null,    // 月份导语（12 个月的主题/金句/正文）
@@ -701,6 +702,30 @@
     return best;
   }
 
+  /* 每月主角：当月=该物产全年 activity 峰值 且 ≥门槛，同品类≤2，取前5（峰值月轮换叙事） */
+  const HERO_MIN = 50, HERO_MAX = 5, HERO_SCALE = 1.9;
+  function computeHeroes(m) {
+    const out = new Set();
+    if (m <= 0) return out;
+    const catCount = {}, heroes = [];
+    for (const p of state.products) {
+      let bestA = 0, bestM = 0;
+      for (let mm = 1; mm <= 12; mm++) {
+        const row = p._pheno && p._pheno[mm];
+        const a = row ? num(row.seasonal_activity) || 0 : 0;
+        if (a > bestA) { bestA = a; bestM = mm; }
+      }
+      if (bestM !== m || bestA < HERO_MIN) continue;
+      const cat = (p.basic && p.basic.category) || "";
+      catCount[cat] = (catCount[cat] || 0) + 1;
+      if (catCount[cat] > 2) continue;
+      heroes.push({ p, a: bestA });
+    }
+    heroes.sort((x, y) => y.a - x.a);
+    heroes.slice(0, HERO_MAX).forEach((h) => out.add(h.p.id));
+    return out;
+  }
+
   function targetStyle(p) {
     const row = state.month === 0
       ? primaryCoreRow(p)
@@ -709,13 +734,14 @@
     const st = stageFor(row, productKind(p));
     const sz = sizeFor(a);
     const active = state.showAll || a >= ACTIVE_MIN;
+    const isHero = !!state.heroes && state.heroes.has(p.id);
     return {
       visible: active,
-      r: active ? sz.r : 4,
+      r: active ? sz.r * (isHero ? HERO_SCALE : 1) : 4,
       color: mapColor(st),
-      haloR: active ? sz.halo : 18,
+      haloR: active ? sz.halo * (isHero ? 1.7 : 1) : 18,
       opacity: active ? (state.activePid && state.activePid !== p.id ? 0.6 : 1) : 0.16,
-      haloOpacity: active ? (state.activePid && state.activePid !== p.id ? 0.07 : 0.13) : 0,
+      haloOpacity: active ? (isHero ? 0.26 : (state.activePid && state.activePid !== p.id ? 0.07 : 0.13)) : 0,
       labelOn: active,
       stage: st,
     };
@@ -1403,6 +1429,7 @@
   function monthImagePool(m) {
     const avail = state.imgAvailable;
     if (!avail) return [];
+    const heroes = computeHeroes(m);   // 主角优先：导语插画同步当月主角轮换
     const core = [], any = [];
     for (const p of state.products) {
       if (state.yearRoundIds.has(p.id)) continue;   // 「全年都有」物产不进单月导语插图池
@@ -1413,7 +1440,10 @@
       if (isCoreStatus(String(row.phenology_status || ""), productKind(p))) core.push(p);
       else any.push(p);
     }
-    const list = core.length ? core : any;
+    let list;
+    const heroList = core.filter((p) => heroes.has(p.id));
+    if (heroList.length) list = heroList.concat(core.filter((p) => !heroes.has(p.id)));
+    else list = core.length ? core : any;
     for (let i = list.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       const t = list[i]; list[i] = list[j]; list[j] = t;
@@ -1548,6 +1578,7 @@
     if (m > 12) m = 1;
     if (m === state.month) return;
     state.month = m;
+    state.heroes = computeHeroes(m);   // 主角随月轮换
     try { history.replaceState(null, "", "?month=" + m); } catch (e) { /* noop */ }
     syncTimeline();
     if (state.activePid) selectProduct(null);
@@ -1779,11 +1810,13 @@
         syncTimeline();
       }
       if (state.activePid) selectProduct(null);
+      state.heroes = computeHeroes(state.month);   // 月份可能变化，重算主角
       renderOrigins(false, "filter");
     });
     $("#btnCurrentMonth").addEventListener("click", () => {
       const m = new Date().getMonth() + 1;
       state.month = m;
+      state.heroes = computeHeroes(m);
       syncTimeline();
       if (state.activePid) selectProduct(null);
       renderOrigins(true, "month");
@@ -1803,6 +1836,7 @@
     // 封面已在页面打开时立即启动（startSplash 提前到 loadData 之前），此处不再重复
     const qm = parseInt(new URLSearchParams(location.search).get("month"), 10);
     if (qm >= 0 && qm <= 12) state.month = qm;   // 0 = 「全年都有」视图
+    state.heroes = computeHeroes(state.month);   // 初始主角（含 URL 直达月份）
     initMap();
     buildMonthTimeline();
     buildFilters();
