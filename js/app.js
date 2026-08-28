@@ -103,7 +103,7 @@
     { key: "precipitation_class", label: "降水", values: ["中降水", "较高降水", "高降水"] },
     { key: "moisture_class", label: "湿润度", values: ["湿润", "中等"] },
     { key: "water_type", label: "水域", values: ["河流", "溪流", "湖泊", "水库", "地下水", "河谷", "滨海", "潮间带", "滩涂", "浅海", "海岛", "雨养", "灌溉"] },
-    { key: "soil_class", label: "土壤", values: ["酸性", "中性"] },
+    { key: "soil_class", label: "土壤", values: ["酸性", "中性", "碱性"] },
     { key: "ecosystem", label: "生态", values: ["森林", "竹林", "茶园", "果园", "农田", "湿地", "滩涂", "海洋", "河谷", "草地", "林下"] },
   ];
 
@@ -397,7 +397,7 @@
         fetch("assets/fujian.geojson").then((r) => { setLoadProgress("地图轮廓"); return r; }),
         fetch("assets/fujian_rivers.geojson").then((r) => { setLoadProgress("水系"); return r; }),
         fetch("assets/china_context.geojson").catch(() => null).then((r) => { setLoadProgress("邻省"); return r; }),
-        fetch("assets/illustrations/splash/cutout/manifest.json").catch(() => null).then((r) => { setLoadProgress("插画清单"); return r; }),
+        fetch("assets/illustrations/thumb/cutout/manifest.json").catch(() => null).then((r) => { setLoadProgress("插画清单"); return r; }),
         fetch("data/month_guides.json").catch(() => null).then((r) => { setLoadProgress("月度导语"); return r; }),
       ]);
       // 注：card_content.json（详情深度内容）已改为点击详情时懒加载，首屏不再下载（899KB）
@@ -828,7 +828,7 @@
       zIndexOffset: -6,
     });
     const img = document.createElement("img");
-    img.src = `assets/illustrations/splash/cutout/${p.id.toLowerCase()}.webp`;
+    img.src = `assets/illustrations/thumb/cutout/${p.id.toLowerCase()}.webp`;
     img.alt = "";
     img.style.cssText = "position:absolute;left:0;top:0;width:80px;height:80px;object-fit:contain;pointer-events:auto;cursor:pointer;transform:translate(-50%,-50%) scale(0.45);opacity:0;will-change:transform,opacity;";
     img.addEventListener("click", (e) => {
@@ -1434,7 +1434,7 @@
     for (const p of state.products) {
       if (!heroes.has(p.id) || !avail.has(p.id.toLowerCase())) continue;
       heroPool.push({
-        url: `assets/illustrations/splash/cutout/${p.id.toLowerCase()}.webp`,
+        url: `assets/illustrations/thumb/cutout/${p.id.toLowerCase()}.webp`,
         name: p.name,
         id: p.id,
         category: (p.basic && p.basic.category) || "",
@@ -1464,7 +1464,7 @@
       const t = list[i]; list[i] = list[j]; list[j] = t;
     }
     return list.map((p) => ({
-      url: `assets/illustrations/splash/cutout/${p.id.toLowerCase()}.webp`,
+      url: `assets/illustrations/thumb/cutout/${p.id.toLowerCase()}.webp`,
       name: p.name,
       id: p.id,
       category: (p.basic && p.basic.category) || "",
@@ -1674,7 +1674,7 @@
 
     const hasImg = !!(state.imgAvailable && state.imgAvailable.has(p.id.toLowerCase()));
     const illustrationHtml = hasImg
-      ? `<img class="dc-illustration-img" src="assets/illustrations/${p.id.toLowerCase()}.webp" alt="${escapeHtml(b.product_name)} 物产插画">`
+      ? `<img class="dc-illustration-img" src="assets/illustrations/thumb/${p.id.toLowerCase()}.webp" alt="${escapeHtml(b.product_name)} 物产插画">`
       : `<div class="dc-illustration-placeholder"><span>${escapeHtml(b.category || "物产")} · 插画待补充</span></div>`;
 
     const subParts = [b.category, b.subcategory, b.product_type, `${b.city || ""}${b.county ? " " + b.county : ""}`].filter(Boolean);
@@ -1870,11 +1870,11 @@
     // 开屏用透明抠图（以 manifest 清单为准，缺图自动跳过）
     const pool = [];
     if (state.imgAvailable && state.imgAvailable.size) {
-      for (const id of state.imgAvailable) pool.push(`assets/illustrations/splash/cutout/${id}.webp`);
+      for (const id of state.imgAvailable) pool.push(`assets/illustrations/thumb/cutout/${id}.webp`);
     } else {
       for (let i = 1; i <= 119; i++) {
         if (i === 9 || i === 118 || i === 120) continue;
-        pool.push(`assets/illustrations/splash/cutout/fj${String(i).padStart(3, "0")}.webp`);
+        pool.push(`assets/illustrations/thumb/cutout/fj${String(i).padStart(3, "0")}.webp`);
       }
     }
     if (!pool.length) return;
