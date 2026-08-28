@@ -18,6 +18,9 @@
   --stage-spectacle: #E8A0A8;
 }
 
+/* 全局兜底：所有插图去掉任何形式的边框线（边框/外边线/轮廓） */
+img { border: 0; outline: none; }
+
 * { box-sizing: border-box; }
 
 /* ---------- 开屏 ---------- */
@@ -816,6 +819,8 @@ button { font-family: inherit; }
   max-height: 98%;
   object-fit: contain;
   transition: opacity 0.45s ease;
+  border: none;
+  outline: none;
 }
 .mg-caption {
   display: none;   /* 插画下方物产名称注释已去除 */
@@ -919,19 +924,14 @@ button { font-family: inherit; }
 .dc-illustration-img {
   width: 100%;
   border-radius: 14px;
-  border: 1px solid var(--line);
-  background: #faf6ec;
+  background: transparent;
   display: block;
 }
 .dc-illustration-placeholder {
   width: 100%;
   aspect-ratio: 4 / 3;
-  border: 1px dashed var(--line);
   border-radius: 14px;
-  background:
-    linear-gradient(135deg, rgba(255,255,255,0.6) 25%, transparent 25%) -12px 0 / 24px 24px,
-    linear-gradient(225deg, rgba(255,255,255,0.6) 25%, transparent 25%) -12px 0 / 24px 24px,
-    var(--paper);
+  background: var(--paper);
   display: flex;
   align-items: center;
   justify-content: center;
