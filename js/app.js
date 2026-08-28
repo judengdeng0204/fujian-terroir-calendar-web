@@ -132,6 +132,7 @@
     cardContent: {},      // L1 卡片内容（product_id -> 字段）
     visiblePids: new Set(),
     splashActive: true,   // 开屏期间隐藏物产原点
+    pendingEnter: false,  // 数据未就绪时用户已点击「点击进入」
     defaultZoom: null,    // 进入时的默认缩放：低于等于该级别不显示插画
     imgAvailable: null,   // 已有抠图文件的物产 id 集合（小写）
     monthGuides: null,    // 月份导语（12 个月的主题/金句/正文）
@@ -375,18 +376,29 @@
   }
 
   /* ---------------- 数据 ---------------- */
+  /* 加载进度反馈：按资源完成数推进（伪进度），封面与状态栏同步展示 */
+  let _loadStep = 0;
+  const _loadTotal = 6;   // json / geo / river / china / manifest / guides（card_content 已懒加载）
+  function setLoadProgress(label) {
+    _loadStep = Math.min(_loadStep + 1, _loadTotal);
+    const txt = `${label} · ${_loadStep}/${_loadTotal}`;
+    const st = $("#mapStatus");
+    if (st) st.textContent = "正在载入数据… " + txt;
+    const sp = $("#splashProgress");
+    if (sp) sp.textContent = "正在准备福建的山与海… " + txt;
+  }
+
   async function loadData() {
     try {
-      const [jsonRes, geoRes, riverRes, chinaRes, cardV2, cardL1, manifestRes, guidesRes] = await Promise.all([
-        fetch("data/Fujian_Terroir_Calendar.json"),
-        fetch("assets/fujian.geojson"),
-        fetch("assets/fujian_rivers.geojson"),
-        fetch("assets/china_context.geojson").catch(() => null),
-        fetch("data/card_content.json").catch(() => null),
-        fetch("data/card_content_l1.json").catch(() => null),
-        fetch("assets/illustrations/splash/cutout/manifest.json").catch(() => null),
-        fetch("data/month_guides.json").catch(() => null),
+      const [jsonRes, geoRes, riverRes, chinaRes, manifestRes, guidesRes] = await Promise.all([
+        fetch("data/Fujian_Terroir_Calendar.json").then((r) => { setLoadProgress("物产名录"); return r; }),
+        fetch("assets/fujian.geojson").then((r) => { setLoadProgress("地图轮廓"); return r; }),
+        fetch("assets/fujian_rivers.geojson").then((r) => { setLoadProgress("水系"); return r; }),
+        fetch("assets/china_context.geojson").catch(() => null).then((r) => { setLoadProgress("邻省"); return r; }),
+        fetch("assets/illustrations/splash/cutout/manifest.json").catch(() => null).then((r) => { setLoadProgress("插画清单"); return r; }),
+        fetch("data/month_guides.json").catch(() => null).then((r) => { setLoadProgress("月度导语"); return r; }),
       ]);
+      // 注：card_content.json（详情深度内容）已改为点击详情时懒加载，首屏不再下载（899KB）
       const data = await jsonRes.json();
       state.geo = await geoRes.json();
       state.riversGeo = await riverRes.json();
@@ -395,13 +407,6 @@
       state.imgAvailable = Array.isArray(manifest) && manifest.length ? new Set(manifest) : null;
       const guides = guidesRes && guidesRes.ok ? await guidesRes.json() : null;
       state.monthGuides = Array.isArray(guides) ? guides : null;
-      const cc2 = cardV2 && cardV2.ok ? await cardV2.json() : null;
-      if (cc2 && cc2.products) {
-        state.cardContent = cc2.products;
-      } else if (cardL1 && cardL1.ok) {
-        const cc1 = await cardL1.json();
-        state.cardContent = (cc1 && cc1.products) || {};
-      }
 
       state.products = data.products
         .filter((p) => p.product_id !== "FJ120") // 建盏：点位与内容暂不下沉到前端
@@ -452,10 +457,28 @@
         if (set.size) state.highlightMonths.set(p.id, set);
       }
       state.loaded = true;
+      // 通知封面：数据就绪（若用户已点「点击进入」则自动进入）
+      window.dispatchEvent(new CustomEvent("fjt:loaded"));
       init();
     } catch (err) {
       $("#mapStatus").textContent = "数据载入失败：" + err.message;
       console.error(err);
+    }
+  }
+
+  /* 详情深度内容（card_content.json）懒加载：首次打开详情时拉取并缓存 */
+  let cardContentLoaded = false;
+  async function ensureCardContent() {
+    if (cardContentLoaded) return;
+    cardContentLoaded = true;
+    try {
+      const r = await fetch("data/card_content.json");
+      if (r.ok) {
+        const dd = await r.json();
+        if (dd && dd.products) state.cardContent = dd.products;
+      }
+    } catch (e) {
+      console.error("card_content 懒加载失败", e);
     }
   }
 
@@ -1617,6 +1640,10 @@
   function renderDetail(p) {
     const b = p.basic, t = p.terroir;
     const cc = (state.cardContent && state.cardContent[p.id]) || {};
+    // 深度内容懒加载：首次打开详情时拉取 card_content.json，返回后若详情仍打开则重绘
+    if (!cc.place_intro && !cardContentLoaded) {
+      ensureCardContent().then(() => { if (state.activePid === p.id) renderDetail(p); });
+    }
     const el = $("#detailBody");
 
     const hasImg = !!(state.imgAvailable && state.imgAvailable.has(p.id.toLowerCase()));
@@ -1794,7 +1821,7 @@
   }
 
   function init() {
-    startSplash();
+    // 封面已在页面打开时立即启动（startSplash 提前到 loadData 之前），此处不再重复
     const qm = parseInt(new URLSearchParams(location.search).get("month"), 10);
     if (qm >= 0 && qm <= 12) state.month = qm;   // 0 = 「全年都有」视图
     initMap();
@@ -1976,6 +2003,13 @@
 
     function commit() {
       if (ended) return;
+      // 数据未就绪：不关闭封面，显示准备进度（②），就绪后自动进入
+      if (!state.loaded) {
+        const sp = $("#splashProgress");
+        if (sp) { sp.style.display = "block"; sp.textContent = "山与海正在准备中，请稍候…"; }
+        state.pendingEnter = true;
+        return;
+      }
       if (jumping) { pendingCommit = true; return; }
       ended = true;
       if (spawnTimer) clearInterval(spawnTimer);
@@ -2000,9 +2034,18 @@
     }
 
     startCycle();
+    // 数据就绪后：若用户等待中已点击进入，自动完成进入
+    window.addEventListener("fjt:loaded", () => {
+      const sp = $("#splashProgress");
+      if (sp) sp.style.display = "none";
+      if (state.pendingEnter) { state.pendingEnter = false; commit(); }
+    });
     enterBtn.addEventListener("click", (e) => { e.stopPropagation(); commit(); });
     overlay.addEventListener("click", commit);
   }
 
+  /* ① 封面提前：页面打开立即播放开屏动画（插画池用兜底，不依赖数据）；
+     loadData 后台并行加载，进入时若未就绪由 commit() 显示进度 */
+  startSplash();
   loadData();
 })();

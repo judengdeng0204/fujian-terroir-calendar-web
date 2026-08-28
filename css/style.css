@@ -151,6 +151,14 @@
   color: #b0503c;
   transform: translateY(-1px);
 }
+/* 封面加载进度：数据未就绪点击进入时的反馈 */
+.splash-progress {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: #7d7563;
+  margin-top: 4px;
+  text-align: center;
+}
 .splash-hint {
   position: absolute;
   bottom: 36px;
