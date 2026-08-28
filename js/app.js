@@ -1575,22 +1575,6 @@
   }
 
   /* ---------------- 筛选 ---------------- */
-  /* 覆盖度标注：分子/分母随当前筛选子集动态更新（选中茶 → 海拔 16/16 而非 119/119） */
-  function hasFieldVal(p, key) {
-    return key === "category" ? !!(p.basic && p.basic.category) : !!((p.terroir && p.terroir[key]) || "").length;
-  }
-  function updateCoverage() {
-    const sub = state.products.filter((p) => matchesFilters(p));
-    FILTER_GROUPS.forEach((g) => {
-      const n = sub.filter((p) => hasFieldVal(p, g.key)).length;
-      const el = document.querySelector(`.coverage[data-key="${g.key}"]`);
-      if (el) {
-        el.textContent = `${n}/${sub.length}`;
-        el.title = `当前筛选子集（${sub.length} 种）中，该维度 ${n} 种已有数据`;
-      }
-    });
-  }
-
   function buildFilters() {
     const box = $("#filterGroups");
     box.innerHTML = "";
@@ -1600,9 +1584,7 @@
       const title = document.createElement("button");
       title.className = "filter-group-title";
       title.type = "button";
-      // 数据覆盖度标注：分子/分母随筛选子集动态更新（初始为全体）
-      const cov = state.products.filter((p) => hasFieldVal(p, g.key)).length;
-      title.innerHTML = `<span>${escapeHtml(g.label)}</span><span class="coverage" data-key="${g.key}" title="当前筛选子集（${state.products.length} 种）中，该维度 ${cov} 种已有数据">${cov}/${state.products.length}</span><span class="chev">▶</span>`;
+      title.innerHTML = `<span>${escapeHtml(g.label)}</span><span class="chev">▶</span>`;
       const chips = document.createElement("div");
       chips.className = "chips" + (gi === 0 ? "" : " collapsed");
       g.values.forEach((v) => {
@@ -1616,7 +1598,6 @@
           if (s.size === 0) delete state.filters[g.key];
           chip.classList.toggle("on", s.has(v));
           renderOrigins(false, "filter");
-          updateCoverage();
         });
         chips.appendChild(chip);
       });
@@ -1632,7 +1613,6 @@
       state.filters = {};
       document.querySelectorAll(".chip").forEach((c) => c.classList.remove("on"));
       renderOrigins(false, "filter");
-      updateCoverage();
     });
   }
 
@@ -1800,7 +1780,6 @@
       }
       if (state.activePid) selectProduct(null);
       renderOrigins(false, "filter");
-      updateCoverage();
     });
     $("#btnCurrentMonth").addEventListener("click", () => {
       const m = new Date().getMonth() + 1;

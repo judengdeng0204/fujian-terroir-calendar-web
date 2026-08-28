@@ -417,12 +417,6 @@ button { font-family: inherit; }
   font-size: 10px;
   color: var(--ink-faint);
 }
-.filter-group-title .coverage {
-  font-size: 10px;
-  color: #b0a892;
-  letter-spacing: 0.03em;
-  margin-right: 2px;
-}
 .filter-group.open .filter-group-title .chev { transform: rotate(90deg); }
 .chips.collapsed { display: none; }
 .chips { margin-top: 7px; }
