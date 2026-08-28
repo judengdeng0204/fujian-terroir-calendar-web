@@ -484,10 +484,10 @@
     clusterLayer.addTo(map);
     addGeography();
 
-    tileLayer = L.tileLayer("https://basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png", {
-      opacity: 0.9,   // 极简淡色底图（白底灰线·无底图文字），替代 OSM（部分网络不可达且纹理重）
+    tileLayer = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      opacity: 0.14,   // 大幅减淡：只留海岸线/省界的空间定位感
       className: "map-tiles",
-      attribution: "© OpenStreetMap · © CARTO",
+      attribution: "© OpenStreetMap",
     });
     tileLayer.addTo(map);
 
