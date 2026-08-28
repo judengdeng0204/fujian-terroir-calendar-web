@@ -1153,6 +1153,11 @@ button { font-family: inherit; }
 /* ---------- responsive / 移动端 ---------- */
 @media (max-width: 860px) {
   .layout { grid-template-columns: 1fr; height: calc(100vh - 118px); }
+  /* iOS Safari 100vh bug：vh 含地址栏高度导致布局溢出、地图容器被异常撑高。
+     100dvh = 动态视口高度（随地址栏收放变化），iOS 16.4+ / 现代浏览器支持 */
+  @supports (height: 100dvh) {
+    .layout { height: calc(100dvh - 118px); }
+  }
 
   /* 头部精简 */
   .app-header { flex-wrap: wrap; gap: 6px 10px; padding: 10px 14px 8px; }
