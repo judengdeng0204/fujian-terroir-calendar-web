@@ -393,8 +393,10 @@ button { font-family: inherit; }
 }
 
 .sidebar {
-  background: var(--paper);
-  border-right: 1px solid var(--line);
+  background: rgba(247, 245, 239, 0.65);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-right: 1px solid rgba(220, 214, 200, 0.4);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -1159,7 +1161,7 @@ button { font-family: inherit; }
   .header-controls { gap: 8px; }
   .mobile-only { display: inline-flex; }
 
-  /* 筛选抽屉（复用桌面侧栏） */
+  /* 筛选抽屉（复用桌面侧栏，桌面已设半透+毛玻璃，移动端微调） */
   .sidebar {
     position: fixed;
     top: auto;
@@ -1172,7 +1174,9 @@ button { font-family: inherit; }
     border-radius: 16px 16px 0 0;
     transform: translateY(105%);
     transition: transform 0.3s cubic-bezier(0.22, 0.9, 0.28, 1);
-    box-shadow: 0 -14px 40px rgba(60,64,56,0.22);
+    box-shadow: 0 -6px 24px rgba(60,64,56,0.12);
+    border: 1px solid rgba(220, 214, 200, 0.4);
+    border-bottom: none;
     display: flex;
   }
   .sidebar.open { transform: translateY(0); }
